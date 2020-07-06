@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import NoDropDownSelector from './NoDropdownSelector/NoDropdownSelector';
+import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
+import DropdownSelector from './DropdownSelector/DropdownSelector';
+import minions from './minions';
 import './App.css';
 
 const tribes = ['Beasts', 'Demons', 'Dragons', 'Mechs', 'Murlocs', 'Pirates'];
@@ -23,16 +25,18 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
-        <NoDropDownSelector 
+        <NoDropdownSelector 
           collection={tribes} 
           currentSelected={this.state.missingTribe}
           changed={this.changeMissingTribeHandler.bind(this)}
           prefixText="The missing tribe is:" />
-        <NoDropDownSelector collection={tiers}
+        <NoDropdownSelector collection={tiers}
           collection={tiers}
           currentSelected={this.state.currentTier}
           changed={this.changeCurrentTierHandler.bind(this)}
           prefixText="The current tier is:" />
+
+        <DropdownSelector collection={minions}/>
 
         <header className="App-header">
 
