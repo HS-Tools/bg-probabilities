@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Tribes from './Tribes';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const tribes = ['Beasts', 'Demons', 'Dragons', 'Mechs', 'Murlocs', 'Pirates'];
+const tiers = [1, 2, 3, 4, 5, 6]
+
+class App extends Component {
+  state = {
+    missingTribe: tribes[0],
+    tier: tiers[0],
+    rollCount: 1,
+  }
+
+  changeMissingTribeHandler(tribeType) {
+    this.setState({missingTribe: tribeType});
+  }
+
+  render() { 
+    return (
+      <div className="App">
+        <Tribes tribes={tribes} 
+                missingTribe={this.state.missingTribe}
+                changed={this.changeMissingTribeHandler.bind(this)}/>
+        <header className="App-header">
+
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;

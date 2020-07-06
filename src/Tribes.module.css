@@ -1,0 +1,14 @@
+.Button {
+    border: none;
+    color: green;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.Missing {
+    color: red;
+}
