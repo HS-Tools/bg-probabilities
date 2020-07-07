@@ -64,6 +64,7 @@ class App extends Component {
           currentSelected={this.state.missingTribe}
           changed={this.changeMissingTribeHandler}
           prefixText="The missing tribe is:" />
+
         <NoDropdownSelector
           collection={tiers}
           currentSelected={this.state.currentTier}
