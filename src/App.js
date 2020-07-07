@@ -4,7 +4,7 @@ import DropdownSelector from './DropdownSelector/DropdownSelector';
 import minions from './minions';
 import './App.css';
 
-const tribes = ['Beasts', 'Demons', 'Dragons', 'Mechs', 'Murlocs', 'Pirates'];
+const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate'];
 const tiers = [1, 2, 3, 4, 5, 6]
 
 class App extends Component {
@@ -34,7 +34,26 @@ class App extends Component {
       return parseInt(item.Tier) <= tier;
     });
 
-    this.setState({ buyableCards: tierAppropriateMinions });
+    let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
+      let synergies = item.Synergy.split(',');
+      if (synergies[0] === "") {
+        if (item.Type === tribeType) {
+          return false;
+        } else {
+          return true;
+        }
+      } else if (synergies.length > 1) {
+        return true;
+      } else {
+        if (synergies[0] === tribeType) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+    });
+
+    this.setState({ buyableCards: tribeAppropriateMinions });
   }
 
   render() { 
