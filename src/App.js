@@ -16,21 +16,20 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.changeBuyableCards();
+    this.changeBuyableCards(this.state.currentTier, this.state.missingTribe);
   }
 
-  changeMissingTribeHandler(tribeType) {
+  changeMissingTribeHandler = (tribeType) => {
     this.setState({missingTribe: tribeType});
-    this.changeBuyableCards(tribeType = tribeType);
+    this.changeBuyableCards(this.state.currentTier, tribeType);
   }
 
-  changeCurrentTierHandler(tier) {
-    console.log(tier);
+  changeCurrentTierHandler = (tier) => {
     this.setState({currentTier: tier});
-    this.changeBuyableCards(tier);
+    this.changeBuyableCards(tier, this.state.missingTribe);
   }
 
-  changeBuyableCards(tier = this.state.currentTier, tribeType = this.state.missingTribe) {
+  changeBuyableCards(tier, tribeType) {
     let tierAppropriateMinions = minions.filter(item => {
       return parseInt(item.Tier) <= tier;
     });
@@ -44,12 +43,12 @@ class App extends Component {
         <NoDropdownSelector 
           collection={tribes} 
           currentSelected={this.state.missingTribe}
-          changed={() => this.changeMissingTribeHandler.bind(this)}
+          changed={this.changeMissingTribeHandler}
           prefixText="The missing tribe is:" />
         <NoDropdownSelector
           collection={tiers}
           currentSelected={this.state.currentTier}
-          changed={() => this.changeCurrentTierHandler.bind(this)}
+          changed={this.changeCurrentTierHandler}
           prefixText="The current tier is:" />
 
         <DropdownSelector 
