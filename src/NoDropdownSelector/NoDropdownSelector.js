@@ -6,7 +6,7 @@ const Selector = (props) => {
         if (item == props.currentSelected) {
             return <button key={item} className={[classes.Button, classes.Missing].join(' ')}>{item}</button>
         } else {
-            return <button key={item} className={classes.Button} onClick={props.changed.bind(this, item)}>{item}</button>
+            return <button key={item} className={classes.Button} onClick={props.changed(item)}>{item}</button>
         }
     });
 
