@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './NoDropdownSelector.module.css';
 
-const selector = (props) => {
+const Selector = (props) => {
     let buttons = props.collection.map(item => {
         if (item == props.currentSelected) {
             return <button key={item} className={[classes.Button, classes.Missing].join(' ')}>{item}</button>
@@ -17,4 +17,4 @@ const selector = (props) => {
     );
 };
 
-export default selector;
+export default Selector;
