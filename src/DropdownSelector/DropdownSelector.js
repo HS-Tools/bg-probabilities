@@ -7,7 +7,9 @@ const Selector = (props) => {
         return { value: item.Name, label: item.Name } 
     });
 
-    return <Select options={options} />;
+    return <Select 
+                options={options}
+                onChange={() => props.changed(props.selectedCard)} />;
 
     // return props.collection.map(item => {
     //     return <div key={item.Name}>{item.Name}</div>

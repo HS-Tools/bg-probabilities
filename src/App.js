@@ -3,6 +3,7 @@ import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
 import minions from './minions';
 import './App.css';
+import SelectedCards from './SelectedCards/SelectedCards';
 
 const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate'];
 const tiers = [1, 2, 3, 4, 5, 6]
@@ -12,24 +13,39 @@ class App extends Component {
     missingTribe: tribes[0],
     currentTier: tiers[0],
     rollCount: 1,
-    buyableCards: []
+    buyableCards: [],
+    selectedCards: {},
+    selectedCard: null,
   }
 
   componentDidMount() {
-    this.changeBuyableCards(this.state.currentTier, this.state.missingTribe);
+    this.changeBuyableCards();
   }
 
   changeMissingTribeHandler = (tribeType) => {
     this.setState({missingTribe: tribeType});
-    this.changeBuyableCards(this.state.currentTier, tribeType);
+    this.changeBuyableCards(undefined, tribeType);
   }
 
   changeCurrentTierHandler = (tier) => {
     this.setState({currentTier: tier});
-    this.changeBuyableCards(tier, this.state.missingTribe);
+    this.changeBuyableCards(tier, undefined);
   }
 
-  changeBuyableCards(tier, tribeType) {
+  addSelectedCardHandler = (newSelected) => {
+    console.log(newSelected);
+    this.setState(prevState => {
+      let selectedCards = Object.assign({}, prevState.selectedCards);
+      selectedCards[newSelected] = 1;
+
+      return { selectedCards }
+    });
+  }
+
+  changeBuyableCards(
+    tier = this.state.currentTier, 
+    tribeType = this.state.tribeType) {
+
     let tierAppropriateMinions = minions.filter(item => {
       return parseInt(item.Tier) <= tier;
     });
@@ -74,7 +90,12 @@ class App extends Component {
         <DropdownSelector 
           collection={this.state.buyableCards}
           currentTier={this.state.currentTier}
-          missingTribe={this.state.missingTribe}/>
+          missingTribe={this.state.missingTribe}
+          changed={this.addSelectedCardHandler}
+          selectedCard={this.state.selectedCard} />
+
+        <SelectedCards 
+          selectedCards={this.state.selectedCards}/>
 
         <header className="App-header">
 
