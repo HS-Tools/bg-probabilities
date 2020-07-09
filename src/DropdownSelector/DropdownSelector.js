@@ -12,6 +12,7 @@ class Selector extends Component {
         return (
             <Select 
                 showSearch
+                style={{width: '200px'}}
                 placeholder='Choose a minion'
                 onChange={this.props.changed}>
                 {names}

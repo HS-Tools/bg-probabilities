@@ -33,12 +33,22 @@ class App extends Component {
   }
 
   addSelectedCardHandler = (newSelected) => {
-    console.log(newSelected);
     this.setState(prevState => {
       let selectedCards = Object.assign({}, prevState.selectedCards);
-      selectedCards[newSelected] = 1;
+      if (!selectedCards[newSelected]) {
+        selectedCards[newSelected] = 1;
+      }
 
-      return { selectedCards }
+      return { selectedCards };
+    });
+  }
+
+  deleteSelectedCardHandler = (toDelete) => {
+    this.setState(prevState => {
+      let selectedCards = Object.assign({}, prevState.selectedCards);
+      delete selectedCards[toDelete];
+
+      return { selectedCards };
     });
   }
 
@@ -94,8 +104,9 @@ class App extends Component {
           changed={this.addSelectedCardHandler}
           selectedCard={this.state.selectedCard} />
 
-        <SelectedCards 
-          selectedCards={this.state.selectedCards}/>
+        <SelectedCards
+          selectedCards={this.state.selectedCards}
+          delete={this.deleteSelectedCardHandler}/>
 
         <header className="App-header">
 
