@@ -52,6 +52,14 @@ class App extends Component {
     });
   }
 
+  changeSelectedCardAmountHandler = (name, value) => {
+    this.setState(prevState => {
+      let selectedCards = Object.assign({}, prevState.selectedCards);
+      selectedCards[name] = value;
+      return { selectedCards };
+    });
+  }
+
   changeBuyableCards(
     tier = this.state.currentTier, 
     tribeType = this.state.tribeType) {
@@ -106,6 +114,7 @@ class App extends Component {
 
         <SelectedCards
           selectedCards={this.state.selectedCards}
+          changeCard={this.changeSelectedCardAmountHandler}
           delete={this.deleteSelectedCardHandler}/>
 
         <header className="App-header">
