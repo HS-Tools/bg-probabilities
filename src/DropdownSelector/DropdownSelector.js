@@ -1,13 +1,23 @@
-import React from 'react';
-import classes from './DropdownSelector.module.css';
+import React, { Component } from 'react';
+import { Select } from 'antd'
+const { Option } = Select;
+// import classes from './DropdownSelector.module.css';
 
-const Selector = (props) => {
+class Selector extends Component {
+    render() {
+        let names = this.props.collection.map(item => {
+            return <Option key={item.Name} value={item.Name}>{item.Name}</Option>;
+        });
 
-    // return props.collection.map(item => {
-    //     return <div key={item.Name}>{item.Name}</div>
-    // });
-
-    return null;
-};
+        return (
+            <Select 
+                showSearch
+                placeholder='Choose a minion'
+                onChange={this.props.changed}>
+                {names}
+            </Select>
+        );
+    }
+}
 
 export default Selector;
