@@ -1,19 +1,13 @@
 import React from 'react';
 import classes from './DropdownSelector.module.css';
-import Select from 'react-select';
 
 const Selector = (props) => {
-    const options = props.collection.map(item => { 
-        return { value: item.Name, label: item.Name } 
-    });
-
-    return <Select 
-                options={options}
-                onChange={() => props.changed(props.selectedCard)} />;
 
     // return props.collection.map(item => {
     //     return <div key={item.Name}>{item.Name}</div>
     // });
+
+    return null;
 };
 
 export default Selector;
