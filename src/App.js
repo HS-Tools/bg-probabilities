@@ -52,8 +52,8 @@ class App extends Component {
 
   addSelectedCardHandler = (newSelected) => {
     this.setState(prevState => {
-      let selectedCards = Object.assign({}, prevState.selectedCards);
-      let takenCards = Object.assign({}, prevState.takenCards);
+      let selectedCards =  {...prevState.selectedCards};
+      let takenCards =  {...prevState.takenCards};
 
       if (!selectedCards[newSelected]) {
         selectedCards[newSelected] = 1;
@@ -69,20 +69,20 @@ class App extends Component {
 
   deleteSelectedCardHandler = (toDelete) => {
     this.setState(prevState => {
-      let selectedCards = Object.assign({}, prevState.selectedCards);
-      let takenCards = Object.assign({}, prevState.takenCards);
+      let selectedCards =  {...prevState.selectedCards};
+      let takenCards = {...prevState.takenCards};
 
       delete selectedCards[toDelete];
       delete takenCards[toDelete];
 
-      return { selectedCards, takenCards, selectedCard: null };
+      return { selectedCards, takenCards };
     });
   }
 
   changeSelectedCardAmountHandler = (name, value) => {
     this.setState(prevState => {
-      let selectedCards = Object.assign({}, prevState.selectedCards);
-      let takenCards = Object.assign({}, prevState.takenCards);
+      let selectedCards = {...prevState.selectedCards};
+      let takenCards = {...prevState.takenCards};
 
       selectedCards[name] = value;
 
@@ -95,7 +95,7 @@ class App extends Component {
 
   changeTakenCardAmountHandler = (name, value) => {
     this.setState(prevState => {
-      let takenCards = Object.assign({}, prevState.takenCards);
+      let takenCards = {...prevState.takenCards};
       takenCards[name] = value;
 
       return { takenCards };
