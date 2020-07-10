@@ -20,7 +20,8 @@ class App extends Component {
       rollCount: 1,
       buyableCards: [],
       selectedCards: {},
-      takenCards: {}
+      takenCards: {},
+      rollCount: 0,
     }
     this.minionToAttributesMap = {};
   }
@@ -101,6 +102,10 @@ class App extends Component {
     });
   }
 
+  changeRollsHandler = (value) => {
+    this.setState({ rollCount: value});
+  }
+
   changeBuyableCards(
     tier = this.state.currentTier, 
     tribeType = this.state.missingTribe) {
@@ -163,6 +168,7 @@ class App extends Component {
           takenCards={this.state.takenCards}
           changeCard={this.changeSelectedCardAmountHandler}
           changeTaken={this.changeTakenCardAmountHandler}
+          changeRolls={this.changeRollsHandler}
           delete={this.deleteSelectedCardHandler}
           minionsMap={this.minionToAttributesMap}
           tierCardCounts={tierCardCounts}/>

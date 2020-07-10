@@ -4,9 +4,14 @@ import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
 
-    const header = <div>
-        What are the odds to hit
-    </div>
+    const rollCountInput = 
+        <div> in &nbsp;
+            <InputNumber
+                min={0}
+                defaultValue={1}
+                onChange={(value) => props.changeRolls(value)} /> 
+            &nbsp; rolls
+        </div>
 
     const entries = Object.keys(props.selectedCards).map(key => {
         let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
@@ -41,8 +46,8 @@ const SelectedCards = (props) => {
         )});
 
     return <div>
-        {header}
         {entries}
+        {rollCountInput}
     </div>
 }
 
