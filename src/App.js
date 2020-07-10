@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
 import minions from './minions';
-import tierCardCounts from './config';
+import { tierCardCounts, tavernCardCounts } from './config';
 import './App.css';
 import SelectedCards from './SelectedCards/SelectedCards';
 
