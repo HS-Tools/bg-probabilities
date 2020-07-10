@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
+import Results from './Results/Results'
 import minions from './minions';
 import { tierCardCounts, tavernCardCounts } from './config';
 import './App.css';
@@ -171,6 +172,14 @@ class App extends Component {
           delete={this.deleteSelectedCardHandler}
           minionsMap={this.minionToAttributesMap}
           tierCardCounts={tierCardCounts}/>
+
+        <Results
+          tierCardCounts={tierCardCounts}
+          tavernCardCounts={tavernCardCounts}
+          buyableCards={this.state.buyableCards}
+          currentTier={this.state.currentTier}
+          selectedCards={this.state.selectedCards}
+          takenCards={this.state.takenCards}/>
 
         <header className="App-header">
 
