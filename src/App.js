@@ -63,7 +63,7 @@ class App extends Component {
         takenCards[newSelected] = 0;
       }
 
-      return { selectedCards, takenCards };
+      return { selectedCards, takenCards, selectedCard: null };
     });
   }
 
