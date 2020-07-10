@@ -20,8 +20,7 @@ class App extends Component {
       rollCount: 1,
       buyableCards: [],
       selectedCards: {},
-      takenCards: {},
-      rollCount: 0,
+      takenCards: {}
     }
     this.minionToAttributesMap = {};
   }

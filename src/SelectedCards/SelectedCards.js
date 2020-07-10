@@ -4,15 +4,6 @@ import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
 
-    const rollCountInput = 
-        <div> in &nbsp;
-            <InputNumber
-                min={0}
-                defaultValue={1}
-                onChange={(value) => props.changeRolls(value)} /> 
-            &nbsp; rolls
-        </div>
-
     const entries = Object.keys(props.selectedCards).map(key => {
         let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
         let currentAmount = props.selectedCards[key];
@@ -45,9 +36,18 @@ const SelectedCards = (props) => {
             </div>
         )});
 
+    const rollCountInput = 
+        <div> in &nbsp;
+            <InputNumber
+                min={0}
+                defaultValue={1}
+                onChange={(value) => props.changeRolls(value)} /> 
+            &nbsp; rolls
+        </div>;
+
     return <div>
         {entries}
-        {rollCountInput}
+        {entries.length > 0 ? rollCountInput : null}
     </div>
 }
 
