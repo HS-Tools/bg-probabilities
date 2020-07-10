@@ -102,6 +102,10 @@ class App extends Component {
     tribeType = this.state.tribeType) {
 
     let tierAppropriateMinions = minions.filter(item => {
+      if (parseInt(item.Tier) > tier) {
+        this.deleteSelectedCardHandler(item.Name);
+      }
+
       return parseInt(item.Tier) <= tier;
     });
 
@@ -109,6 +113,7 @@ class App extends Component {
       let synergies = item.Synergy.split(',');
       if (synergies[0] === "") {
         if (item.Type === tribeType) {
+          this.deleteSelectedCardHandler(item.Name);
           return false;
         } else {
           return true;
@@ -117,6 +122,7 @@ class App extends Component {
         return true;
       } else {
         if (synergies[0] === tribeType) {
+          this.deleteSelectedCardHandler(item.Name);
           return false;
         } else {
           return true;
