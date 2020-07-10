@@ -10,16 +10,20 @@ const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate'];
 const tiers = [1, 2, 3, 4, 5, 6]
 
 class App extends Component {
-  minionToAttributesMap = {};
 
-  state = {
-    missingTribe: tribes[0],
-    currentTier: tiers[0],
-    rollCount: 1,
-    buyableCards: [],
-    selectedCards: {},
-    takenCards: {},
-    selectedCard: null,
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      missingTribe: tribes[0],
+      currentTier: tiers[0],
+      rollCount: 1,
+      buyableCards: [],
+      selectedCards: {},
+      takenCards: {},
+      selectedCard: null,
+    }
+    this.minionToAttributesMap = {};
   }
 
   mapNameToObjectOfAttributes() {
@@ -67,10 +71,11 @@ class App extends Component {
     this.setState(prevState => {
       let selectedCards = Object.assign({}, prevState.selectedCards);
       let takenCards = Object.assign({}, prevState.takenCards);
+
       delete selectedCards[toDelete];
       delete takenCards[toDelete];
 
-      return { selectedCards };
+      return { selectedCards, takenCards, selectedCard: null };
     });
   }
 
@@ -99,7 +104,7 @@ class App extends Component {
 
   changeBuyableCards(
     tier = this.state.currentTier, 
-    tribeType = this.state.tribeType) {
+    tribeType = this.state.missingTribe) {
 
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
