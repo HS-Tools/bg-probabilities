@@ -20,8 +20,7 @@ class App extends Component {
       rollCount: 1,
       buyableCards: [],
       selectedCards: {},
-      takenCards: {},
-      selectedCard: null,
+      takenCards: {}
     }
     this.minionToAttributesMap = {};
   }
@@ -63,7 +62,7 @@ class App extends Component {
         takenCards[newSelected] = 0;
       }
 
-      return { selectedCards, takenCards, selectedCard: null };
+      return { selectedCards, takenCards };
     });
   }
 
@@ -157,8 +156,7 @@ class App extends Component {
           collection={this.state.buyableCards}
           currentTier={this.state.currentTier}
           missingTribe={this.state.missingTribe}
-          changed={this.addSelectedCardHandler}
-          selectedCard={this.state.selectedCard} />
+          changed={this.addSelectedCardHandler} />
 
         <SelectedCards
           selectedCards={this.state.selectedCards}

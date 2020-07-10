@@ -14,7 +14,7 @@ class Selector extends Component {
                 showSearch
                 style={{width: '200px'}}
                 placeholder='Choose a minion'
-                value={this.props.selectedCard}
+                value={null}
                 onChange={this.props.changed}>
                 {names}
             </Select>
