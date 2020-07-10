@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
 import minions from './minions';
+import tierCardCounts from './config';
 import './App.css';
 import SelectedCards from './SelectedCards/SelectedCards';
 
@@ -9,6 +10,8 @@ const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate'];
 const tiers = [1, 2, 3, 4, 5, 6]
 
 class App extends Component {
+  minionToAttributesMap = {};
+
   state = {
     missingTribe: tribes[0],
     currentTier: tiers[0],
@@ -18,7 +21,17 @@ class App extends Component {
     selectedCard: null,
   }
 
+  mapNameToObjectOfAttributes() {
+    const nameMap = {}
+    for (let minion of minions) {
+      nameMap[minion.Name] = minion;
+    }
+
+    return nameMap;
+  }
+
   componentDidMount() {
+    this.minionToAttributesMap = this.mapNameToObjectOfAttributes();
     this.changeBuyableCards();
   }
 
@@ -56,6 +69,7 @@ class App extends Component {
     this.setState(prevState => {
       let selectedCards = Object.assign({}, prevState.selectedCards);
       selectedCards[name] = value;
+
       return { selectedCards };
     });
   }
@@ -115,7 +129,9 @@ class App extends Component {
         <SelectedCards
           selectedCards={this.state.selectedCards}
           changeCard={this.changeSelectedCardAmountHandler}
-          delete={this.deleteSelectedCardHandler}/>
+          delete={this.deleteSelectedCardHandler}
+          minionsMap={this.minionToAttributesMap}
+          tierCardCounts={tierCardCounts}/>
 
         <header className="App-header">
 
