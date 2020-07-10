@@ -18,6 +18,7 @@ class App extends Component {
     rollCount: 1,
     buyableCards: [],
     selectedCards: {},
+    takenCards: {},
     selectedCard: null,
   }
 
@@ -48,18 +49,26 @@ class App extends Component {
   addSelectedCardHandler = (newSelected) => {
     this.setState(prevState => {
       let selectedCards = Object.assign({}, prevState.selectedCards);
+      let takenCards = Object.assign({}, prevState.takenCards);
+
       if (!selectedCards[newSelected]) {
         selectedCards[newSelected] = 1;
       }
 
-      return { selectedCards };
+      if (!takenCards[newSelected]) {
+        takenCards[newSelected] = 0;
+      }
+
+      return { selectedCards, takenCards };
     });
   }
 
   deleteSelectedCardHandler = (toDelete) => {
     this.setState(prevState => {
       let selectedCards = Object.assign({}, prevState.selectedCards);
+      let takenCards = Object.assign({}, prevState.takenCards);
       delete selectedCards[toDelete];
+      delete takenCards[toDelete];
 
       return { selectedCards };
     });
@@ -68,9 +77,23 @@ class App extends Component {
   changeSelectedCardAmountHandler = (name, value) => {
     this.setState(prevState => {
       let selectedCards = Object.assign({}, prevState.selectedCards);
+      let takenCards = Object.assign({}, prevState.takenCards);
+
       selectedCards[name] = value;
 
+      let maxTakenAmount = tierCardCounts[this.minionToAttributesMap[name]] - value;
+      takenCards[name] = Math.min(maxTakenAmount, takenCards[name]);
+
       return { selectedCards };
+    });
+  }
+
+  changeTakenCardAmountHandler = (name, value) => {
+    this.setState(prevState => {
+      let takenCards = Object.assign({}, prevState.takenCards);
+      takenCards[name] = value;
+
+      return { takenCards };
     });
   }
 
@@ -128,7 +151,9 @@ class App extends Component {
 
         <SelectedCards
           selectedCards={this.state.selectedCards}
+          takenCards={this.state.takenCards}
           changeCard={this.changeSelectedCardAmountHandler}
+          changeTaken={this.changeTakenCardAmountHandler}
           delete={this.deleteSelectedCardHandler}
           minionsMap={this.minionToAttributesMap}
           tierCardCounts={tierCardCounts}/>

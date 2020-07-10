@@ -10,21 +10,31 @@ const SelectedCards = (props) => {
     </div>
 
     const entries = Object.keys(props.selectedCards).map(key => {
+        let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
+        let currentAmount = props.selectedCards[key];
+        let takenAmount = props.takenCards[key];
+
+        const cardAmountInput = <InputNumber 
+                                min={0}
+                                max={maxCardsInCurrentTier}
+                                style={{width: '60px'}}
+                                value={currentAmount}
+                                onChange={(value) => props.changeCard(key, value)} />
+
+        let maxTakenAmount = maxCardsInCurrentTier - currentAmount;
+        const takenAmountInput = <InputNumber 
+                                min={0}
+                                max={maxTakenAmount}
+                                style={{width: '60px'}}
+                                value={takenAmount}
+                                onChange={(value) => props.changeTaken(key, value)}/>
+
         return (
             <div key={key}>
-                <InputNumber 
-                            min={0}
-                            max={props.tierCardCounts[props.minionsMap[key].Tier]}
-                            style={{width: '60px'}}
-                            defaultValue={props.selectedCards[key]}
-                            onChange={(value) => props.changeCard(key, value)} />
+                {cardAmountInput}
                 &nbsp; {key}
                 <span> when </span>
-                <InputNumber 
-                            min={0}
-                            max={5}
-                            style={{width: '60px'}}
-                            defaultValue={0} />
+                {takenAmountInput}
                 &nbsp; <span>are taken already</span> &nbsp;
                 <img className={classes.trashcan} src={require('../assets/trash.svg')} onClick={() => props.delete(key)}/>
             </div>
