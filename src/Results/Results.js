@@ -37,7 +37,7 @@ class Results extends Component {
 
     }
 
-    calculateOdds(numRolls, numDesiredCopies) {
+    calculateOdds(numDesiredCopies, numRolls) {
         if (numDesiredCopies === 0) {
             return 1
         }
@@ -47,8 +47,8 @@ class Results extends Component {
 
         let retVal = 0;
 
-        for (let i = 0; i < numRolls; i++) {
-            retVal += this.calculateOdds(numRolls - i, numDesiredCopies - 1);
+        for (let i = 0; i < this.getCountOfMinionsInTavern(); i++) {
+            retVal += this.calculateOdds(numDesiredCopies - i, numRolls - 1);
         }
 
         return retVal

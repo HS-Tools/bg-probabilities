@@ -37,17 +37,17 @@ class App extends Component {
 
   componentDidMount() {
     this.minionToAttributesMap = this.mapNameToObjectOfAttributes();
-    this.changeBuyableCards();
+    this.changeBuyableCards(this.state.currentTier, this.state.missingTribe);
   }
 
   changeMissingTribeHandler = (tribeType) => {
     this.setState({missingTribe: tribeType});
-    this.changeBuyableCards(undefined, tribeType);
+    this.changeBuyableCards(this.state.currentTier, tribeType);
   }
 
   changeCurrentTierHandler = (tier) => {
     this.setState({currentTier: tier});
-    this.changeBuyableCards(tier, undefined);
+    this.changeBuyableCards(tier, this.state.missingTribe);
   }
 
   addSelectedCardHandler = (newSelected) => {
@@ -107,8 +107,8 @@ class App extends Component {
   }
 
   changeBuyableCards(
-    tier = this.state.currentTier, 
-    tribeType = this.state.missingTribe) {
+    tier, 
+    tribeType) {
 
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
