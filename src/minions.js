@@ -1056,6 +1056,17 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Amalgadon",
+      "Tier":"6",
+      "Attack":"6",
+      "Health":"6",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"All",
+      "Keywords":"Adapt, Battlecry",
+      "Synergy":"Beast, Murloc, Dragon, Demon, Pirate, Mech"
+   },
+   {
       "Name":"Dread Admiral Eliza",
       "Tier":"6",
       "Attack":"6",
