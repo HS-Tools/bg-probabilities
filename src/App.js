@@ -174,6 +174,7 @@ class App extends Component {
           tierCardCounts={tierCardCounts}/>
 
         <Results
+          minionsMap={this.minionToAttributesMap}
           tierCardCounts={tierCardCounts}
           tavernCardCounts={tavernCardCounts}
           buyableCards={this.state.buyableCards}

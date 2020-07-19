@@ -15,6 +15,33 @@ class Results extends Component {
         return total;
     }
 
+    // Returns a map where the key is the card name and the value is another object with fields that indicate needed and available amounts of that card
+    getCardMap() {
+        let cardMap = {};
+        const { minionsMap, tierCardCounts, takenCards, selectedCards } = this.props;
+
+        for (let key of Object.keys(selectedCards)) {
+            let cardTier = parseInt(minionsMap[key].Tier);
+            let availableAmount = tierCardCounts[cardTier] - takenCards[key];
+
+            cardMap[key] = {
+                'needed': selectedCards[key],
+                'available': availableAmount
+            }
+        }
+
+        return cardMap;
+    }
+
+    runOneSimulationWithAnd() {
+        let totalCards = this.getCountOfAvailableMinions();
+        let cardsDrawn = this.getCountOfMinionsInTavern();
+
+        // let successCount = this.
+
+
+    }
+
     getCountOfMinionsInTavern() {
         return this.props.tavernCardCounts[this.props.currentTier];
     }
@@ -29,9 +56,6 @@ class Results extends Component {
                                 // successCount of desiredCards
     // This is the odds of hitting at least numDesired cards in one tavern roll when there are successCount of desired cards
     calculateOddsToHit(numDesired) {
-        let totalCards = this.getCountOfAvailableMinions();
-        let cardsDrawn = this.getCountOfMinionsInTavern();
-        let successCount = 0;
 
         // this.props.
 
@@ -55,7 +79,6 @@ class Results extends Component {
     }
 
     render() {
-        console.log(this.getCountOfAvailableMinions());
         return <p>Hi</p>;
     }
 }
