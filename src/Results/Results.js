@@ -33,10 +33,36 @@ class Results extends Component {
         return cardMap;
     }
 
+    getXUniqueRandoms(min, max, x) {
+        let arr = [];
+
+        while(arr.length < x) {
+            let randomInt = this.getRandomInRange(min, max);
+            if (arr.indexOf(randomInt) === -1) {
+                arr.push(randomInt);
+            }
+        }
+
+        return arr;
+    }
+
+    getRandomInRange(min, max) {
+        let delta = max-min;
+
+        return Math.floor(Math.random() * delta) + min;
+    }
+
     runOneSimulationWithAnd() {
         let totalCards = this.getCountOfAvailableMinions();
-        let cardsDrawn = this.getCountOfMinionsInTavern();
+        let cardsDrawnPerRound = this.getCountOfMinionsInTavern();
+        let cardMap = this.getCardMap();
+        let rollCount = this.props.numRolls;
 
+        while (rollCount > 0 && Object.keys(cardMap).length > 0) {
+
+        }
+
+        
         // let successCount = this.
 
 
@@ -79,7 +105,12 @@ class Results extends Component {
     }
 
     render() {
-        return <p>Hi</p>;
+        console.log(this.getXUniqueRandoms(1, 10, 3));
+        return (
+            <div>
+                <button>Calculate Odds</button>
+            </div>
+        );
     }
 }
 
