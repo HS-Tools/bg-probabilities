@@ -6,7 +6,7 @@ class Results extends Component {
         super(props);
 
         this.state = {
-            odds: 0
+            odds: null
         }
     }
 
@@ -161,11 +161,13 @@ class Results extends Component {
     }
 
     render() {
+        let oddsDiv = this.state.odds !== null ? <div>Odds are: {this.state.odds}</div>: null;
+
         if (Object.keys(this.props.selectedCards).length > 0) {
             return (
                 <div>
                     <Button type="primary" onClick={() => this.runXSimulationsWithAnd(100000)}>Calculate Odds</Button>
-                    <div>Odds are: {this.state.odds}</div>
+                    {oddsDiv}
                 </div>
             );
         }
