@@ -21,7 +21,8 @@ class App extends Component {
       rollCount: 1,
       buyableCards: [],
       selectedCards: {},
-      takenCards: {}
+      takenCards: {},
+      longestSelectedCardCharCount: 0
     }
     this.minionToAttributesMap = {};
   }
@@ -50,6 +51,18 @@ class App extends Component {
     this.changeBuyableCards(tier, this.state.missingTribe);
   }
 
+  calculateLongestSelectedCardCharCount(selectedCards) {
+    let max = 0;
+
+    for (let key of Object.keys(selectedCards)) {
+      if (key.length > max) {
+        max = key.length;
+      }
+    }
+
+    return max;
+  }
+
   addSelectedCardHandler = (newSelected) => {
     this.setState(prevState => {
       let selectedCards =  {...prevState.selectedCards};
@@ -63,7 +76,9 @@ class App extends Component {
         takenCards[newSelected] = 0;
       }
 
-      return { selectedCards, takenCards };
+      let newCharMax = this.calculateLongestSelectedCardCharCount(selectedCards);
+
+      return { selectedCards, takenCards, longestSelectedCardCharCount: newCharMax };
     });
   }
 
@@ -75,7 +90,11 @@ class App extends Component {
       delete selectedCards[toDelete];
       delete takenCards[toDelete];
 
-      return { selectedCards, takenCards };
+      this.calculateLongestSelectedCardCharCount(selectedCards);
+
+      let newCharMax = this.calculateLongestSelectedCardCharCount(selectedCards);
+
+      return { selectedCards, takenCards, longestSelectedCardCharCount: newCharMax };
     });
   }
 
@@ -171,6 +190,7 @@ class App extends Component {
           changeRolls={this.changeRollsHandler}
           delete={this.deleteSelectedCardHandler}
           minionsMap={this.minionToAttributesMap}
+          longestSelectedCardCharCount={this.state.longestSelectedCardCharCount}
           tierCardCounts={tierCardCounts}/>
 
         <Results

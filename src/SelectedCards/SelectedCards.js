@@ -5,6 +5,7 @@ import classes from './SelectedCards.module.css';
 const SelectedCards = (props) => {
 
     const entries = Object.keys(props.selectedCards).map(key => {
+
         let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
         let currentAmount = props.selectedCards[key];
         let takenAmount = props.takenCards[key];
@@ -31,7 +32,7 @@ const SelectedCards = (props) => {
                 {cardAmountInput}
                 &nbsp;
                 
-                <span className={classes.CardName}>
+                <span style={{display: 'inline-block', width: `${props.longestSelectedCardCharCount * 8}px`}}>
                 {key}
                 </span>
                 <span> when </span>
