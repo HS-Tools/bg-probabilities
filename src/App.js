@@ -41,12 +41,14 @@ class App extends Component {
     this.changeBuyableCards(this.state.currentTier, this.state.missingTribe);
   }
 
-  changeMissingTribeHandler = (tribeType) => {
+  changeMissingTribeHandler = (e) => {
+    let tribeType = e.target.value;
     this.setState({missingTribe: tribeType});
     this.changeBuyableCards(this.state.currentTier, tribeType);
   }
 
-  changeCurrentTierHandler = (tier) => {
+  changeCurrentTierHandler = (e) => {
+    let tier = e.target.value;
     this.setState({currentTier: tier});
     this.changeBuyableCards(tier, this.state.missingTribe);
   }

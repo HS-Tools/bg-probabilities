@@ -1,19 +1,18 @@
 import React from 'react';
-import classes from './NoDropdownSelector.module.css';
+import { Radio } from 'antd';
 
 const Selector = (props) => {
 
     let buttons = props.collection.map(item => {
-        if (item === props.currentSelected) {
-            return <button key={item} className={[classes.Button, classes.Missing].join(' ')}>{item}</button>
-        } else {
-            return <button key={item} className={classes.Button} onClick={() => props.changed(item)}>{item}</button>
-        }
+        return <Radio.Button key={item} value={item}>{item}</Radio.Button>
     });
 
     return (
         <div>
-            <div className={classes.Centered}>{props.prefixText} {buttons}</div>
+            {props.prefixText} &nbsp;
+            <Radio.Group onChange={props.changed} defaultValue={props.currentSelected}>
+                {buttons}
+            </Radio.Group>
         </div>
     );
 };

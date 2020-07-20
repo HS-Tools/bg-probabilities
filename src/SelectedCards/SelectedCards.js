@@ -35,9 +35,9 @@ const SelectedCards = (props) => {
                 <span style={{display: 'inline-block', width: `${props.longestSelectedCardCharCount * 8}px`}}>
                 {key}
                 </span>
-                <span> when </span>
+                <span> if </span>
                 {takenAmountInput}
-                &nbsp; <span>are taken already</span> &nbsp;
+                &nbsp; <span>are missing</span> &nbsp;
                 <img className={classes.Trashcan} src={require('../assets/trash.svg')} alt="Remove" onClick={() => props.delete(key)}/>
             </div>
         )});

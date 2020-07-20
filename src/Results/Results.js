@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'antd';
 
 class Results extends Component {
     constructor(props) {
@@ -160,12 +161,15 @@ class Results extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <button onClick={() => this.runXSimulationsWithAnd(100000)}>Calculate Odds</button>
-                <div>Odds are: {this.state.odds}</div>
-            </div>
-        );
+        if (Object.keys(this.props.selectedCards).length > 0) {
+            return (
+                <div>
+                    <Button type="primary" onClick={() => this.runXSimulationsWithAnd(100000)}>Calculate Odds</Button>
+                    <div>Odds are: {this.state.odds}</div>
+                </div>
+            );
+        }
+        return null;
     }
 }
 
