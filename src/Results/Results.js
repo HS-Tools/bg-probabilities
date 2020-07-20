@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class Results extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            odds: 0
+        }
+    }
+
     getCountOfAvailableMinions() {
         let total = 0;
 
@@ -52,20 +60,67 @@ class Results extends Component {
         return Math.floor(Math.random() * delta) + min;
     }
 
+    // Returns an object where the key is the cardName and the value is a 2 element array with a min and max value that represents the range of a successful draw
+    getCardSuccessRanges(cardMap) {
+        let count = 0;
+        let ranges = {};
+
+        for (let cardName of Object.keys(cardMap)) {
+            let availableCards = cardMap[cardName]['available'];
+            ranges[cardName] = [count, count + availableCards - 1];
+            count += availableCards;
+        }
+
+        return ranges;
+    }
+
+    runXSimulationsWithAnd(x) {
+        let successes = 0;
+
+        for (let i = 0; i < x; i++) {
+            successes += this.runOneSimulationWithAnd();
+        }
+
+        this.setState({
+            odds: successes/x
+        });
+    }
+
+    // Returns 1 if conditions were met, 0 if not
     runOneSimulationWithAnd() {
         let totalCards = this.getCountOfAvailableMinions();
         let cardsDrawnPerRound = this.getCountOfMinionsInTavern();
         let cardMap = this.getCardMap();
-        let rollCount = this.props.numRolls;
+        let rollCount = this.props.rollCount;
 
         while (rollCount > 0 && Object.keys(cardMap).length > 0) {
+            let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
+            let ranges = this.getCardSuccessRanges(cardMap);
+            // For every roll, if there is a roll that matches one of the needed cards, make appropriate adjustments to totalCards and cardMap
+            // Remove a key from object if the value for needed is 0
 
+            for (const roll of rolls) {
+                for (const key of Object.keys(ranges)) {
+                    const [min, max] = ranges[key];
+                    if (cardMap[key] && roll <= max && roll >= min) {
+                        totalCards -= 1;
+                        cardMap[key]['available'] -= 1;
+                        cardMap[key]['needed'] -= 1;
+
+                        if (cardMap[key]['needed'] <= 0) {
+                            delete cardMap[key];
+                        }
+                    }
+                }
+            }
+            rollCount--;
         }
 
-        
-        // let successCount = this.
-
-
+        if (Object.keys(cardMap).length > 0) {
+            return 0;
+        } else {
+            return 1;
+        }
     }
 
     getCountOfMinionsInTavern() {
@@ -105,10 +160,10 @@ class Results extends Component {
     }
 
     render() {
-        console.log(this.getXUniqueRandoms(1, 10, 3));
         return (
             <div>
-                <button>Calculate Odds</button>
+                <button onClick={() => this.runXSimulationsWithAnd(100000)}>Calculate Odds</button>
+                <div>Odds are: {this.state.odds}</div>
             </div>
         );
     }
