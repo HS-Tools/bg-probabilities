@@ -14,7 +14,7 @@ class Selector extends Component {
                 <span>What are the odds to hit.. &nbsp; </span>
                 <Select 
                     showSearch
-                    style={{width: '200px'}}
+                    style={{width: '250px'}}
                     placeholder='Add a minion'
                     value={null}
                     onChange={this.props.changed}>

@@ -12,3 +12,7 @@
 .Missing {
     color: red;
 }
+
+.Centered {
+    text-align: center;
+}

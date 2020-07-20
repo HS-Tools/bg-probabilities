@@ -1,4 +1,9 @@
-.trashcan {
+.Trashcan {
     width: 25px;
     height: 25px;
+}
+
+.CardName {
+    display: inline-block;
+    width: 300px;
 }

@@ -13,7 +13,7 @@ const Selector = (props) => {
 
     return (
         <div>
-            <div>{props.prefixText} {buttons}</div>
+            <div className={classes.Centered}>{props.prefixText} {buttons}</div>
         </div>
     );
 };

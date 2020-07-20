@@ -24,15 +24,20 @@ const SelectedCards = (props) => {
                                 value={takenAmount}
                                 onChange={(value) => props.changeTaken(key, value)}/>
 
+        // Objective is to make the cardName class be dynamic and be as wide as the widest cardName in the list
         return (
             <div key={key}>
                 <span> at least &nbsp; </span>
                 {cardAmountInput}
-                &nbsp; {key}
+                &nbsp;
+                
+                <span className={classes.CardName}>
+                {key}
+                </span>
                 <span> when </span>
                 {takenAmountInput}
                 &nbsp; <span>are taken already</span> &nbsp;
-                <img className={classes.trashcan} src={require('../assets/trash.svg')} alt="Remove" onClick={() => props.delete(key)}/>
+                <img className={classes.Trashcan} src={require('../assets/trash.svg')} alt="Remove" onClick={() => props.delete(key)}/>
             </div>
         )});
 
