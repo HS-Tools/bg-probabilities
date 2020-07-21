@@ -3,9 +3,10 @@ import { InputNumber } from 'antd';
 import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
+    const andOr = props.isAnd ? <span>and</span> : <span>or</span>
 
     const entries = Object.keys(props.selectedCards).map(key => {
-
+        let isLastKey = (key === Object.keys(props.selectedCards)[Object.keys(props.selectedCards).length - 1]);
         let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
         let currentAmount = props.selectedCards[key];
         let takenAmount = props.takenCards[key];
@@ -28,6 +29,7 @@ const SelectedCards = (props) => {
         // Objective is to make the cardName class be dynamic and be as wide as the widest cardName in the list
         return (
             <div key={key}>
+                <img className={classes.Trashcan} src={require('../assets/trash.svg')} alt="Remove" onClick={() => props.delete(key)}/>
                 <span> at least &nbsp; </span>
                 {cardAmountInput}
                 &nbsp;
@@ -38,7 +40,7 @@ const SelectedCards = (props) => {
                 <span> if </span>
                 {takenAmountInput}
                 &nbsp; <span>are missing</span> &nbsp;
-                <img className={classes.Trashcan} src={require('../assets/trash.svg')} alt="Remove" onClick={() => props.delete(key)}/>
+                {!isLastKey ? andOr : null}
             </div>
         )});
 

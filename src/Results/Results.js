@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
+import { Button, Switch } from 'antd';
 
 class Results extends Component {
     constructor(props) {
@@ -87,6 +87,18 @@ class Results extends Component {
         });
     }
 
+    runXSimulationsWithOr(x) {
+        let successes = 0;
+
+        for (let i = 0; i < x; i++) {
+            successes += this.runOneSimulationWithOr();
+        }
+
+        this.setState({
+            odds: successes/x
+        });
+    }
+
     // Returns 1 if conditions were met, 0 if not
     runOneSimulationWithAnd() {
         let totalCards = this.getCountOfAvailableMinions();
@@ -124,41 +136,74 @@ class Results extends Component {
         }
     }
 
+    // Returns 1 if conditions were met, 0 if not
+    runOneSimulationWithOr() {
+        let totalCards = this.getCountOfAvailableMinions();
+        let cardsDrawnPerRound = this.getCountOfMinionsInTavern();
+        let cardMap = this.getCardMap();
+        let rollCount = this.props.rollCount;
+
+        let originalQueryCount = Object.keys(cardMap).length
+
+        while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length < originalQueryCount) {
+            let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
+            let ranges = this.getCardSuccessRanges(cardMap);
+            // For every roll, if there is a roll that matches one of the needed cards, make appropriate adjustments to totalCards and cardMap
+            // Remove a key from object if the value for needed is 0
+
+            for (const roll of rolls) {
+                for (const key of Object.keys(ranges)) {
+                    const [min, max] = ranges[key];
+                    if (cardMap[key] && roll <= max && roll >= min) {
+                        totalCards--;
+                        cardMap[key]['available'] -= 1;
+                        cardMap[key]['needed'] -= 1;
+
+                        if (cardMap[key]['needed'] <= 0) {
+                            delete cardMap[key];
+                        }
+                    }
+                }
+            }
+            rollCount--;
+        }
+
+        if (Object.keys(cardMap).length > 0) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+
     getCountOfMinionsInTavern() {
         return this.props.tavernCardCounts[this.props.currentTier];
     }
 
     calculateOrOdds() {
-        
+        this.runXSimulationsWithOr(this.props.simulationCount);
     }
 
-    // Calcuate odds of finding >= numDesired cards with 
-                                // totalCards cards in the available pool and 
-                                // cardsDrawn cards drawn and
-                                // successCount of desiredCards
-    // This is the odds of hitting at least numDesired cards in one tavern roll when there are successCount of desired cards
-    calculateOddsToHit(numDesired) {
-
-        // this.props.
-
+    calculateAndOdds() {
+        this.runXSimulationsWithAnd(this.props.simulationCount);
     }
 
-    calculateOdds(numDesiredCopies, numRolls) {
-        if (numDesiredCopies === 0) {
-            return 1
-        }
-        if (numRolls === 0) {
-            return 0
-        }
+    // Recursive solution that shoop suggested
+    // calculateOdds(numDesiredCopies, numRolls) {
+    //     if (numDesiredCopies === 0) {
+    //         return 1
+    //     }
+    //     if (numRolls === 0) {
+    //         return 0
+    //     }
 
-        let retVal = 0;
+    //     let retVal = 0;
 
-        for (let i = 0; i < this.getCountOfMinionsInTavern(); i++) {
-            retVal += this.calculateOdds(numDesiredCopies - i, numRolls - 1);
-        }
+    //     for (let i = 0; i < this.getCountOfMinionsInTavern(); i++) {
+    //         retVal += this.calculateOdds(numDesiredCopies - i, numRolls - 1);
+    //     }
 
-        return retVal
-    }
+    //     return retVal
+    // }
 
     render() {
         let oddsDiv = this.state.odds !== null ? <div>Odds are: {this.state.odds}</div>: null;
@@ -166,7 +211,9 @@ class Results extends Component {
         if (Object.keys(this.props.selectedCards).length > 0) {
             return (
                 <div>
-                    <Button type="primary" onClick={() => this.runXSimulationsWithAnd(100000)}>Calculate Odds</Button>
+                    <Button type="primary" onClick={() => this.calculateAndOdds()}>Calculate Odds</Button>
+                    <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
+                            onChange={this.props.changeAndMode} />
                     {oddsDiv}
                 </div>
             );

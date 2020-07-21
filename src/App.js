@@ -22,7 +22,9 @@ class App extends Component {
       buyableCards: [],
       selectedCards: {},
       takenCards: {},
-      longestSelectedCardCharCount: 0
+      longestSelectedCardCharCount: 0,
+      simulationCount: 100000,
+      isAnd: true
     }
     this.minionToAttributesMap = {};
   }
@@ -127,6 +129,10 @@ class App extends Component {
     this.setState({ rollCount: value});
   }
 
+  changeAndModeHandler = (checked) => {
+    this.setState({'isAnd': checked});
+  }
+
   changeBuyableCards(
     tier, 
     tribeType) {
@@ -193,6 +199,7 @@ class App extends Component {
           delete={this.deleteSelectedCardHandler}
           minionsMap={this.minionToAttributesMap}
           longestSelectedCardCharCount={this.state.longestSelectedCardCharCount}
+          isAnd = {this.state.isAnd}
           tierCardCounts={tierCardCounts}/>
 
         <Results
@@ -203,7 +210,9 @@ class App extends Component {
           buyableCards={this.state.buyableCards}
           currentTier={this.state.currentTier}
           selectedCards={this.state.selectedCards}
-          takenCards={this.state.takenCards}/>
+          takenCards={this.state.takenCards}
+          changeAndMode={this.changeAndModeHandler}
+          simulationCount={this.state.simulationCount}/>
 
         <header className="App-header">
 
