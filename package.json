@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jimliu0.github.io/bg-odds",
-  "name": "bg-odds",
+  "homepage": "https://jimliu0.github.io/bg-probabilities",
+  "name": "bg-probabilities",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
