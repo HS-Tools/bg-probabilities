@@ -49,7 +49,7 @@ const SelectedCards = (props) => {
         <div> in &nbsp;
             <InputNumber
                 min={0}
-                defaultValue={1}
+                value={props.rollCount}
                 onChange={(value) => props.changeRolls(value)} /> 
             &nbsp; rolls
         </div>;

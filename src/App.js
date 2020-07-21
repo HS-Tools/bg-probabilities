@@ -23,7 +23,7 @@ class App extends Component {
       selectedCards: {},
       takenCards: {},
       longestSelectedCardCharCount: 0,
-      simulationCount: 1000000,
+      simulationCount: 100000,
       isAnd: true
     }
     this.minionToAttributesMap = {};
@@ -132,7 +132,8 @@ class App extends Component {
   clearSelectionsHandler = () => {
     this.setState({
       selectedCards: {},
-      takenCards: {}
+      takenCards: {},
+      rollCount: 1
     });
   }
 
@@ -207,6 +208,7 @@ class App extends Component {
           minionsMap={this.minionToAttributesMap}
           longestSelectedCardCharCount={this.state.longestSelectedCardCharCount}
           isAnd = {this.state.isAnd}
+          rollCount={this.state.rollCount}
           changeAndMode={this.changeAndModeHandler}
           tierCardCounts={tierCardCounts}/>
 

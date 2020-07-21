@@ -107,7 +107,9 @@ class Results extends Component {
         let rollCount = this.props.rollCount;
 
         while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length > 0) {
-            let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
+            let cardsDrawn = Math.min(cardsDrawnPerRound, totalCards);
+
+            let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawn);
             let ranges = this.getCardSuccessRanges(cardMap);
             // For every roll, if there is a roll that matches one of the needed cards, make appropriate adjustments to totalCards and cardMap
             // Remove a key from object if the value for needed is 0
@@ -144,7 +146,9 @@ class Results extends Component {
         let rollCount = this.props.rollCount;
 
         while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length > 0) {
-            let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
+            let cardsDrawn = Math.min(cardsDrawnPerRound, totalCards);
+
+            let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawn);
             let ranges = this.getCardSuccessRanges(cardMap);
             // For every roll, if there is a roll that matches one of the needed cards, make appropriate adjustments to totalCards and cardMap
             // Remove a key from object if the value for needed is 0
