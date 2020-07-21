@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
+import Header from './Header/Header';
 import Results from './Results/Results'
 import minions from './minions';
 import { tierCardCounts, tavernCardCounts } from './config';
@@ -180,6 +181,7 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
+        <Header />
         <NoDropdownSelector 
           collection={tribes} 
           currentSelected={this.state.missingTribe}
