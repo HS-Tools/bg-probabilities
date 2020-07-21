@@ -23,7 +23,7 @@ class App extends Component {
       selectedCards: {},
       takenCards: {},
       longestSelectedCardCharCount: 0,
-      simulationCount: 100000,
+      simulationCount: 1000000,
       isAnd: true
     }
     this.minionToAttributesMap = {};

@@ -200,7 +200,8 @@ class Results extends Component {
     // }
 
     render() {
-        let oddsDiv = this.state.odds !== null ? <div>Odds are: {this.state.odds}</div>: null;
+        let oddsDiv = this.state.odds !== null ? 
+            <div>The odds are: {(this.state.odds * 100).toFixed(2)}%</div>: null;
 
         if (Object.keys(this.props.selectedCards).length > 0) {
             return (
