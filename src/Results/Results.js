@@ -45,7 +45,7 @@ class Results extends Component {
     getXUniqueRandoms(min, max, x) {
         let arr = [];
 
-        while(arr.length < x) {
+        while(arr.length < x && arr.length <= max-min+1) {
             let randomInt = this.getRandomInRange(min, max);
             if (arr.indexOf(randomInt) === -1) {
                 arr.push(randomInt);
@@ -94,7 +94,7 @@ class Results extends Component {
         let cardMap = this.getCardMap();
         let rollCount = this.props.rollCount;
 
-        while (rollCount > 0 && Object.keys(cardMap).length > 0) {
+        while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length > 0) {
             let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
             let ranges = this.getCardSuccessRanges(cardMap);
             // For every roll, if there is a roll that matches one of the needed cards, make appropriate adjustments to totalCards and cardMap
@@ -104,7 +104,7 @@ class Results extends Component {
                 for (const key of Object.keys(ranges)) {
                     const [min, max] = ranges[key];
                     if (cardMap[key] && roll <= max && roll >= min) {
-                        totalCards -= 1;
+                        totalCards--;
                         cardMap[key]['available'] -= 1;
                         cardMap[key]['needed'] -= 1;
 
