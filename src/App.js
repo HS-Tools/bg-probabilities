@@ -196,6 +196,7 @@ class App extends Component {
           collection={this.state.buyableCards}
           currentTier={this.state.currentTier}
           missingTribe={this.state.missingTribe}
+          selectedCards={this.state.selectedCards}
           changed={this.addSelectedCardHandler} />
 
         <SelectedCards

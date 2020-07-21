@@ -13,6 +13,7 @@ const SelectedCards = (props) => {
         let takenAmount = props.takenCards[key];
 
         const cardAmountInput = <InputNumber 
+                                size="small"
                                 min={0}
                                 max={maxCardsInCurrentTier}
                                 style={{width: '60px'}}
@@ -20,7 +21,8 @@ const SelectedCards = (props) => {
                                 onChange={(value) => props.changeCard(key, value)} />
 
         let maxTakenAmount = maxCardsInCurrentTier - currentAmount;
-        const takenAmountInput = <InputNumber 
+        const takenAmountInput = <InputNumber
+                                size="small"
                                 min={0}
                                 max={maxTakenAmount}
                                 style={{width: '60px'}}
@@ -48,6 +50,7 @@ const SelectedCards = (props) => {
     const rollCountInput = 
         <div> in &nbsp;
             <InputNumber
+                size="small"
                 min={0}
                 value={props.rollCount}
                 onChange={(value) => props.changeRolls(value)} /> 

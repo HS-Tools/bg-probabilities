@@ -6,7 +6,7 @@ const { Option } = Select;
 class Selector extends Component {
     render() {
         let names = this.props.collection.map(item => {
-            return <Option key={item.Name} value={item.Name}>{item.Name}</Option>;
+            return <Option key={item.Name} disabled={Object.keys(this.props.selectedCards).indexOf(item.Name) >= 0} value={item.Name}>{item.Name}</Option>;
         });
 
         return (
