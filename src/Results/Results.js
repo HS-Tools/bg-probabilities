@@ -6,7 +6,7 @@ class Results extends Component {
         super(props);
 
         this.state = {
-            odds: null
+            probability: null
         }
     }
 
@@ -83,7 +83,7 @@ class Results extends Component {
         }
 
         this.setState({
-            odds: successes/x
+            probability: successes/x
         });
     }
 
@@ -95,7 +95,7 @@ class Results extends Component {
         }
 
         this.setState({
-            odds: successes/x
+            probability: successes/x
         });
     }
 
@@ -177,16 +177,16 @@ class Results extends Component {
         return this.props.tavernCardCounts[this.props.currentTier];
     }
 
-    calculateOrOdds() {
+    calculateOrProbability() {
         this.runXSimulationsWithOr(this.props.simulationCount);
     }
 
-    calculateAndOdds() {
+    calculateAndProbability() {
         this.runXSimulationsWithAnd(this.props.simulationCount);
     }
 
     // Recursive solution that shoop suggested
-    // calculateOdds(numDesiredCopies, numRolls) {
+    // calculateProbability(numDesiredCopies, numRolls) {
     //     if (numDesiredCopies === 0) {
     //         return 1
     //     }
@@ -197,24 +197,24 @@ class Results extends Component {
     //     let retVal = 0;
 
     //     for (let i = 0; i < this.getCountOfMinionsInTavern(); i++) {
-    //         retVal += this.calculateOdds(numDesiredCopies - i, numRolls - 1);
+    //         retVal += this.calculateProbability(numDesiredCopies - i, numRolls - 1);
     //     }
 
     //     return retVal
     // }
 
     render() {
-        let oddsDiv = this.state.odds !== null ? 
-            <div>The odds are: {(this.state.odds * 100).toFixed(2)}%</div>: null;
+        let probabilityDiv = this.state.probability !== null ? 
+            <div>The probability is approximately: {(this.state.probability * 100).toFixed(2)}%</div>: null;
 
         if (Object.keys(this.props.selectedCards).length > 0) {
             return (
                 <div>
-                    <Button type="primary" onClick={this.props.isAnd ? () => this.calculateAndOdds() : 
-                                                                       () => this.calculateOrOdds()}>Calculate Odds</Button>
+                    <Button type="primary" onClick={this.props.isAnd ? () => this.calculateAndProbability() : 
+                                                                       () => this.calculateOrProbability()}>Calculate Probability</Button>
                     &nbsp;
                     <Button type="primary" onClick={() => this.props.clear()}>Clear Selections</Button>
-                    {oddsDiv}
+                    {probabilityDiv}
                 </div>
             );
         }

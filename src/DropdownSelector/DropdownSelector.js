@@ -11,7 +11,7 @@ class Selector extends Component {
 
         return (
             <div>
-                <span>What are the chances to hit.. &nbsp; </span>
+                <span>What is the probability to see and buy these minions in the tavern? &nbsp; </span>
                 <Select 
                     showSearch
                     style={{width: '250px'}}
