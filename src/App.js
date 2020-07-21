@@ -233,10 +233,6 @@ class App extends Component {
           isAnd={this.state.isAnd}
           clear={this.clearSelectionsHandler}
           simulationCount={this.state.simulationCount}/>
-
-        <header className="App-header">
-
-        </header>
       </div>
     );
   }
