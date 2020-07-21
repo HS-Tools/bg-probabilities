@@ -143,8 +143,6 @@ class Results extends Component {
         let cardMap = this.getCardMap();
         let rollCount = this.props.rollCount;
 
-        const originalQueryCount = Object.keys(cardMap).length
-
         while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length > 0) {
             let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
             let ranges = this.getCardSuccessRanges(cardMap);
@@ -209,6 +207,8 @@ class Results extends Component {
                 <div>
                     <Button type="primary" onClick={this.props.isAnd ? () => this.calculateAndOdds() : 
                                                                        () => this.calculateOrOdds()}>Calculate Odds</Button>
+                    &nbsp;
+                    <Button type="primary" onClick={() => this.props.clear()}>Clear Selections</Button>
                     <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
                             onChange={this.props.changeAndMode} />
                     {oddsDiv}

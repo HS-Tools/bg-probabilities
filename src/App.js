@@ -129,6 +129,13 @@ class App extends Component {
     this.setState({ rollCount: value});
   }
 
+  clearSelectionsHandler = () => {
+    this.setState({
+      selectedCards: {},
+      takenCards: {}
+    });
+  }
+
   changeAndModeHandler = (checked) => {
     this.setState({'isAnd': checked});
   }
@@ -213,6 +220,7 @@ class App extends Component {
           takenCards={this.state.takenCards}
           isAnd={this.state.isAnd}
           changeAndMode={this.changeAndModeHandler}
+          clear={this.clearSelectionsHandler}
           simulationCount={this.state.simulationCount}/>
 
         <header className="App-header">
