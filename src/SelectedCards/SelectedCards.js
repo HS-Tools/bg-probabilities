@@ -1,9 +1,10 @@
 import React from 'react';
-import { InputNumber } from 'antd';
+import { InputNumber, Switch } from 'antd';
 import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
-    const andOr = props.isAnd ? <span>and</span> : <span>or</span>
+    const andOr = <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
+    checked={props.isAnd} onChange={props.changeAndMode} />
 
     const entries = Object.keys(props.selectedCards).map(key => {
         let isLastKey = (key === Object.keys(props.selectedCards)[Object.keys(props.selectedCards).length - 1]);

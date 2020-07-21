@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Switch } from 'antd';
+import { Button } from 'antd';
 
 class Results extends Component {
     constructor(props) {
@@ -209,8 +209,6 @@ class Results extends Component {
                                                                        () => this.calculateOrOdds()}>Calculate Odds</Button>
                     &nbsp;
                     <Button type="primary" onClick={() => this.props.clear()}>Clear Selections</Button>
-                    <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
-                            onChange={this.props.changeAndMode} />
                     {oddsDiv}
                 </div>
             );
