@@ -117,8 +117,8 @@ class Results extends Component {
                     const [min, max] = ranges[key];
                     if (cardMap[key] && roll <= max && roll >= min) {
                         totalCards--;
-                        cardMap[key]['available'] -= 1;
-                        cardMap[key]['needed'] -= 1;
+                        cardMap[key]['available']--;
+                        cardMap[key]['needed']--;
 
                         if (cardMap[key]['needed'] <= 0) {
                             delete cardMap[key];
@@ -143,9 +143,9 @@ class Results extends Component {
         let cardMap = this.getCardMap();
         let rollCount = this.props.rollCount;
 
-        let originalQueryCount = Object.keys(cardMap).length
+        const originalQueryCount = Object.keys(cardMap).length
 
-        while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length < originalQueryCount) {
+        while (totalCards > 0 && rollCount > 0 && Object.keys(cardMap).length > 0) {
             let rolls = this.getXUniqueRandoms(0, totalCards, cardsDrawnPerRound);
             let ranges = this.getCardSuccessRanges(cardMap);
             // For every roll, if there is a roll that matches one of the needed cards, make appropriate adjustments to totalCards and cardMap
@@ -156,23 +156,19 @@ class Results extends Component {
                     const [min, max] = ranges[key];
                     if (cardMap[key] && roll <= max && roll >= min) {
                         totalCards--;
-                        cardMap[key]['available'] -= 1;
-                        cardMap[key]['needed'] -= 1;
+                        cardMap[key]['available']--;
+                        cardMap[key]['needed']--;
+                    }
 
-                        if (cardMap[key]['needed'] <= 0) {
-                            delete cardMap[key];
-                        }
+                    if (cardMap[key]['needed'] <= 0) {
+                        return 1;
                     }
                 }
             }
             rollCount--;
         }
 
-        if (Object.keys(cardMap).length > 0) {
-            return 0;
-        } else {
-            return 1;
-        }
+        return 0;
     }
 
     getCountOfMinionsInTavern() {
@@ -211,7 +207,8 @@ class Results extends Component {
         if (Object.keys(this.props.selectedCards).length > 0) {
             return (
                 <div>
-                    <Button type="primary" onClick={() => this.calculateAndOdds()}>Calculate Odds</Button>
+                    <Button type="primary" onClick={this.props.isAnd ? () => this.calculateAndOdds() : 
+                                                                       () => this.calculateOrOdds()}>Calculate Odds</Button>
                     <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
                             onChange={this.props.changeAndMode} />
                     {oddsDiv}

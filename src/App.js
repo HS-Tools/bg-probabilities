@@ -211,6 +211,7 @@ class App extends Component {
           currentTier={this.state.currentTier}
           selectedCards={this.state.selectedCards}
           takenCards={this.state.takenCards}
+          isAnd={this.state.isAnd}
           changeAndMode={this.changeAndModeHandler}
           simulationCount={this.state.simulationCount}/>
 
