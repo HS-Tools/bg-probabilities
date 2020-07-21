@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bg-odds/static/css/main.498dc45a.chunk.css",
+    "main.js": "/bg-odds/static/js/main.f130e362.chunk.js",
+    "main.js.map": "/bg-odds/static/js/main.f130e362.chunk.js.map",
+    "runtime-main.js": "/bg-odds/static/js/runtime-main.663e56c5.js",
+    "runtime-main.js.map": "/bg-odds/static/js/runtime-main.663e56c5.js.map",
+    "static/css/2.9edc93b8.chunk.css": "/bg-odds/static/css/2.9edc93b8.chunk.css",
+    "static/js/2.d107f6f9.chunk.js": "/bg-odds/static/js/2.d107f6f9.chunk.js",
+    "static/js/2.d107f6f9.chunk.js.map": "/bg-odds/static/js/2.d107f6f9.chunk.js.map",
+    "index.html": "/bg-odds/index.html",
+    "precache-manifest.8fcbcfc83f5cef1b6a456c11c401255a.js": "/bg-odds/precache-manifest.8fcbcfc83f5cef1b6a456c11c401255a.js",
+    "service-worker.js": "/bg-odds/service-worker.js",
+    "static/css/2.9edc93b8.chunk.css.map": "/bg-odds/static/css/2.9edc93b8.chunk.css.map",
+    "static/css/main.498dc45a.chunk.css.map": "/bg-odds/static/css/main.498dc45a.chunk.css.map",
+    "static/js/2.d107f6f9.chunk.js.LICENSE.txt": "/bg-odds/static/js/2.d107f6f9.chunk.js.LICENSE.txt",
+    "static/media/trash.svg": "/bg-odds/static/media/trash.bb7b14c7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.663e56c5.js",
+    "static/css/2.9edc93b8.chunk.css",
+    "static/js/2.d107f6f9.chunk.js",
+    "static/css/main.498dc45a.chunk.css",
+    "static/js/main.f130e362.chunk.js"
+  ]
+}
