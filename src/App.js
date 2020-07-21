@@ -7,6 +7,7 @@ import minions from './minions';
 import { tierCardCounts, tavernCardCounts } from './config';
 import './App.css';
 import SelectedCards from './SelectedCards/SelectedCards';
+import ReactGA from 'react-ga';
 
 const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate'];
 const tiers = [1, 2, 3, 4, 5, 6]
@@ -176,6 +177,11 @@ class App extends Component {
     });
 
     this.setState({ buyableCards: tribeAppropriateMinions });
+  }
+
+  initializeReactGA() {
+    ReactGA.initialize('UA-173232340-1');
+    ReactGA.pageview('/home-page');
   }
 
   render() { 
