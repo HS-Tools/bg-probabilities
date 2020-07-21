@@ -40,7 +40,7 @@ const SelectedCards = (props) => {
                 <span style={{display: 'inline-block', width: `${props.longestSelectedCardCharCount * 8}px`}}>
                 {key}
                 </span>
-                <span> if </span>
+                <span> if </span> &nbsp;
                 {takenAmountInput}
                 &nbsp; <span>are missing</span> &nbsp;
                 {!isLastKey ? andOr : null}

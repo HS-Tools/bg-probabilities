@@ -190,7 +190,7 @@ class App extends Component {
           collection={tiers}
           currentSelected={this.state.currentTier}
           changed={this.changeCurrentTierHandler}
-          prefixText="The current tier is:" />
+          prefixText="The current tavern tier is:" />
 
         <DropdownSelector 
           collection={this.state.buyableCards}
