@@ -903,7 +903,7 @@ const minions = [
    },
    {
       "Name":"Goldrinn,  the Great Wolf",
-      "Tier":"5",
+      "Tier":"6",
       "Attack":"4",
       "Health":"4",
       "Cost":"8",
