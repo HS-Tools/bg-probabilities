@@ -35,7 +35,7 @@ const SelectedCards = (props) => {
 
         // Objective is to make the cardName class be dynamic and be as wide as the widest cardName in the list
         return (
-            <div key={key}>
+            <div key={key} className={classes.Entry}>
                 <CloseCircleFilled className={classes.Close} alt="Remove" onClick={() => props.delete(key)}/>
                 <span> at least &nbsp; </span>
                 {cardAmountInput}
@@ -61,7 +61,7 @@ const SelectedCards = (props) => {
             &nbsp; rolls
         </div>;
 
-    return <div className={classes.Entries}>
+    return <div>
         {entries}
         {entries.length > 0 ? rollCountInput : null}
     </div>

@@ -1,11 +1,8 @@
 .Close {
-    position:relative;
-    top:0;
-    right:0;
+    position: relative;
+    top:-12px;
 }
 
-.Entries {
-    display: inline-block;
-    min-width: 50%;
-    text-align: left;
+.Entry {
+    position: relative;
 }
