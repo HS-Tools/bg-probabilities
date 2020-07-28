@@ -1,10 +1,14 @@
 import React from 'react';
 import { InputNumber, Switch } from 'antd';
+import { CloseCircleFilled } from '@ant-design/icons';
 import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
     const andOr = <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
     checked={props.isAnd} onChange={props.changeAndMode} />
+    const emptySpanForAlignment = props.isAnd ?
+        <span style={{display: 'inline-block', width: '52px'}}></span> : 
+        <span style={{display: 'inline-block', width: '44px'}}></span>;
 
     const entries = Object.keys(props.selectedCards).map(key => {
         let isLastKey = (key === Object.keys(props.selectedCards)[Object.keys(props.selectedCards).length - 1]);
@@ -32,7 +36,7 @@ const SelectedCards = (props) => {
         // Objective is to make the cardName class be dynamic and be as wide as the widest cardName in the list
         return (
             <div key={key}>
-                <img className={classes.Trashcan} src={require('../assets/trash.svg')} alt="Remove" onClick={() => props.delete(key)}/>
+                <CloseCircleFilled className={classes.Close} alt="Remove" onClick={() => props.delete(key)}/>
                 <span> at least &nbsp; </span>
                 {cardAmountInput}
                 &nbsp;
@@ -43,7 +47,7 @@ const SelectedCards = (props) => {
                 <span> if </span> &nbsp;
                 {takenAmountInput}
                 &nbsp; <span>are missing</span> &nbsp;
-                {!isLastKey ? andOr : null}
+                {!isLastKey ? andOr : emptySpanForAlignment}
             </div>
         )});
 
@@ -57,7 +61,7 @@ const SelectedCards = (props) => {
             &nbsp; rolls
         </div>;
 
-    return <div>
+    return <div className={classes.Entries}>
         {entries}
         {entries.length > 0 ? rollCountInput : null}
     </div>
