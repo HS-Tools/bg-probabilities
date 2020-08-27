@@ -176,17 +176,6 @@ const minions = [
       "Synergy":"Demon"
    },
    {
-      "Name":"Arcane Cannon",
-      "Tier":"2",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
       "Name":"Freedealing Gambler",
       "Tier":"2",
       "Attack":"3",
@@ -310,18 +299,7 @@ const minions = [
    {
       "Name":"Rabid Saurolisk",
       "Tier":"2",
-      "Attack":"3",
-      "Health":"2",
-      "Cost":"3",
-      "Legendary":"",
-      "Type":"Beast",
-      "Keywords":"Deathrattle",
-      "Synergy":""
-   },
-   {
-      "Name":"Rat Pack",
-      "Tier":"2",
-      "Attack":"2",
+      "Attack":"4",
       "Health":"2",
       "Cost":"3",
       "Legendary":"",
@@ -530,8 +508,8 @@ const minions = [
    {
       "Name":"Monstrous Macaw",
       "Tier":"3",
-      "Attack":"3",
-      "Health":"2",
+      "Attack":"4",
+      "Health":"3",
       "Cost":"",
       "Legendary":"",
       "Type":"Beast",
@@ -540,7 +518,7 @@ const minions = [
    },
    {
       "Name":"Pack Leader",
-      "Tier":"3",
+      "Tier":"2",
       "Attack":"3",
       "Health":"3",
       "Cost":"3",
@@ -557,6 +535,17 @@ const minions = [
       "Cost":"4",
       "Legendary":"",
       "Type":"Mech",
+      "Keywords":"Deathrattle",
+      "Synergy":""
+   },
+   {
+      "Name":"Rat Pack",
+      "Tier":"3",
+      "Attack":"2",
+      "Health":"2",
+      "Cost":"3",
+      "Legendary":"",
+      "Type":"Beast",
       "Keywords":"Deathrattle",
       "Synergy":""
    },
@@ -781,6 +770,17 @@ const minions = [
       "Synergy":"Beast, Murloc, Dragon"
    },
    {
+      "Name":"Primalfin Lookout",
+      "Tier":"4",
+      "Attack":"3",
+      "Health":"2",
+      "Cost":"3",
+      "Legendary":"",
+      "Type":"Murloc",
+      "Keywords":"Battlecry, Discover",
+      "Synergy":""
+   },
+   {
       "Name":"Ripsnarl Captain",
       "Tier":"4",
       "Attack":"3",
@@ -990,17 +990,6 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Primalfin Lookout",
-      "Tier":"5",
-      "Attack":"3",
-      "Health":"2",
-      "Cost":"3",
-      "Legendary":"",
-      "Type":"Murloc",
-      "Keywords":"Battlecry, Discover",
-      "Synergy":""
-   },
-   {
       "Name":"Razorgore, the Untamed",
       "Tier":"5",
       "Attack":"2",
@@ -1089,17 +1078,6 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Gentle Megasaur",
-      "Tier":"6",
-      "Attack":"5",
-      "Health":"4",
-      "Cost":"4",
-      "Legendary":"",
-      "Type":"Beast",
-      "Keywords":"Adapt, Battlecry",
-      "Synergy":"Murloc"
-   },
-   {
       "Name":"Ghastcoiler",
       "Tier":"6",
       "Attack":"7",
@@ -1156,9 +1134,9 @@ const minions = [
    },
    {
       "Name":"Mama Bear",
-      "Tier":"6",
-      "Attack":"5",
-      "Health":"5",
+      "Tier":"5",
+      "Attack":"4",
+      "Health":"4",
       "Cost":"8",
       "Legendary":"",
       "Type":"Beast",

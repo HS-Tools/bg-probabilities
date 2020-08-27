@@ -61,7 +61,7 @@ const SelectedCards = (props) => {
             &nbsp; rolls
         </div>;
 
-    return <div>
+    return <div className={classes.Padding}>
         {entries}
         {entries.length > 0 ? rollCountInput : null}
     </div>
