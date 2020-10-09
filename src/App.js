@@ -9,7 +9,7 @@ import './App.css';
 import SelectedCards from './SelectedCards/SelectedCards';
 import ReactGA from 'react-ga';
 
-const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate'];
+const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate', 'Elemental'];
 const tiers = [1, 2, 3, 4, 5, 6]
 
 class App extends Component {
@@ -144,7 +144,7 @@ class App extends Component {
   }
 
   changeBuyableCards(
-    tier, 
+    tier,
     tribeType) {
 
     let tierAppropriateMinions = minions.filter(item => {
@@ -184,12 +184,12 @@ class App extends Component {
     ReactGA.pageview('/home-page');
   }
 
-  render() { 
+  render() {
     return (
       <div className="App">
         <Header />
-        <NoDropdownSelector 
-          collection={tribes} 
+        <NoDropdownSelector
+          collection={tribes}
           currentSelected={this.state.missingTribe}
           changed={this.changeMissingTribeHandler}
           prefixText="The missing tribe is:" />
@@ -200,7 +200,7 @@ class App extends Component {
           changed={this.changeCurrentTierHandler}
           prefixText="The current tavern tier is:" />
 
-        <DropdownSelector 
+        <DropdownSelector
           collection={this.state.buyableCards}
           currentTier={this.state.currentTier}
           missingTribe={this.state.missingTribe}

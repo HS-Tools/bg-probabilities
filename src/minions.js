@@ -1,5 +1,27 @@
 const minions = [
    {
+      "Name":"Refreshing Anomaly",
+      "Tier":"1",
+      "Attack":"1",
+      "Health":"3",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
+      "Synergy":""
+   },
+   {
+      "Name":"Sellemental",
+      "Tier":"1",
+      "Attack":"2",
+      "Health":"2",
+      "Cost":"1",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
+      "Synergy":""
+   },
+   {
       "Name":"Alleycat",
       "Tier":"1",
       "Attack":"1",
@@ -174,6 +196,28 @@ const minions = [
       "Type":"",
       "Keywords":"",
       "Synergy":"Demon"
+   },
+   {
+      "Name":"Molten Rock",
+      "Tier":"2",
+      "Attack":"2",
+      "Health":"3",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Taunt",
+      "Synergy":"Elemental"
+   },
+   {
+      "Name":"Party Elemental",
+      "Tier":"2",
+      "Attack":"2",
+      "Health":"2",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"",
+      "Synergy":"Elemental"
    },
    {
       "Name":"Freedealing Gambler",
@@ -363,15 +407,48 @@ const minions = [
       "Synergy":"Dragon"
    },
    {
-      "Name":"Zoobot",
+      "Name":"Menagerie Mug",
       "Tier":"2",
-      "Attack":"3",
-      "Health":"3",
+      "Attack":"2",
+      "Health":"2",
       "Cost":"3",
       "Legendary":"",
-      "Type":"Mech",
+      "Type":"",
       "Keywords":"Battlecry",
-      "Synergy":"Beast, Murloc, Dragon"
+      "Synergy":""
+   },
+   {
+      "Name":"Arcane Assistant",
+      "Tier":"3",
+      "Attack":"3",
+      "Health":"2",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
+      "Synergy":"Elemental"
+   },
+   {
+      "Name":"Crackling Cyclone",
+      "Tier":"3",
+      "Attack":"4",
+      "Health":"1",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Divine Shield, Windfury",
+      "Synergy":""
+   },
+   {
+      "Name":"Stasis Elemental",
+      "Tier":"3",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
+      "Synergy":"Elemental"
    },
    {
       "Name":"Bloodsail Cannoneer",
@@ -638,6 +715,28 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Whirlwind Tempest",
+      "Tier":"4",
+      "Attack":"6",
+      "Health":"6",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Windfury, Mega-Windfury",
+      "Synergy":""
+   },
+   {
+      "Name":"Wildfire Elemental",
+      "Tier":"4",
+      "Attack":"7",
+      "Health":"3",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"",
+      "Synergy":""
+   },
+   {
       "Name":"Annoy-o-Module",
       "Tier":"4",
       "Attack":"2",
@@ -759,15 +858,15 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Menagerie Magician",
+      "Name":"Menagerie Jug",
       "Tier":"4",
-      "Attack":"4",
-      "Health":"4",
+      "Attack":"3",
+      "Health":"3",
       "Cost":"5",
       "Legendary":"",
       "Type":"",
       "Keywords":"Battlecry",
-      "Synergy":"Beast, Murloc, Dragon"
+      "Synergy":""
    },
    {
       "Name":"Primalfin Lookout",
@@ -856,6 +955,28 @@ const minions = [
       "Type":"",
       "Keywords":"Battlecry",
       "Synergy":"Beast"
+   },
+   {
+      "Name":"Lil' Rag",
+      "Tier":"5",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"Y",
+      "Type":"Elemental",
+      "Keywords":"",
+      "Synergy":""
+   },
+   {
+      "Name":"Tavern Tempest",
+      "Tier":"4",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
+      "Synergy":"Elemental"
    },
    {
       "Name":"Annihilan Battlemaster",
@@ -1043,6 +1164,28 @@ const minions = [
       "Type":"Demon",
       "Keywords":"Deathrattle, Taunt",
       "Synergy":""
+   },
+   {
+      "Name":"Gentle Djinni",
+      "Tier":"6",
+      "Attack":"6",
+      "Health":"8",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Taunt, Deathrattle",
+      "Synergy":"Elemental"
+   },
+   {
+      "Name":"Lieutenant Garr",
+      "Tier":"6",
+      "Attack":"8",
+      "Health":"1",
+      "Cost":"",
+      "Legendary":"Y",
+      "Type":"Elemental",
+      "Keywords":"Taunt",
+      "Synergy":"Elemental"
    },
    {
       "Name":"Amalgadon",
