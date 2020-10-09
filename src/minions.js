@@ -206,7 +206,7 @@ const minions = [
       "Legendary":"",
       "Type":"Elemental",
       "Keywords":"Taunt",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Party Elemental",
@@ -217,7 +217,7 @@ const minions = [
       "Legendary":"",
       "Type":"Elemental",
       "Keywords":"",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Freedealing Gambler",
@@ -426,7 +426,7 @@ const minions = [
       "Legendary":"",
       "Type":"Elemental",
       "Keywords":"Battlecry",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Crackling Cyclone",
@@ -448,7 +448,7 @@ const minions = [
       "Legendary":"",
       "Type":"Elemental",
       "Keywords":"Battlecry",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Bloodsail Cannoneer",
@@ -968,15 +968,26 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Nomi, Kitchen Nightmare",
+      "Tier":"5",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"Y",
+      "Type":"",
+      "Keywords":"",
+      "Synergy":"Elemental"
+   },
+   {
       "Name":"Tavern Tempest",
-      "Tier":"4",
+      "Tier":"5",
       "Attack":"4",
       "Health":"4",
       "Cost":"",
       "Legendary":"",
       "Type":"Elemental",
       "Keywords":"Battlecry",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Annihilan Battlemaster",
@@ -1174,7 +1185,7 @@ const minions = [
       "Legendary":"",
       "Type":"Elemental",
       "Keywords":"Taunt, Deathrattle",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Lieutenant Garr",
@@ -1185,7 +1196,7 @@ const minions = [
       "Legendary":"Y",
       "Type":"Elemental",
       "Keywords":"Taunt",
-      "Synergy":"Elemental"
+      "Synergy":""
    },
    {
       "Name":"Amalgadon",

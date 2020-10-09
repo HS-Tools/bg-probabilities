@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
+import NoDropdownMultiSelector from './NoDropdownMultiSelector/NoDropdownMultiSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
 import Header from './Header/Header';
 import Results from './Results/Results'
@@ -18,7 +19,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      missingTribe: tribes[0],
+      missingTribes: [tribes[0], tribes[1]],
       currentTier: tiers[0],
       rollCount: 1,
       buyableCards: [],
@@ -42,19 +43,18 @@ class App extends Component {
 
   componentDidMount() {
     this.minionToAttributesMap = this.mapNameToObjectOfAttributes();
-    this.changeBuyableCards(this.state.currentTier, this.state.missingTribe);
+    this.changeBuyableCards(this.state.currentTier, this.state.missingTribes);
   }
 
   changeMissingTribeHandler = (e) => {
-    let tribeType = e.target.value;
-    this.setState({missingTribe: tribeType});
-    this.changeBuyableCards(this.state.currentTier, tribeType);
+    this.setState({missingTribes: e});
+    this.changeBuyableCards(this.state.currentTier, e);
   }
 
   changeCurrentTierHandler = (e) => {
     let tier = e.target.value;
     this.setState({currentTier: tier});
-    this.changeBuyableCards(tier, this.state.missingTribe);
+    this.changeBuyableCards(tier, this.state.missingTribes);
   }
 
   calculateLongestSelectedCardCharCount(selectedCards) {
@@ -143,10 +143,11 @@ class App extends Component {
     this.setState({'isAnd': checked});
   }
 
+
   changeBuyableCards(
     tier,
-    tribeType) {
-
+    tribeTypes) {
+    console.log({tier, tribeTypes})
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
         this.deleteSelectedCardHandler(item.Name);
@@ -158,7 +159,7 @@ class App extends Component {
     let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
       let synergies = item.Synergy.split(',');
       if (synergies[0] === "") {
-        if (item.Type === tribeType) {
+        if (tribeTypes.indexOf(item.Type) >= 0) {
           this.deleteSelectedCardHandler(item.Name);
           return false;
         } else {
@@ -167,7 +168,7 @@ class App extends Component {
       } else if (synergies.length > 1) {
         return true;
       } else {
-        if (synergies[0] === tribeType) {
+        if (tribeTypes.indexOf(synergies[0]) >= 0) {
           this.deleteSelectedCardHandler(item.Name);
           return false;
         } else {
@@ -188,9 +189,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <NoDropdownSelector
+        <NoDropdownMultiSelector
           collection={tribes}
-          currentSelected={this.state.missingTribe}
+          currentSelected={this.state.missingTribes}
           changed={this.changeMissingTribeHandler}
           prefixText="The missing tribe is:" />
 
@@ -203,7 +204,7 @@ class App extends Component {
         <DropdownSelector
           collection={this.state.buyableCards}
           currentTier={this.state.currentTier}
-          missingTribe={this.state.missingTribe}
+          missingTribes={this.state.missingTribes}
           selectedCards={this.state.selectedCards}
           changed={this.addSelectedCardHandler} />
 
