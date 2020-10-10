@@ -147,7 +147,6 @@ class App extends Component {
   changeBuyableCards(
     tier,
     tribeTypes) {
-    console.log({tier, tribeTypes})
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
         this.deleteSelectedCardHandler(item.Name);

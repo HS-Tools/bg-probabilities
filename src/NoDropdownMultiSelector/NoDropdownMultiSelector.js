@@ -2,7 +2,6 @@ import React from 'react';
 import { Checkbox } from 'antd';
 
 const Selector = (props) => {
-    // console.log({props})
     let buttons = props.collection.map(item => {
         return <Checkbox value={item}>{item}</Checkbox>
     });
