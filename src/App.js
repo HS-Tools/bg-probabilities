@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
 import NoDropdownMultiSelector from './NoDropdownMultiSelector/NoDropdownMultiSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
+import Radio from './Radio/radio';
 import Header from './Header/Header';
 import Results from './Results/Results'
 import minions from './minions';
@@ -46,9 +47,14 @@ class App extends Component {
     this.changeBuyableCards(this.state.currentTier, this.state.missingTribes);
   }
 
-  changeMissingTribeHandler = (e) => {
-    this.setState({missingTribes: e});
-    this.changeBuyableCards(this.state.currentTier, e);
+  changeMissingTribeHandler = (position, e) => {
+    console.log(e);
+    this.setState(prevState => {
+      let missingTribes =  [...prevState.missingTribes];
+      missingTribes[position] = e.target.value;
+      this.changeBuyableCards(this.state.currentTier, missingTribes);
+      return missingTribes;
+    })
   }
 
   changeCurrentTierHandler = (e) => {
@@ -146,7 +152,7 @@ class App extends Component {
 
   changeBuyableCards(
     tier,
-    tribeTypes) {
+    missingTribes) {
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
         this.deleteSelectedCardHandler(item.Name);
@@ -157,23 +163,17 @@ class App extends Component {
 
     let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
       let synergies = item.Combined.split(',');
-      if (synergies[0] === "") {
-        if (tribeTypes.indexOf(item.Type) >= 0) {
-          this.deleteSelectedCardHandler(item.Name);
-          return false;
-        } else {
-          return true;
-        }
-      } else if (synergies.length > 1) {
-        return true;
-      } else {
-        if (tribeTypes.indexOf(synergies[0]) >= 0) {
-          this.deleteSelectedCardHandler(item.Name);
-          return false;
-        } else {
-          return true;
+
+      for (let synergy of synergies) {
+        for (let tribe of missingTribes) {
+          if (tribe === synergy) {
+            this.deleteSelectedCardHandler(item.Name);
+            return false;
+          }
         }
       }
+
+      return true;
     });
 
     this.setState({ buyableCards: tribeAppropriateMinions });
@@ -184,15 +184,33 @@ class App extends Component {
     ReactGA.pageview('/home-page');
   }
 
+  missingTribes() {
+    let radioList = [];
+
+    for (let i in Array.from(Array(tribes.length - 5))) {
+      let handler = this.changeMissingTribeHandler.bind(this, i);
+      let prefixText = `Banned tribe # ${parseInt(i)+1}`;
+      radioList.push(
+          <Radio 
+            collection={tribes}
+            prefixText={prefixText}
+            currentSelected={this.state.missingTribes[i]}
+            changed={handler} />
+      );
+    }
+
+    return (
+      <div>
+        {radioList}
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
-        <NoDropdownMultiSelector
-          collection={tribes}
-          currentSelected={this.state.missingTribes}
-          changed={this.changeMissingTribeHandler}
-          prefixText="The missing tribe is:" />
+        {this.missingTribes()}
 
         <NoDropdownSelector
           collection={tiers}
