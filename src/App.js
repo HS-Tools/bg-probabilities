@@ -156,22 +156,24 @@ class App extends Component {
     });
 
     let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
-      let synergies = item.Synergy.split(',');
-      if (synergies[0] === "") {
-        if (tribeTypes.indexOf(item.Type) >= 0) {
-          this.deleteSelectedCardHandler(item.Name);
-          return false;
-        } else {
+      if (item.Synergy) {
+        let synergies = item.Synergy.split(',');
+        if (synergies[0] === "") {
+          if (tribeTypes.indexOf(item.Type) >= 0) {
+            this.deleteSelectedCardHandler(item.Name);
+            return false;
+          } else {
+            return true;
+          }
+        } else if (synergies.length > 1) {
           return true;
-        }
-      } else if (synergies.length > 1) {
-        return true;
-      } else {
-        if (tribeTypes.indexOf(synergies[0]) >= 0) {
-          this.deleteSelectedCardHandler(item.Name);
-          return false;
         } else {
-          return true;
+          if (tribeTypes.indexOf(synergies[0]) >= 0) {
+            this.deleteSelectedCardHandler(item.Name);
+            return false;
+          } else {
+            return true;
+          }
         }
       }
     });
@@ -192,7 +194,7 @@ class App extends Component {
           collection={tribes}
           currentSelected={this.state.missingTribes}
           changed={this.changeMissingTribeHandler}
-          prefixText="The missing tribe is:" />
+          prefixText="The missing tribes are:" />
 
         <NoDropdownSelector
           collection={tiers}
