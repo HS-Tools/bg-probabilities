@@ -3,7 +3,7 @@ import { Radio } from 'antd';
 
 const Selector = (props) => {
     let buttons = props.collection.map(item => {
-        return <Radio.Button value={item}>{item}</Radio.Button>
+        return <Radio.Button value={item} disabled={props.allSelected.slice(0, props.index).includes(item)}>{item}</Radio.Button>
     });
 
     return (

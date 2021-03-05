@@ -48,13 +48,12 @@ class App extends Component {
   }
 
   changeMissingTribeHandler = (position, e) => {
-    console.log(e);
     this.setState(prevState => {
       let missingTribes =  [...prevState.missingTribes];
       missingTribes[position] = e.target.value;
       this.changeBuyableCards(this.state.currentTier, missingTribes);
       return missingTribes;
-    })
+    });
   }
 
   changeCurrentTierHandler = (e) => {
@@ -194,6 +193,8 @@ class App extends Component {
           <Radio 
             collection={tribes}
             prefixText={prefixText}
+            index={i}
+            allSelected={this.state.missingTribes}
             currentSelected={this.state.missingTribes[i]}
             changed={handler} />
       );
