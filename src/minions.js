@@ -1039,16 +1039,6 @@ const minions = [
        "Combined": "Pirate"
    },
    {
-       "Name": "Elistra the Immortal",
-       "Tier": "6",
-       "Attack": "4",
-       "Health": "4",
-       "Legendary": "Y",
-       "Keywords": "Divine Shield, Reborn",
-       "Synergy": "Taunt",
-       "Combined": "Divine Shield, Reborn, Taunt"
-   },
-   {
        "Name": "Foe Reaper 4000",
        "Tier": "6",
        "Attack": "6",
