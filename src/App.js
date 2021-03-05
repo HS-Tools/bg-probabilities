@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NoDropdownSelector from './NoDropdownSelector/NoDropdownSelector';
-import NoDropdownMultiSelector from './NoDropdownMultiSelector/NoDropdownMultiSelector';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
 import Radio from './Radio/radio';
 import Header from './Header/Header';
@@ -52,7 +51,8 @@ class App extends Component {
       let missingTribes =  [...prevState.missingTribes];
       missingTribes[position] = e.target.value;
       this.changeBuyableCards(this.state.currentTier, missingTribes);
-      return missingTribes;
+
+      return { missingTribes };
     });
   }
 
@@ -191,6 +191,7 @@ class App extends Component {
       let prefixText = `Banned tribe # ${parseInt(i)+1}`;
       radioList.push(
           <Radio 
+            key={i.toString()}
             collection={tribes}
             prefixText={prefixText}
             index={i}
