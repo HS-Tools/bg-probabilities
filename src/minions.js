@@ -1,196 +1,8 @@
 const minions = [
    {
-      "Name":"Refreshing Anomaly",
-      "Tier":"1",
+       "Tier":"1",
       "Attack":"1",
       "Health":"3",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
-      "Name":"Sellemental",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
-      "Name":"Alleycat",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"1",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"Beast",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
-      "Name":"Deck Swabbie",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Pirate",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
-      "Name":"Dragonspawn Lieutenant",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"3",
-      "Cost":"2",
-      "Legendary":"",
-      "Type":"Dragon",
-      "Keywords":"Taunt",
-      "Synergy":""
-   },
-   {
-      "Name":"Fiendish Servant",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"1",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"Demon",
-      "Keywords":"Deathrattle",
-      "Synergy":""
-   },
-   {
-      "Name":"Mecharoo",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"1",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"Mech",
-      "Keywords":"Deathrattle",
-      "Synergy":""
-   },
-   {
-      "Name":"Micro Machine",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"2",
-      "Cost":"2",
-      "Legendary":"",
-      "Type":"Mech",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
-      "Name":"Murloc Tidecaller",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"2",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"Murloc",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
-      "Name":"Murloc Tidehunter",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"1",
-      "Cost":"2",
-      "Legendary":"",
-      "Type":"Murloc",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
-      "Name":"Red Whelp",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"2",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Dragon",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
-      "Name":"Righteous Protector",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"1",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"",
-      "Keywords":"Divine Shield,  Taunt",
-      "Synergy":""
-   },
-   {
-      "Name":"Rockpool Hunter",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"3",
-      "Cost":"2",
-      "Legendary":"",
-      "Type":"Murloc",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
-      "Name":"Scallywag",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"1",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Pirate",
-      "Keywords":"Deathrattle",
-      "Synergy":""
-   },
-   {
-      "Name":"Scavenging Hyena",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"2",
-      "Legendary":"",
-      "Type":"Beast",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
-      "Name":"Selfless Hero",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"1",
-      "Cost":"1",
-      "Legendary":"",
-      "Type":"",
-      "Keywords":"Deathrattle, Divine Shield",
-      "Synergy":""
-   },
-   {
-      "Name":"Vulgar Homunculus",
-      "Tier":"1",
-      "Attack":"2",
-      "Health":"4",
-      "Cost":"2",
-      "Legendary":"",
-      "Type":"Demon",
-      "Keywords":"Battlecry, Taunt",
-      "Synergy":""
-   },
-   {
-      "Name":"Wrath Weaver",
-      "Tier":"1",
-      "Attack":"1",
-      "Health":"1",
       "Cost":"1",
       "Legendary":"",
       "Type":"",
@@ -198,26 +10,26 @@ const minions = [
       "Synergy":"Demon"
    },
    {
-      "Name":"Molten Rock",
-      "Tier":"2",
-      "Attack":"2",
-      "Health":"3",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Taunt",
-      "Synergy":""
+      "Name":"Micro Mummy",
+      "Tier":"1
+      "Attack":"1
+      "Health":"2
+      "Cost":"2
+      "Legendary":"
+      "Type":"Mech
+      "Keywords":"Reborn
+      "Synergy":"
    },
    {
-      "Name":"Party Elemental",
-      "Tier":"2",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"",
-      "Synergy":""
+      "Name":"Acolyte of C'Thun",
+      "Tier":"1
+      "Attack":"2
+      "Health":"2
+      "Cost":"1
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"Reborn
+      "Synergy":"
    },
    {
       "Name":"Freedealing Gambler",
@@ -286,6 +98,17 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Menagerie Mug",
+      "Tier":"2",
+      "Attack":"2",
+      "Health":"2",
+      "Cost":"3",
+      "Legendary":"",
+      "Type":"",
+      "Keywords":"Battlecry",
+      "Synergy":""
+   },
+   {
       "Name":"Metaltooth Leaper",
       "Tier":"2",
       "Attack":"3",
@@ -294,6 +117,17 @@ const minions = [
       "Legendary":"",
       "Type":"Mech",
       "Keywords":"Battlecry",
+      "Synergy":""
+   },
+   {
+      "Name":"Molten Rock",
+      "Tier":"2",
+      "Attack":"2",
+      "Health":"3",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Taunt",
       "Synergy":""
    },
    {
@@ -330,20 +164,31 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Pogo-Hopper",
+      "Name":"Pack Leader",
       "Tier":"2",
-      "Attack":"1",
-      "Health":"1",
-      "Cost":"1",
+      "Attack":"3",
+      "Health":"3",
+      "Cost":"3",
       "Legendary":"",
-      "Type":"Mech",
-      "Keywords":"Battlecry",
-      "Synergy":""
+      "Type":"",
+      "Keywords":"",
+      "Synergy":"Beast"
    },
    {
+      "Name":"Party Elemental",
+      "Tier":"2",
+      "Attack":"2",
+      "Health":"2",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"",
+      "Synergy":""
+ },   
+{
       "Name":"Rabid Saurolisk",
       "Tier":"2",
-      "Attack":"4",
+      "Attack":"3",
       "Health":"2",
       "Cost":"3",
       "Legendary":"",
@@ -352,6 +197,17 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Selfless Hero",
+      "Tier":"2",
+      "Attack":"2",
+      "Health":"1",
+      "Cost":"1",
+      "Legendary":"",
+      "Type":"",
+      "Keywords":"Deathrattle, Divine Shield",
+      "Synergy":""
+ },
+ {
       "Name":"Southsea Captain",
       "Tier":"2",
       "Attack":"3",
@@ -399,7 +255,7 @@ const minions = [
       "Name":"Waxrider Togwaggle",
       "Tier":"2",
       "Attack":"1",
-      "Health":"2",
+      "Health":"3",
       "Cost":"",
       "Legendary":"Y",
       "Type":"",
@@ -407,15 +263,26 @@ const minions = [
       "Synergy":"Dragon"
    },
    {
-      "Name":"Menagerie Mug",
-      "Tier":"2",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"3",
-      "Legendary":"",
-      "Type":"",
-      "Keywords":"Battlecry",
-      "Synergy":""
+      "Name":"Tormented Ritualist",
+      "Tier":"2
+      "Attack":"2
+      "Health":"3
+      "Cost":"3
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"Taunt
+      "Synergy":"
+   },
+   {
+      "Name":"Yo-Ho-Ogre",
+      "Tier":"2
+      "Attack":"2
+      "Health":"6
+      "Cost":"6
+      "Legendary":"
+      "Type":"Pirate
+      "Keywords":"Taunt
+      "Synergy":"
    },
    {
       "Name":"Arcane Assistant",
@@ -429,32 +296,10 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Crackling Cyclone",
-      "Tier":"3",
-      "Attack":"4",
-      "Health":"1",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Divine Shield, Windfury",
-      "Synergy":""
-   },
-   {
-      "Name":"Stasis Elemental",
-      "Tier":"3",
-      "Attack":"4",
-      "Health":"4",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
       "Name":"Bloodsail Cannoneer",
       "Tier":"3",
       "Attack":"4",
-      "Health":"2",
+      "Health":"3",
       "Cost":"",
       "Legendary":"",
       "Type":"Pirate",
@@ -484,14 +329,14 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Crowd Favorite",
+      "Name":"Crackling Cyclone",
       "Tier":"3",
       "Attack":"4",
-      "Health":"4",
-      "Cost":"4",
+      "Health":"1",
+      "Cost":"",
       "Legendary":"",
-      "Type":"",
-      "Keywords":"Battlecry",
+      "Type":"Elemental",
+      "Keywords":"Divine Shield, Windfury",
       "Synergy":""
    },
    {
@@ -572,6 +417,17 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Iron Sensei",
+      "Tier":"3",
+      "Attack":"2",
+      "Health":"2",
+      "Cost":"3",
+      "Legendary":"",
+      "Type":"Mech",
+      "Keywords":"",
+      "Synergy":""
+   },
+   {
       "Name":"Khadgar",
       "Tier":"3",
       "Attack":"2",
@@ -592,17 +448,6 @@ const minions = [
       "Type":"Beast",
       "Keywords":"Deathrattle",
       "Synergy":""
-   },
-   {
-      "Name":"Pack Leader",
-      "Tier":"2",
-      "Attack":"3",
-      "Health":"3",
-      "Cost":"3",
-      "Legendary":"",
-      "Type":"",
-      "Keywords":"",
-      "Synergy":"Beast"
    },
    {
       "Name":"Piloted Shredder",
@@ -640,8 +485,8 @@ const minions = [
    {
       "Name":"Salty Looter",
       "Tier":"3",
-      "Attack":"3",
-      "Health":"3",
+      "Attack":"4",
+      "Health":"4",
       "Cost":"",
       "Legendary":"",
       "Type":"Pirate",
@@ -660,17 +505,6 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Shifter Zerus",
-      "Tier":"3",
-      "Attack":"1",
-      "Health":"1",
-      "Cost":"1",
-      "Legendary":"Y",
-      "Type":"",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
       "Name":"Soul Juggler",
       "Tier":"3",
       "Attack":"3",
@@ -682,14 +516,25 @@ const minions = [
       "Synergy":"Demon"
    },
    {
-      "Name":"The Beast",
+      "Name":"Southsea Strongarm",
       "Tier":"3",
-      "Attack":"9",
-      "Health":"7",
-      "Cost":"6",
-      "Legendary":"Y",
-      "Type":"Beast",
-      "Keywords":"Deathrattle",
+      "Attack":"5",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Pirate",
+      "Keywords":"Battlecry",
+      "Synergy":""
+   },
+   {
+      "Name":"Stasis Elemental",
+      "Tier":"3",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
       "Synergy":""
    },
    {
@@ -704,37 +549,37 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Yo-Ho-Ogre",
-      "Tier":"3",
-      "Attack":"2",
-      "Health":"8",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Pirate",
-      "Keywords":"Taunt",
-      "Synergy":""
+      "Name":"",
+      "Tier":"Arm of the Empire
+      "Attack":"3
+      "Health":"4
+      "Cost":"5
+      "Legendary":"5
+      "Type":"
+      "Keywords":"Neutral
+      "Synergy":"
    },
    {
-      "Name":"Whirlwind Tempest",
-      "Tier":"4",
-      "Attack":"6",
-      "Health":"6",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Windfury, Mega-Windfury",
-      "Synergy":""
+      "Name":"Soul Devourer",
+      "Tier":"3
+      "Attack":"3
+      "Health":"3
+      "Cost":"4
+      "Legendary":"
+      "Type":"Demon
+      "Keywords":"Battlecry
+      "Synergy":"
    },
    {
-      "Name":"Wildfire Elemental",
-      "Tier":"4",
-      "Attack":"7",
-      "Health":"3",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"",
-      "Synergy":""
+      "Name":"Warden of Old",
+      "Tier":"3
+      "Attack":"3
+      "Health":"3
+      "Cost":"4
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"Deathrattle
+      "Synergy":"
    },
    {
       "Name":"Annoy-o-Module",
@@ -803,17 +648,6 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Floating Watcher",
-      "Tier":"4",
-      "Attack":"4",
-      "Health":"4",
-      "Cost":"5",
-      "Legendary":"",
-      "Type":"Demon",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
       "Name":"Goldgrubber",
       "Tier":"4",
       "Attack":"2",
@@ -836,11 +670,11 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Iron Sensei",
+      "Name":"Junkbot",
       "Tier":"4",
-      "Attack":"2",
-      "Health":"2",
-      "Cost":"3",
+      "Attack":"1",
+      "Health":"5",
+      "Cost":"5",
       "Legendary":"",
       "Type":"Mech",
       "Keywords":"",
@@ -882,8 +716,8 @@ const minions = [
    {
       "Name":"Ripsnarl Captain",
       "Tier":"4",
-      "Attack":"3",
-      "Health":"4",
+      "Attack":"4",
+      "Health":"5",
       "Cost":"",
       "Legendary":"",
       "Type":"Pirate",
@@ -924,17 +758,6 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Southsea Strongarm",
-      "Tier":"4",
-      "Attack":"5",
-      "Health":"4",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Pirate",
-      "Keywords":"Battlecry",
-      "Synergy":""
-   },
-   {
       "Name":"Toxfin",
       "Tier":"4",
       "Attack":"1",
@@ -957,37 +780,70 @@ const minions = [
       "Synergy":"Beast"
    },
    {
-      "Name":"Lil' Rag",
-      "Tier":"5",
-      "Attack":"4",
-      "Health":"4",
-      "Cost":"",
-      "Legendary":"Y",
-      "Type":"Elemental",
-      "Keywords":"",
-      "Synergy":""
-   },
-   {
-      "Name":"Nomi, Kitchen Nightmare",
-      "Tier":"5",
-      "Attack":"4",
-      "Health":"4",
-      "Cost":"",
-      "Legendary":"Y",
-      "Type":"",
-      "Keywords":"",
-      "Synergy":"Elemental"
-   },
-   {
-      "Name":"Tavern Tempest",
-      "Tier":"5",
-      "Attack":"4",
-      "Health":"4",
+      "Name":"Wildfire Elemental",
+      "Tier":"4",
+      "Attack":"7",
+      "Health":"3",
       "Cost":"",
       "Legendary":"",
       "Type":"Elemental",
-      "Keywords":"Battlecry",
+      "Keywords":"",
       "Synergy":""
+   },
+   {
+      "Name":"Bigfernal",
+      "Tier":"4
+      "Attack":"4
+      "Health":"4
+      "Cost":"5
+      "Legendary":"
+      "Type":"Demon
+      "Keywords":"
+      "Synergy":"
+   },
+   {
+      "Name":"Champion of Y'Shaarj",
+      "Tier":"4
+      "Attack":"4
+      "Health":"4
+      "Cost":"4
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"
+      "Synergy":"
+   },
+   {
+      "Name":"Majordomo Executus",
+      "Tier":"4
+      "Attack":"6
+      "Health":"3
+      "Cost":"6
+      "Legendary":"Y
+      "Type":"Neutral
+      "Keywords":"
+      "Synergy":"Elemental
+   },
+   {
+      "Name":"Qiraji Harbinger",
+      "Tier":"4
+      "Attack":"5
+      "Health":"5
+      "Cost":"6
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"
+      "Synergy":"
+   },
+   {
+      "Name":"Ring Matron",
+      "Tier":"4
+      "Attack":"6
+      "Health":"4
+      "Cost":"6
+      "Legendary":"
+      "Type":"Demon
+      "Keywords":"Deathrattle, Taunt
+      "Synergy":"
    },
    {
       "Name":"Annihilan Battlemaster",
@@ -1034,17 +890,6 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Goldrinn,  the Great Wolf",
-      "Tier":"6",
-      "Attack":"4",
-      "Health":"4",
-      "Cost":"8",
-      "Legendary":"Y",
-      "Type":"Beast",
-      "Keywords":"Deathrattle",
-      "Synergy":""
-   },
-   {
       "Name":"Ironhide Direhorn",
       "Tier":"5",
       "Attack":"7",
@@ -1053,17 +898,6 @@ const minions = [
       "Legendary":"",
       "Type":"Beast",
       "Keywords":"Overkill",
-      "Synergy":""
-   },
-   {
-      "Name":"Junkbot",
-      "Tier":"5",
-      "Attack":"1",
-      "Health":"5",
-      "Cost":"5",
-      "Legendary":"",
-      "Type":"Mech",
-      "Keywords":"",
       "Synergy":""
    },
    {
@@ -1111,6 +945,17 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Mama Bear",
+      "Tier":"5",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"8",
+      "Legendary":"",
+      "Type":"Beast",
+      "Keywords":"",
+      "Synergy":""
+   },
+   {
       "Name":"Nat Pagle, Extreme Angler",
       "Tier":"5",
       "Attack":"8",
@@ -1120,6 +965,17 @@ const minions = [
       "Type":"Pirate",
       "Keywords":"Overkill",
       "Synergy":""
+   },
+   {
+      "Name":"Nomi, Kitchen Nightmare",
+      "Tier":"5",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"Y",
+      "Type":"",
+      "Keywords":"",
+      "Synergy":"Elemental"
    },
    {
       "Name":"Razorgore, the Untamed",
@@ -1166,6 +1022,17 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Tavern Tempest",
+      "Tier":"5",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Battlecry",
+      "Synergy":""
+   },
+   {
       "Name":"Voidlord",
       "Tier":"5",
       "Attack":"3",
@@ -1177,26 +1044,48 @@ const minions = [
       "Synergy":""
    },
    {
-      "Name":"Gentle Djinni",
-      "Tier":"6",
-      "Attack":"6",
-      "Health":"8",
-      "Cost":"",
-      "Legendary":"",
-      "Type":"Elemental",
-      "Keywords":"Taunt, Deathrattle",
-      "Synergy":""
+     "Name":"Mythrax",
+     "Tier":"5
+     "Attack":"4
+     "Health":"4
+     "Cost":"5
+     "Legendary":"
+     "Type":"Neutral
+     "Keywords":"
+     "Synergy":"
    },
    {
-      "Name":"Lieutenant Garr",
-      "Tier":"6",
-      "Attack":"8",
-      "Health":"1",
-      "Cost":"",
-      "Legendary":"Y",
-      "Type":"Elemental",
-      "Keywords":"Taunt",
-      "Synergy":""
+      "Name":"Deadly Spore",
+      "Tier":"5
+      "Attack":"1
+      "Health":"1
+      "Cost":"4
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"Poisonous
+      "Synergy":"
+   },
+   {
+      "Name":"Murazond",
+      "Tier":"5
+      "Attack":"5
+      "Health":"5
+      "Cost":"7
+      "Legendary":"
+      "Type":"Dragon
+      "Keywords":"Battlecry
+      "Synergy":"
+   },
+   {
+      "Name":"Mythrax",
+      "Tier":"5
+      "Attack":"4
+      "Health":"4
+      "Cost":"5
+      "Legendary":"
+      "Type":"Neutral
+      "Keywords":"
+      "Synergy":"
    },
    {
       "Name":"Amalgadon",
@@ -1232,12 +1121,34 @@ const minions = [
       "Synergy":""
    },
    {
+      "Name":"Gentle Djinni",
+      "Tier":"6",
+      "Attack":"4",
+      "Health":"5",
+      "Cost":"",
+      "Legendary":"",
+      "Type":"Elemental",
+      "Keywords":"Taunt, Deathrattle",
+      "Synergy":""
+   },
+   {
       "Name":"Ghastcoiler",
       "Tier":"6",
       "Attack":"7",
       "Health":"7",
       "Cost":"6",
       "Legendary":"",
+      "Type":"Beast",
+      "Keywords":"Deathrattle",
+      "Synergy":""
+   },
+   {
+      "Name":"Goldrinn,  the Great Wolf",
+      "Tier":"6",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"8",
+      "Legendary":"Y",
       "Type":"Beast",
       "Keywords":"Deathrattle",
       "Synergy":""
@@ -1267,13 +1178,35 @@ const minions = [
    {
       "Name":"Kangor's Apprentice",
       "Tier":"6",
-      "Attack":"3",
-      "Health":"6",
+      "Attack":"4",
+      "Health":"8",
       "Cost":"10",
       "Legendary":"",
       "Type":"",
       "Keywords":"Deathrattle",
       "Synergy":"Mech"
+   },
+   {
+      "Name":"Lieutenant Garr",
+      "Tier":"6",
+      "Attack":"5",
+      "Health":"1",
+      "Cost":"",
+      "Legendary":"Y",
+      "Type":"Elemental",
+      "Keywords":"Taunt",
+      "Synergy":""
+   },
+   {
+      "Name":"Lil' Rag",
+      "Tier":"6",
+      "Attack":"4",
+      "Health":"4",
+      "Cost":"",
+      "Legendary":"Y",
+      "Type":"Elemental",
+      "Keywords":"",
+      "Synergy":""
    },
    {
       "Name":"Maexxna",
@@ -1284,17 +1217,6 @@ const minions = [
       "Legendary":"Y",
       "Type":"Beast",
       "Keywords":"Poisonous",
-      "Synergy":""
-   },
-   {
-      "Name":"Mama Bear",
-      "Tier":"5",
-      "Attack":"4",
-      "Health":"4",
-      "Cost":"8",
-      "Legendary":"",
-      "Type":"Beast",
-      "Keywords":"",
       "Synergy":""
    },
    {
@@ -1330,6 +1252,7 @@ const minions = [
       "Keywords":"Windfury",
       "Synergy":""
    }
+ 
 ]
 
 export default minions;
