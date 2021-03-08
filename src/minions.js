@@ -677,15 +677,6 @@ const minions = [
        "Combined": "Dragon, Divine Shield"
    },
    {
-       "Name": "Floating Watcher",
-       "Tier": "4",
-       "Attack": "4",
-       "Health": "4",
-       "Cost": "5",
-       "Type": "Demon",
-       "Combined": "Demon"
-   },
-   {
        "Name": "Goldgrubber",
        "Tier": "4",
        "Attack": "2",
@@ -906,7 +897,7 @@ const minions = [
        "Health": "2",
        "Cost": "6",
        "Synergy": "Mech,  Murloc,  Demon,  Beast, Dragon, Pirate",
-       "Combined": "Mech,  Murloc,  Demon,  Beast, Dragon, Pirate"
+       "Combined": ""
    },
    {
        "Name": "Mal'Ganis",
@@ -1027,7 +1018,7 @@ const minions = [
        "Health": "12",
        "Type": "Mech,  Murloc,  Demon,  Beast, Dragon, Pirate, Elemental",
        "Keywords": "Battlecry",
-       "Combined": "Mech,  Murloc,  Demon,  Beast, Dragon, Pirate, Elemental, Battlecry"
+       "Combined": ""
    },
    {
        "Name": "Dread Admiral Eliza",
