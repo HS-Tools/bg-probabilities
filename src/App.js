@@ -161,7 +161,7 @@ class App extends Component {
     });
 
     let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
-      let synergies = item.Combined.split(',');
+      let synergies = item.Combined.split(',').map(str => str.trim());
 
       for (let synergy of synergies) {
         for (let tribe of missingTribes) {
