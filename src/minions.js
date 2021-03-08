@@ -430,7 +430,7 @@ const minions = [
        "Combined": "Battlecry, Demon"
    },
    {
-       "Name": "Deflect-o-bot",
+       "Name": "Deflect-o-Bot",
        "Tier": "3",
        "Attack": "3",
        "Health": "2",
@@ -623,7 +623,7 @@ const minions = [
        "Combined": "Demon"
    },
    {
-       "Name": "Bolvar,  Fireblood",
+       "Name": "Bolvar, Fireblood",
        "Tier": "4",
        "Attack": "1",
        "Health": "7",
@@ -930,7 +930,7 @@ const minions = [
        "Combined": "Dragon, Battlecry"
    },
    {
-       "Name": "Mythrax, the Unraveler",
+       "Name": "Mythrax the Unraveler",
        "Tier": "5",
        "Attack": "4",
        "Health": "4",
@@ -1059,7 +1059,7 @@ const minions = [
        "Combined": "Beast, Deathrattle"
    },
    {
-       "Name": "Goldrinn,  the Great Wolf",
+       "Name": "Goldrinn, the Great Wolf",
        "Tier": "6",
        "Attack": "4",
        "Health": "4",

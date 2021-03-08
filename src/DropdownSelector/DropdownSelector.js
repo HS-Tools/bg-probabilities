@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import { Select } from 'antd'
+import cards from '../assets/cards.json';
+import './DropdownSelector.module.css';
+import classes from './DropdownSelector.module.css';
 const { Option } = Select;
-// import classes from './DropdownSelector.module.css';
 
 class Selector extends Component {
     render() {
         let names = this.props.collection.map(item => {
-            return <Option key={item.Name} disabled={Object.keys(this.props.selectedCards).indexOf(item.Name) >= 0} value={item.Name}>{item.Name}</Option>;
+            const card = cards.find(card => card['name'] === item.Name);
+            const image = card && (<img className={classes.Clip} src={`https://art.hearthstonejson.com/v1/orig/${card.id}.png`} alt={item.Name}/>);
+
+            return <Option key={item.Name} disabled={Object.keys(this.props.selectedCards).indexOf(item.Name) >= 0} value={item.Name}>
+                {image}
+                {item.Name}
+            </Option>;
         });
 
         return (

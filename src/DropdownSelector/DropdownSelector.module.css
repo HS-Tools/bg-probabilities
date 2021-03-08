@@ -1,0 +1,8 @@
+.Clip {
+    border-radius: 50%;
+    max-width: 30%;
+    margin-right: 15px;
+
+    /* Artwork dimensions and borders are inconsistent, clipping to make art more uniform */
+    clip-path: circle(35%);
+}
