@@ -5,6 +5,22 @@
 
 .Entry {
     position: relative;
+    padding: 0;
+    margin: 4px;
+}
+
+.Entry img {
+    max-width: 40px;
+
+    /* Artwork dimensions and borders are inconsistent, clipping to make art more uniform */
+    clip-path: circle(35%);
+}
+
+@media only screen and (max-width: 375px) {
+    .Entry img {
+        max-width: 35px;
+        clip-path: circle(40%);
+    }
 }
 
 .Padding {

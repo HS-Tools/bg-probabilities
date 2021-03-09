@@ -1,16 +1,20 @@
 import React from 'react';
 import { InputNumber, Switch } from 'antd';
 import { CloseCircleFilled } from '@ant-design/icons';
+import cards from '../assets/cards.json';
 import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
-    const andOr = <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked 
+    const andOr = <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked
     checked={props.isAnd} onChange={props.changeAndMode} />
     const emptySpanForAlignment = props.isAnd ?
         <span style={{display: 'inline-block', width: '52px'}}></span> : 
         <span style={{display: 'inline-block', width: '44px'}}></span>;
 
     const entries = Object.keys(props.selectedCards).map(key => {
+        const card = cards.find(card => card['name'] === key);
+        const image = card && (<img src={`https://art.hearthstonejson.com/v1/orig/${card.id}.png`} alt={key}/>);
+
         let isLastKey = (key === Object.keys(props.selectedCards)[Object.keys(props.selectedCards).length - 1]);
         let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
         let currentAmount = props.selectedCards[key];
@@ -37,6 +41,7 @@ const SelectedCards = (props) => {
         return (
             <div key={key} className={classes.Entry}>
                 <CloseCircleFilled className={classes.Close} alt="Remove" onClick={() => props.delete(key)}/>
+                { image }
                 <span> at least &nbsp; </span>
                 {cardAmountInput}
                 &nbsp;
