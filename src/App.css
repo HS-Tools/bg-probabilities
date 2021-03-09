@@ -5,3 +5,8 @@ div {
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
+.ant-select-item-option-content {
+  display: flex;
+  align-items: center;
+}
