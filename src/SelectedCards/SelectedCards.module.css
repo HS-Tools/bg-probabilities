@@ -27,3 +27,8 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
+
+.Switch {
+    display: inline-block;
+    width: 53px;
+}

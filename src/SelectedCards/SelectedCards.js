@@ -6,10 +6,8 @@ import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
     const andOr = <Switch checkedChildren="and" unCheckedChildren="or" defaultChecked
-    checked={props.isAnd} onChange={props.changeAndMode} />
-    const emptySpanForAlignment = props.isAnd ?
-        <span style={{display: 'inline-block', width: '52px'}}></span> : 
-        <span style={{display: 'inline-block', width: '44px'}}></span>;
+        checked={props.isAnd} onChange={props.changeAndMode} className={classes.Switch}/>
+    const emptySpanForAlignment = <span className={classes.Switch}/>;
 
     const entries = Object.keys(props.selectedCards).map(key => {
         const card = cards.find(card => card['name'] === key);
