@@ -13,7 +13,7 @@ const Header = (props) => {
                 </a>
             </div>
             <div>
-                <div><h2>Battlegrounds Probability Calculator</h2></div>
+                <div><h2>Hearthstone Battlegrounds Probability Calculator</h2></div>
             </div>
         </div>
     );
