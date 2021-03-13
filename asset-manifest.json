@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bg-probabilities/static/css/main.20528030.chunk.css",
-    "main.js": "/bg-probabilities/static/js/main.2150d570.chunk.js",
-    "main.js.map": "/bg-probabilities/static/js/main.2150d570.chunk.js.map",
+    "main.js": "/bg-probabilities/static/js/main.41047db4.chunk.js",
+    "main.js.map": "/bg-probabilities/static/js/main.41047db4.chunk.js.map",
     "runtime-main.js": "/bg-probabilities/static/js/runtime-main.e1073f10.js",
     "runtime-main.js.map": "/bg-probabilities/static/js/runtime-main.e1073f10.js.map",
     "static/css/2.9edc93b8.chunk.css": "/bg-probabilities/static/css/2.9edc93b8.chunk.css",
     "static/js/2.68287f03.chunk.js": "/bg-probabilities/static/js/2.68287f03.chunk.js",
     "static/js/2.68287f03.chunk.js.map": "/bg-probabilities/static/js/2.68287f03.chunk.js.map",
     "index.html": "/bg-probabilities/index.html",
-    "precache-manifest.0cfe1777d7dab99918404c26c2a7dbcc.js": "/bg-probabilities/precache-manifest.0cfe1777d7dab99918404c26c2a7dbcc.js",
+    "precache-manifest.fdcf52f512ca283119ee5494d28b5d69.js": "/bg-probabilities/precache-manifest.fdcf52f512ca283119ee5494d28b5d69.js",
     "service-worker.js": "/bg-probabilities/service-worker.js",
     "static/css/2.9edc93b8.chunk.css.map": "/bg-probabilities/static/css/2.9edc93b8.chunk.css.map",
     "static/css/main.20528030.chunk.css.map": "/bg-probabilities/static/css/main.20528030.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.9edc93b8.chunk.css",
     "static/js/2.68287f03.chunk.js",
     "static/css/main.20528030.chunk.css",
-    "static/js/main.2150d570.chunk.js"
+    "static/js/main.41047db4.chunk.js"
   ]
 }
