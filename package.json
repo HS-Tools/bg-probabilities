@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "update-cards": "scripts/update-cards.js"
+    "update-cards": "node scripts/update-cards.js"
   },
   "eslintConfig": {
     "extends": "react-app"
