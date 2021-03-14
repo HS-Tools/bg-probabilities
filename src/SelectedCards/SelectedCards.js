@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputNumber, Switch } from 'antd';
 import { CloseCircleFilled } from '@ant-design/icons';
-import cards from '../assets/cards.json';
+import minions from '../minions';
 import classes from './SelectedCards.module.css';
 
 const SelectedCards = (props) => {
@@ -10,8 +10,8 @@ const SelectedCards = (props) => {
     const emptySpanForAlignment = <span className={classes.Switch}/>;
 
     const entries = Object.keys(props.selectedCards).map(key => {
-        const card = cards.find(card => card['name'] === key);
-        const image = card && (<img src={`https://art.hearthstonejson.com/v1/orig/${card.id}.png`} alt={key}/>);
+        const card = minions.find(card => card['Name'] === key);
+        const image = card && (<img src={`https://art.hearthstonejson.com/v1/orig/${card.ID}.png`} alt={key}/>);
 
         let isLastKey = (key === Object.keys(props.selectedCards)[Object.keys(props.selectedCards).length - 1]);
         let maxCardsInCurrentTier = props.tierCardCounts[props.minionsMap[key].Tier];
