@@ -579,6 +579,7 @@ const minions = [
         "Health": "2",
         "Cost": "2",
         "Legendary": "Y",
+        "Combined": "",
         "ID": "DAL_575"
     },
     {
@@ -1104,6 +1105,7 @@ const minions = [
         "Health": "4",
         "Cost": "5",
         "Legendary": "Y",
+        "Combined": "",
         "ID": "BGS_202"
     },
     {

@@ -111,7 +111,7 @@ const updateMinionsJSFile = (cardsArray) => {
             "Type": type,
             "Keywords": keywords.length ? keywords.join(', ') : undefined,
             "Synergy": synergies.length ? synergies.join(', ') : undefined,
-            "Combined": combined.length ? combined.join(', ') : undefined,
+            "Combined": combined.join(', '),
             "ID": card["id"]
         };
 
