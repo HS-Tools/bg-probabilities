@@ -1,9 +1,5 @@
 [
   {
-    "id": "AT_121",
-    "name": "Crowd Favorite"
-  },
-  {
     "id": "BGS_001",
     "name": "Nathrezim Overseer"
   },
@@ -68,32 +64,12 @@
     "name": "Piloted Shredder"
   },
   {
-    "id": "BGS_024",
-    "name": "Piloted Sky Golem"
-  },
-  {
-    "id": "BGS_025",
-    "name": "Mounted Raptor"
-  },
-  {
     "id": "BGS_027",
     "name": "Micro Machine"
   },
   {
-    "id": "BGS_028",
-    "name": "Pogo-Hopper"
-  },
-  {
-    "id": "BGS_029",
-    "name": "Shifter Zerus"
-  },
-  {
     "id": "BGS_030",
     "name": "King Bagurgle"
-  },
-  {
-    "id": "BGS_031",
-    "name": "Gentle Megasaur"
   },
   {
     "id": "BGS_032",
@@ -210,10 +186,6 @@
   {
     "id": "BGS_075",
     "name": "Rabid Saurolisk"
-  },
-  {
-    "id": "BGS_077",
-    "name": "Arcane Cannon"
   },
   {
     "id": "BGS_078",
@@ -336,20 +308,12 @@
     "name": "Bigfernal"
   },
   {
-    "id": "BGS_205",
-    "name": "Elistra the Immortal"
-  },
-  {
     "id": "BOT_218",
     "name": "Security Rover"
   },
   {
     "id": "BOT_312",
     "name": "Replicating Menace"
-  },
-  {
-    "id": "BOT_445",
-    "name": "Mecharoo"
   },
   {
     "id": "BOT_537",
@@ -376,10 +340,6 @@
     "name": "Alleycat"
   },
   {
-    "id": "CFM_315t",
-    "name": "Tabbycat"
-  },
-  {
     "id": "CFM_316",
     "name": "Rat Pack"
   },
@@ -398,10 +358,6 @@
   {
     "id": "DAL_575",
     "name": "Khadgar"
-  },
-  {
-    "id": "DAL_742",
-    "name": "Whirlwind Tempest"
   },
   {
     "id": "DMF_533",
@@ -424,20 +380,12 @@
     "name": "Coldlight Seer"
   },
   {
-    "id": "EX1_162",
-    "name": "Dire Wolf Alpha"
-  },
-  {
     "id": "EX1_185",
     "name": "Siegebreaker"
   },
   {
     "id": "EX1_506",
     "name": "Murloc Tidehunter"
-  },
-  {
-    "id": "EX1_506a",
-    "name": "Murloc Scout"
   },
   {
     "id": "EX1_507",
@@ -460,10 +408,6 @@
     "name": "Harvest Golem"
   },
   {
-    "id": "EX1_577",
-    "name": "The Beast"
-  },
-  {
     "id": "FP1_010",
     "name": "Maexxna"
   },
@@ -474,10 +418,6 @@
   {
     "id": "FP1_031",
     "name": "Baron Rivendare"
-  },
-  {
-    "id": "GIL_655",
-    "name": "Festeroot Hulk"
   },
   {
     "id": "GVG_021",
@@ -496,10 +436,6 @@
     "name": "Screwjank Clunker"
   },
   {
-    "id": "GVG_100",
-    "name": "Floating Watcher"
-  },
-  {
     "id": "GVG_106",
     "name": "Junkbot"
   },
@@ -512,10 +448,6 @@
     "name": "Cobalt Scalebane"
   },
   {
-    "id": "ICC_038",
-    "name": "Righteous Protector"
-  },
-  {
     "id": "ICC_807",
     "name": "Strongshell Scavenger"
   },
@@ -526,14 +458,6 @@
   {
     "id": "KAR_005",
     "name": "Kindly Grandmother"
-  },
-  {
-    "id": "KAR_095",
-    "name": "Zoobot"
-  },
-  {
-    "id": "KAR_702",
-    "name": "Menagerie Magician"
   },
   {
     "id": "LOE_077",
@@ -568,40 +492,12 @@
     "name": "Spawn of N'Zoth"
   },
   {
-    "id": "OG_300",
-    "name": "The Boogeymonster"
-  },
-  {
-    "id": "SCH_149",
-    "name": "Argent Braggart"
-  },
-  {
-    "id": "TB_BaconShop_HP_105t",
-    "name": "Fish of N'Zoth"
-  },
-  {
     "id": "TRL_232",
     "name": "Ironhide Direhorn"
   },
   {
-    "id": "TRLA_149",
-    "name": "Ghastcoiler"
-  },
-  {
-    "id": "ULD_179",
-    "name": "Phalanx Commander"
-  },
-  {
     "id": "ULD_217",
     "name": "Micro Mummy"
-  },
-  {
-    "id": "UNG_010",
-    "name": "Sated Threshadon"
-  },
-  {
-    "id": "UNG_037",
-    "name": "Tortollan Shellraiser"
   },
   {
     "id": "UNG_073",
