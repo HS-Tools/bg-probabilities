@@ -8,7 +8,7 @@ const cardsRequest = new XMLHttpRequest();
 
 let patchNumber = '';
 
-const updateMinionsJSFile = (cardsArray) => {
+const updateMinionsJSFile = (cardsArray) => {    
     // Sort cards first on tier, then alphabetically.
     cardsArray = cardsArray.sort((a, b) => {
         if (a.techLevel > b.techLevel) return 1;
@@ -128,28 +128,6 @@ const updateMinionsJSFile = (cardsArray) => {
     );
 };
 
-const updateCardsJsonFile = () => {
-    const cardsArray = JSON.parse(cardsRequest.responseText);
-    
-    // Filter for only BG minions
-    const bgCardsArray = []
-    cardsArray.forEach((card) => {
-        // Retired BG minions don't have a techLevel anymore
-        if(card["techLevel"]) {
-            bgCardsArray.push(card)
-        }
-    });
-
-    jsonfile.writeFile(
-        "./src/assets/cards.json",
-        bgCardsArray.map((card) => ({ id: card["id"], name: card["name"] })),
-        { spaces: 2 },
-        (err) => err ? console.log(err) : console.log("The cards.json has been updated. 🙌 🎉 🙌 🎉")
-    );
-
-    updateMinionsJSFile(bgCardsArray);
-}
-
 latestRequest.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         // Grab the latest patch number from response content.
@@ -165,7 +143,18 @@ latestRequest.onreadystatechange = function() {
 
 cardsRequest.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        updateCardsJsonFile();
+        const cardsArray = JSON.parse(cardsRequest.responseText);
+    
+        // Filter for only BG minions
+        const bgCardsArray = []
+        cardsArray.forEach((card) => {
+            // Retired BG minions don't have a techLevel anymore
+            if(card["techLevel"]) {
+                bgCardsArray.push(card)
+            }
+        });
+
+        updateMinionsJSFile(bgCardsArray);
     }
 };
 
