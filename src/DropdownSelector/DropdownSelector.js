@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Select } from 'antd'
-import cards from '../assets/cards.json';
+import minions from '../minions';
 import './DropdownSelector.module.css';
 import classes from './DropdownSelector.module.css';
 const { Option } = Select;
@@ -8,8 +8,8 @@ const { Option } = Select;
 class Selector extends Component {
     render() {
         let names = this.props.collection.map(item => {
-            const card = cards.find(card => card['name'] === item.Name);
-            const image = card && (<img className={classes.Clip} src={`https://art.hearthstonejson.com/v1/orig/${card.id}.png`} alt={item.Name}/>);
+            const card = minions.find(card => card['Name'] === item.Name);
+            const image = card && (<img className={classes.Clip} src={`https://art.hearthstonejson.com/v1/orig/${card.ID}.png`} alt={item.Name}/>);
 
             return <Option key={item.Name} disabled={Object.keys(this.props.selectedCards).indexOf(item.Name) >= 0} value={item.Name}>
                 {image}
