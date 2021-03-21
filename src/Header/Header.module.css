@@ -7,3 +7,14 @@
 .Logos {
     text-align: right;
 }
+
+.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Title h2 {
+    margin-bottom: 0;
+}
