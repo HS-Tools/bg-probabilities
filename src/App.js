@@ -163,16 +163,17 @@ class App extends Component {
     let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
       let synergies = item.Combined.split(',').map(str => str.trim());
 
-      for (let synergy of synergies) {
-        for (let tribe of missingTribes) {
-          if (tribe === synergy) {
-            this.deleteSelectedCardHandler(item.Name);
-            return false;
-          }
-        }
-      }
+      // If a card has multiple type synergies with it, only remove it if all those type synergies are included inside of missingTribes
+      let typeSynergies = synergies.filter(synergy => tribes.includes(synergy))
 
-      return true;
+      const isoverlap = typeSynergies.every(type => missingTribes.includes(type));
+
+      if (typeSynergies.length > 0 && isoverlap) {
+        this.deleteSelectedCardHandler(item.Name)
+        return false;
+      } else {
+        return true;
+      }
     });
 
     this.setState({ buyableCards: tribeAppropriateMinions });
