@@ -444,6 +444,15 @@ const minions = [
         "ID": "BGS_110"
     },
     {
+        "Name": "Barrens Blacksmith",
+        "Tier": "3",
+        "Attack": "3",
+        "Health": "5",
+        "Cost": "5",
+        "Combined": "",
+        "ID": "BAR_073"
+    },
+    {
         "Name": "Bloodsail Cannoneer",
         "Tier": "3",
         "Attack": "4",
@@ -592,17 +601,6 @@ const minions = [
         "Keywords": "Deathrattle",
         "Combined": "Beast, Deathrattle",
         "ID": "BGS_078"
-    },
-    {
-        "Name": "Piloted Shredder",
-        "Tier": "3",
-        "Attack": "4",
-        "Health": "3",
-        "Cost": "4",
-        "Type": "Mech",
-        "Keywords": "Deathrattle",
-        "Combined": "Mech, Deathrattle",
-        "ID": "BGS_023"
     },
     {
         "Name": "Rat Pack",
@@ -777,7 +775,7 @@ const minions = [
     {
         "Name": "Defender of Argus",
         "Tier": "4",
-        "Attack": "2",
+        "Attack": "3",
         "Health": "3",
         "Cost": "4",
         "Keywords": "Battlecry, Taunt",
