@@ -250,7 +250,8 @@ const minions = [
         "Health": "2",
         "Cost": "3",
         "Keywords": "Battlecry",
-        "Combined": "Battlecry",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_082"
     },
     {
@@ -311,7 +312,7 @@ const minions = [
     {
         "Name": "Pack Leader",
         "Tier": "2",
-        "Attack": "2",
+        "Attack": "3",
         "Health": "3",
         "Cost": "3",
         "Synergy": "Beast",
@@ -373,7 +374,7 @@ const minions = [
         "Name": "Steward of Time",
         "Tier": "2",
         "Attack": "3",
-        "Health": "4",
+        "Health": "3",
         "Cost": "4",
         "Type": "Dragon",
         "Combined": "Dragon",
@@ -449,7 +450,8 @@ const minions = [
         "Attack": "3",
         "Health": "5",
         "Cost": "5",
-        "Combined": "",
+        "Keywords": "Frenzy",
+        "Combined": "Frenzy",
         "ID": "BAR_073"
     },
     {
@@ -594,7 +596,7 @@ const minions = [
     {
         "Name": "Monstrous Macaw",
         "Tier": "3",
-        "Attack": "4",
+        "Attack": "5",
         "Health": "3",
         "Cost": "3",
         "Type": "Beast",
@@ -807,7 +809,7 @@ const minions = [
     {
         "Name": "Herald of Flame",
         "Tier": "4",
-        "Attack": "5",
+        "Attack": "6",
         "Health": "6",
         "Cost": "5",
         "Type": "Dragon",
@@ -854,7 +856,8 @@ const minions = [
         "Health": "3",
         "Cost": "5",
         "Keywords": "Battlecry",
-        "Combined": "Battlecry",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_083"
     },
     {
@@ -959,7 +962,7 @@ const minions = [
         "Name": "Wildfire Elemental",
         "Tier": "4",
         "Attack": "7",
-        "Health": "3",
+        "Health": "4",
         "Cost": "6",
         "Type": "Elemental",
         "Combined": "Elemental",
@@ -1058,8 +1061,8 @@ const minions = [
         "Attack": "2",
         "Health": "2",
         "Cost": "6",
-        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "ID": "BGS_009"
     },
     {
@@ -1103,7 +1106,8 @@ const minions = [
         "Health": "4",
         "Cost": "5",
         "Legendary": "Y",
-        "Combined": "",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "ID": "BGS_202"
     },
     {
@@ -1201,9 +1205,9 @@ const minions = [
         "Attack": "6",
         "Health": "6",
         "Cost": "8",
-        "Type": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate",
+        "Type": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "Keywords": "Battlecry",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Battlecry",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_069"
     },
     {
@@ -1299,7 +1303,7 @@ const minions = [
     {
         "Name": "Lieutenant Garr",
         "Tier": "6",
-        "Attack": "5",
+        "Attack": "8",
         "Health": "1",
         "Cost": "8",
         "Legendary": "Y",
@@ -1311,8 +1315,8 @@ const minions = [
     {
         "Name": "Lil' Rag",
         "Tier": "6",
-        "Attack": "4",
-        "Health": "4",
+        "Attack": "6",
+        "Health": "6",
         "Cost": "4",
         "Legendary": "Y",
         "Type": "Elemental",
