@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const { XMLHttpRequest } = require("xmlhttprequest");
-const jsonfile = require('jsonfile');
 const fs = require('fs');
 
 const latestRequest = new XMLHttpRequest();
@@ -24,17 +23,20 @@ const updateMinionsJSFile = (cardsArray) => {
         ELEMENTAL: "Elemental",
         MECHANICAL: "Mech",
         MURLOC: "Murloc",
-        PIRATE: "Pirate"
+        PIRATE: "Pirate",
+        QUILBOAR: "Quilboar"
     };
-    typeMap["ALL"] = Object.values(typeMap).join(', ');
+    typeMap["ALL"] = Object.values(typeMap).join(", ");
 
     const keywordsMap = {
         BATTLECRY: "Battlecry",
+        BLOOD_GEM: "Blood Gem",
         CHARGE: "Charge",
         DEATHRATTLE: "Deathrattle",
         DISCOVER: "Discover",
         DIVINE_SHIELD: "Divine Shield",
         FREEZE: "Freeze",
+        FRENZY: "Frenzy",
         IMMUNE: "Immune",
         MODULAR: "Magnetic",
         OVERKILL: "Overkill",
@@ -77,9 +79,8 @@ const updateMinionsJSFile = (cardsArray) => {
         if (text && !type) {
             synergies = text.match(synergyRegex) || [];
 
-            // Check for Lightfang
-            const isLightFang = text.match(/each minion type/gi);
-            if (isLightFang) {
+            const isMenagerie = text.match(/each[\r\n\s]*minion type|different[\r\n\s]*minion type/gi);
+            if (isMenagerie) {
                 synergies.push(typeMap["ALL"]);
             }
 
@@ -90,8 +91,20 @@ const updateMinionsJSFile = (cardsArray) => {
         return synergies;
     };
 
+    const cardNames = {};
     let formattedMinions = cardsArray.map((card) => {
-        const type = typeMap[card["race"]];
+        // Return null if card with same name already has been formatted
+        if (cardNames[card.name]) {
+            return null;
+        } else {
+            cardNames[card.name] = true;
+        };
+
+        let type = typeMap[card["race"]];
+        //Agamaggan, The Great Boar is a beast but is in the Quilboar bucket
+        if (card.name === "Agamaggan, The Great Boar") {
+            type = typeMap["QUILBOAR"];
+        }
         const keywords = getKeywords(card);
         const synergies = getSynergies(card);
         // Filter out duplicates between keywords and synergies.
@@ -121,6 +134,9 @@ const updateMinionsJSFile = (cardsArray) => {
         return formattedMinion;
     });
 
+    // Filter out null values
+    formattedMinions = formattedMinions.filter(Boolean);
+
     fs.writeFile(
         "./src/minions.js",
         `const minions = ${JSON.stringify(formattedMinions, null, 4)}\n\nexport default minions;`,
@@ -129,7 +145,7 @@ const updateMinionsJSFile = (cardsArray) => {
 };
 
 latestRequest.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
         // Grab the latest patch number from response content.
         patchNumber = this.responseText.match(/v1\/(\d+)/g)[0].substring(3);
 
@@ -142,7 +158,7 @@ latestRequest.onreadystatechange = function() {
 };
 
 cardsRequest.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
         const cardsArray = JSON.parse(cardsRequest.responseText);
     
         // Filter for only BG minions
