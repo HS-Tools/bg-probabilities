@@ -96,6 +96,17 @@ const minions = [
         "ID": "EX1_506"
     },
     {
+        "Name": "Razorfen Geomancer",
+        "Tier": "1",
+        "Attack": "3",
+        "Health": "1",
+        "Cost": "1",
+        "Type": "Quilboar",
+        "Keywords": "Battlecry",
+        "Combined": "Quilboar, Battlecry",
+        "ID": "BG20_100"
+    },
+    {
         "Name": "Red Whelp",
         "Tier": "1",
         "Attack": "1",
@@ -157,6 +168,16 @@ const minions = [
         "Type": "Elemental",
         "Combined": "Elemental",
         "ID": "BGS_115"
+    },
+    {
+        "Name": "Sun-Bacon Relaxer",
+        "Tier": "1",
+        "Attack": "1",
+        "Health": "2",
+        "Cost": "3",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_301"
     },
     {
         "Name": "Vulgar Homunculus",
@@ -250,7 +271,8 @@ const minions = [
         "Health": "2",
         "Cost": "3",
         "Keywords": "Battlecry",
-        "Combined": "Battlecry",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_082"
     },
     {
@@ -311,7 +333,7 @@ const minions = [
     {
         "Name": "Pack Leader",
         "Tier": "2",
-        "Attack": "2",
+        "Attack": "3",
         "Health": "3",
         "Cost": "3",
         "Synergy": "Beast",
@@ -329,6 +351,16 @@ const minions = [
         "ID": "BGS_120"
     },
     {
+        "Name": "Prophet of the Boar",
+        "Tier": "2",
+        "Attack": "3",
+        "Health": "3",
+        "Cost": "3",
+        "Synergy": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_203"
+    },
+    {
         "Name": "Rabid Saurolisk",
         "Tier": "2",
         "Attack": "3",
@@ -338,6 +370,17 @@ const minions = [
         "Keywords": "Deathrattle",
         "Combined": "Beast, Deathrattle",
         "ID": "BGS_075"
+    },
+    {
+        "Name": "Roadboar",
+        "Tier": "2",
+        "Attack": "2",
+        "Health": "4",
+        "Cost": "3",
+        "Type": "Quilboar",
+        "Keywords": "Frenzy",
+        "Combined": "Quilboar, Frenzy",
+        "ID": "BG20_101"
     },
     {
         "Name": "Selfless Hero",
@@ -373,7 +416,7 @@ const minions = [
         "Name": "Steward of Time",
         "Tier": "2",
         "Attack": "3",
-        "Health": "4",
+        "Health": "3",
         "Cost": "4",
         "Type": "Dragon",
         "Combined": "Dragon",
@@ -388,6 +431,17 @@ const minions = [
         "Keywords": "Taunt",
         "Combined": "Taunt",
         "ID": "BGS_201"
+    },
+    {
+        "Name": "Tough Tusk",
+        "Tier": "2",
+        "Attack": "4",
+        "Health": "3",
+        "Cost": "3",
+        "Type": "Quilboar",
+        "Keywords": "Divine Shield",
+        "Combined": "Quilboar, Divine Shield",
+        "ID": "BG20_102"
     },
     {
         "Name": "Unstable Ghoul",
@@ -444,12 +498,23 @@ const minions = [
         "ID": "BGS_110"
     },
     {
+        "Name": "Bannerboar",
+        "Tier": "3",
+        "Attack": "2",
+        "Health": "5",
+        "Cost": "3",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_201"
+    },
+    {
         "Name": "Barrens Blacksmith",
         "Tier": "3",
         "Attack": "3",
         "Health": "5",
         "Cost": "5",
-        "Combined": "",
+        "Keywords": "Frenzy",
+        "Combined": "Frenzy",
         "ID": "BAR_073"
     },
     {
@@ -462,6 +527,16 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Pirate, Battlecry",
         "ID": "BGS_053"
+    },
+    {
+        "Name": "Bristleback Brute",
+        "Tier": "3",
+        "Attack": "3",
+        "Health": "3",
+        "Cost": "5",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_103"
     },
     {
         "Name": "Bronze Warden",
@@ -594,13 +669,24 @@ const minions = [
     {
         "Name": "Monstrous Macaw",
         "Tier": "3",
-        "Attack": "4",
+        "Attack": "5",
         "Health": "3",
         "Cost": "3",
         "Type": "Beast",
         "Keywords": "Deathrattle",
         "Combined": "Beast, Deathrattle",
         "ID": "BGS_078"
+    },
+    {
+        "Name": "Necrolyte",
+        "Tier": "3",
+        "Attack": "3",
+        "Health": "3",
+        "Cost": "3",
+        "Type": "Quilboar",
+        "Keywords": "Battlecry",
+        "Combined": "Quilboar, Battlecry",
+        "ID": "BG20_202"
     },
     {
         "Name": "Rat Pack",
@@ -689,6 +775,17 @@ const minions = [
         "ID": "BGS_122"
     },
     {
+        "Name": "Thorncaller",
+        "Tier": "3",
+        "Attack": "4",
+        "Health": "3",
+        "Cost": "5",
+        "Type": "Quilboar",
+        "Keywords": "Battlecry, Deathrattle",
+        "Combined": "Quilboar, Battlecry, Deathrattle",
+        "ID": "BG20_105"
+    },
+    {
         "Name": "Twilight Emissary",
         "Tier": "3",
         "Attack": "4",
@@ -740,6 +837,17 @@ const minions = [
         "Keywords": "Divine Shield",
         "Combined": "Divine Shield",
         "ID": "ICC_858"
+    },
+    {
+        "Name": "Bonker",
+        "Tier": "4",
+        "Attack": "4",
+        "Health": "7",
+        "Cost": "5",
+        "Type": "Quilboar",
+        "Keywords": "Windfury",
+        "Combined": "Quilboar, Windfury",
+        "ID": "BG20_104"
     },
     {
         "Name": "Cave Hydra",
@@ -795,6 +903,17 @@ const minions = [
         "ID": "BGS_067"
     },
     {
+        "Name": "Dynamic Duo",
+        "Tier": "4",
+        "Attack": "5",
+        "Health": "6",
+        "Cost": "4",
+        "Type": "Quilboar",
+        "Keywords": "Taunt",
+        "Combined": "Quilboar, Taunt",
+        "ID": "BG20_207"
+    },
+    {
         "Name": "Goldgrubber",
         "Tier": "4",
         "Attack": "2",
@@ -805,9 +924,19 @@ const minions = [
         "ID": "BGS_066"
     },
     {
+        "Name": "Groundshaker",
+        "Tier": "4",
+        "Attack": "2",
+        "Health": "6",
+        "Cost": "6",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_106"
+    },
+    {
         "Name": "Herald of Flame",
         "Tier": "4",
-        "Attack": "5",
+        "Attack": "6",
         "Health": "6",
         "Cost": "5",
         "Type": "Dragon",
@@ -854,7 +983,8 @@ const minions = [
         "Health": "3",
         "Cost": "5",
         "Keywords": "Battlecry",
-        "Combined": "Battlecry",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_083"
     },
     {
@@ -959,11 +1089,33 @@ const minions = [
         "Name": "Wildfire Elemental",
         "Tier": "4",
         "Attack": "7",
-        "Health": "3",
+        "Health": "4",
         "Cost": "6",
         "Type": "Elemental",
         "Combined": "Elemental",
         "ID": "BGS_126"
+    },
+    {
+        "Name": "Agamaggan, the Great Boar",
+        "Tier": "5",
+        "Attack": "6",
+        "Health": "6",
+        "Cost": "5",
+        "Legendary": "Y",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_205"
+    },
+    {
+        "Name": "Aggem Thorncurse",
+        "Tier": "5",
+        "Attack": "3",
+        "Health": "6",
+        "Cost": "6",
+        "Legendary": "Y",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_302"
     },
     {
         "Name": "Annihilan Battlemaster",
@@ -997,6 +1149,17 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Battlecry",
         "ID": "LOE_077"
+    },
+    {
+        "Name": "Bristleback Knight",
+        "Tier": "5",
+        "Attack": "4",
+        "Health": "8",
+        "Cost": "5",
+        "Type": "Quilboar",
+        "Keywords": "Divine Shield, Frenzy, Windfury",
+        "Combined": "Quilboar, Divine Shield, Frenzy, Windfury",
+        "ID": "BG20_204"
     },
     {
         "Name": "Cap'n Hoggarr",
@@ -1058,8 +1221,8 @@ const minions = [
         "Attack": "2",
         "Health": "2",
         "Cost": "6",
-        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "ID": "BGS_009"
     },
     {
@@ -1103,7 +1266,8 @@ const minions = [
         "Health": "4",
         "Cost": "5",
         "Legendary": "Y",
-        "Combined": "",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "ID": "BGS_202"
     },
     {
@@ -1201,10 +1365,32 @@ const minions = [
         "Attack": "6",
         "Health": "6",
         "Cost": "8",
-        "Type": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate",
+        "Type": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "Keywords": "Battlecry",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Battlecry",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_069"
+    },
+    {
+        "Name": "Captain Flat Tusk",
+        "Tier": "6",
+        "Attack": "9",
+        "Health": "6",
+        "Cost": "6",
+        "Legendary": "Y",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_206"
+    },
+    {
+        "Name": "Charlga",
+        "Tier": "6",
+        "Attack": "7",
+        "Health": "7",
+        "Cost": "6",
+        "Legendary": "Y",
+        "Type": "Quilboar",
+        "Combined": "Quilboar",
+        "ID": "BG20_303"
     },
     {
         "Name": "Dread Admiral Eliza",
@@ -1299,7 +1485,7 @@ const minions = [
     {
         "Name": "Lieutenant Garr",
         "Tier": "6",
-        "Attack": "5",
+        "Attack": "8",
         "Health": "1",
         "Cost": "8",
         "Legendary": "Y",
@@ -1311,8 +1497,8 @@ const minions = [
     {
         "Name": "Lil' Rag",
         "Tier": "6",
-        "Attack": "4",
-        "Health": "4",
+        "Attack": "6",
+        "Health": "6",
         "Cost": "4",
         "Legendary": "Y",
         "Type": "Elemental",
