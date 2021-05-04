@@ -30,7 +30,6 @@ const updateMinionsJSFile = (cardsArray) => {
 
     const keywordsMap = {
         BATTLECRY: "Battlecry",
-        BLOOD_GEM: "Blood Gem",
         CHARGE: "Charge",
         DEATHRATTLE: "Deathrattle",
         DISCOVER: "Discover",
@@ -101,9 +100,9 @@ const updateMinionsJSFile = (cardsArray) => {
         };
 
         let type = typeMap[card["race"]];
-        //Agamaggan, The Great Boar is a beast but is in the Quilboar bucket
-        if (card.name === "Agamaggan, The Great Boar") {
-            type = typeMap["QUILBOAR"];
+        //Agamaggan, the Great Boar is a beast but is in the Quilboar bucket
+        if (card.name === "Agamaggan, the Great Boar") {
+        type = typeMap["QUILBOAR"];
         }
         const keywords = getKeywords(card);
         const synergies = getSynergies(card);
