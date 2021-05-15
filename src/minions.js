@@ -353,7 +353,7 @@ const minions = [
     {
         "Name": "Prophet of the Boar",
         "Tier": "2",
-        "Attack": "3",
+        "Attack": "2",
         "Health": "3",
         "Cost": "3",
         "Synergy": "Quilboar",
@@ -374,7 +374,7 @@ const minions = [
     {
         "Name": "Roadboar",
         "Tier": "2",
-        "Attack": "2",
+        "Attack": "1",
         "Health": "4",
         "Cost": "3",
         "Type": "Quilboar",
@@ -500,22 +500,12 @@ const minions = [
     {
         "Name": "Bannerboar",
         "Tier": "3",
-        "Attack": "2",
-        "Health": "5",
+        "Attack": "1",
+        "Health": "4",
         "Cost": "3",
         "Type": "Quilboar",
         "Combined": "Quilboar",
         "ID": "BG20_201"
-    },
-    {
-        "Name": "Barrens Blacksmith",
-        "Tier": "3",
-        "Attack": "3",
-        "Health": "5",
-        "Cost": "5",
-        "Keywords": "Frenzy",
-        "Combined": "Frenzy",
-        "ID": "BAR_073"
     },
     {
         "Name": "Bloodsail Cannoneer",
@@ -841,7 +831,7 @@ const minions = [
     {
         "Name": "Bonker",
         "Tier": "4",
-        "Attack": "4",
+        "Attack": "3",
         "Health": "7",
         "Cost": "5",
         "Type": "Quilboar",
@@ -905,8 +895,8 @@ const minions = [
     {
         "Name": "Dynamic Duo",
         "Tier": "4",
-        "Attack": "5",
-        "Health": "6",
+        "Attack": "3",
+        "Health": "4",
         "Cost": "4",
         "Type": "Quilboar",
         "Keywords": "Taunt",
@@ -1384,8 +1374,8 @@ const minions = [
     {
         "Name": "Charlga",
         "Tier": "6",
-        "Attack": "7",
-        "Health": "7",
+        "Attack": "4",
+        "Health": "4",
         "Cost": "6",
         "Legendary": "Y",
         "Type": "Quilboar",
