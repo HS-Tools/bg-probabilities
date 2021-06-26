@@ -935,6 +935,16 @@ const minions = [
         "ID": "BGS_032"
     },
     {
+        "Name": "Hexruin Marauder",
+        "Tier": "4",
+        "Attack": "3",
+        "Health": "5",
+        "Cost": "4",
+        "Type": "Demon",
+        "Combined": "Demon",
+        "ID": "BG20_210"
+    },
+    {
         "Name": "Junkbot",
         "Tier": "4",
         "Attack": "1",
@@ -1041,17 +1051,6 @@ const minions = [
         "Keywords": "Taunt",
         "Combined": "Mech, Taunt",
         "ID": "BOT_218"
-    },
-    {
-        "Name": "Siegebreaker",
-        "Tier": "4",
-        "Attack": "5",
-        "Health": "8",
-        "Cost": "7",
-        "Type": "Demon",
-        "Keywords": "Taunt",
-        "Combined": "Demon, Taunt",
-        "ID": "EX1_185"
     },
     {
         "Name": "Toxfin",
@@ -1192,6 +1191,17 @@ const minions = [
         "Keywords": "Overkill",
         "Combined": "Beast, Overkill",
         "ID": "TRL_232"
+    },
+    {
+        "Name": "Kangor's Apprentice",
+        "Tier": "5",
+        "Attack": "3",
+        "Health": "6",
+        "Cost": "9",
+        "Keywords": "Deathrattle",
+        "Synergy": "Mech",
+        "Combined": "Mech, Deathrattle",
+        "ID": "BGS_012"
     },
     {
         "Name": "King Bagurgle",
@@ -1460,17 +1470,6 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Dragon, Battlecry",
         "ID": "BGS_041"
-    },
-    {
-        "Name": "Kangor's Apprentice",
-        "Tier": "6",
-        "Attack": "4",
-        "Health": "8",
-        "Cost": "9",
-        "Keywords": "Deathrattle",
-        "Synergy": "Mech",
-        "Combined": "Mech, Deathrattle",
-        "ID": "BGS_012"
     },
     {
         "Name": "Lieutenant Garr",
