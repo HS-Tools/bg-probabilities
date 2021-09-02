@@ -29,6 +29,9 @@ const updateMinionsJSFile = (cardsArray) => {
     typeMap["ALL"] = Object.values(typeMap).join(", ");
 
     const keywordsMap = {
+        ADAPT: "Adapt",
+        AURA: "Aura",
+        AVENGE: "Avenge",
         BATTLECRY: "Battlecry",
         CHARGE: "Charge",
         DEATHRATTLE: "Deathrattle",
