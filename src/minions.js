@@ -1374,17 +1374,6 @@ const minions = [
         "ID": "BGS_069"
     },
     {
-        "Name": "Archdruid Hamuul",
-        "Tier": "6",
-        "Attack": "4",
-        "Health": "4",
-        "Cost": "6",
-        "Legendary": "Y",
-        "Keywords": "Battlecry",
-        "Combined": "Battlecry",
-        "ID": "BG20_304"
-    },
-    {
         "Name": "Captain Flat Tusk",
         "Tier": "6",
         "Attack": "9",
