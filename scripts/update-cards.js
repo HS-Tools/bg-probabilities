@@ -166,9 +166,8 @@ cardsRequest.onreadystatechange = function() {
         // Filter for only BG minions
         const bgCardsArray = []
         cardsArray.forEach((card) => {
-            // Retired BG minions don't have a techLevel anymore
-            if(card["techLevel"]) {
-                bgCardsArray.push(card)
+            if (card["isBattlegroundsPoolMinion"]) {
+              bgCardsArray.push(card);
             }
         });
 
