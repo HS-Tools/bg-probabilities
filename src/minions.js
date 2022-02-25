@@ -142,7 +142,7 @@ const minions = [
     {
         "Name": "Scallywag",
         "Tier": "1",
-        "Attack": "2",
+        "Attack": "3",
         "Health": "1",
         "Cost": "1",
         "Type": "Pirate",
@@ -189,16 +189,6 @@ const minions = [
         "Synergy": "Demon",
         "Combined": "Demon",
         "ID": "BGS_004"
-    },
-    {
-        "Name": "Defiant Shipwright",
-        "Tier": "2",
-        "Attack": "3",
-        "Health": "4",
-        "Cost": "1",
-        "Synergy": "Pirate",
-        "Combined": "Pirate",
-        "ID": "BG21_018"
     },
     {
         "Name": "Freedealing Gambler",
@@ -395,7 +385,6 @@ const minions = [
     },
     {
         "Name": "Sewer Rat",
-<<<<<<< HEAD
         "Tier": "2",
         "Attack": "3",
         "Health": "2",
@@ -407,16 +396,14 @@ const minions = [
     },
     {
         "Name": "Southsea Captain",
-=======
->>>>>>> 84170064e7f16b4bdcc84211494f93d72e4346f6
         "Tier": "2",
         "Attack": "3",
-        "Health": "2",
-        "Cost": "2",
-        "Type": "Beast",
-        "Keywords": "Deathrattle, Taunt",
-        "Combined": "Beast, Deathrattle, Taunt",
-        "ID": "BG19_010"
+        "Health": "3",
+        "Cost": "3",
+        "Type": "Pirate",
+        "Keywords": "Aura",
+        "Combined": "Pirate, Aura",
+        "ID": "NEW1_027"
     },
     {
         "Name": "Spawn of N'Zoth",
@@ -431,7 +418,7 @@ const minions = [
     {
         "Name": "Tough Tusk",
         "Tier": "2",
-        "Attack": "4",
+        "Attack": "5",
         "Health": "3",
         "Cost": "3",
         "Type": "Quilboar",
@@ -453,11 +440,7 @@ const minions = [
         "Name": "Whelp Smuggler",
         "Tier": "2",
         "Attack": "2",
-<<<<<<< HEAD
         "Health": "5",
-=======
-        "Health": "4",
->>>>>>> 84170064e7f16b4bdcc84211494f93d72e4346f6
         "Cost": "2",
         "Synergy": "Dragon",
         "Combined": "Dragon",
@@ -466,8 +449,8 @@ const minions = [
     {
         "Name": "Yo-Ho-Ogre",
         "Tier": "2",
-        "Attack": "2",
-        "Health": "6",
+        "Attack": "3",
+        "Health": "5",
         "Cost": "6",
         "Type": "Pirate",
         "Keywords": "Taunt",
@@ -501,14 +484,9 @@ const minions = [
         "Attack": "2",
         "Health": "4",
         "Cost": "3",
-<<<<<<< HEAD
-        "Synergy": "Beast",
-        "Combined": "Beast",
-=======
         "Keywords": "Avenge",
         "Synergy": "Beast",
         "Combined": "Beast, Avenge",
->>>>>>> 84170064e7f16b4bdcc84211494f93d72e4346f6
         "ID": "BG21_002"
     },
     {
@@ -524,9 +502,9 @@ const minions = [
     {
         "Name": "Bristleback Brute",
         "Tier": "3",
-        "Attack": "4",
-        "Health": "4",
-        "Cost": "5",
+        "Attack": "3",
+        "Health": "3",
+        "Cost": "3",
         "Type": "Quilboar",
         "Combined": "Quilboar",
         "ID": "BG20_103"
@@ -586,6 +564,17 @@ const minions = [
         "ID": "BGS_071"
     },
     {
+        "Name": "Drakonid Enforcer",
+        "Tier": "3",
+        "Attack": "2",
+        "Health": "4",
+        "Cost": "6",
+        "Type": "Dragon",
+        "Keywords": "Divine Shield",
+        "Combined": "Dragon, Divine Shield",
+        "ID": "BGS_067"
+    },
+    {
         "Name": "Felfin Navigator",
         "Tier": "3",
         "Attack": "4",
@@ -626,8 +615,8 @@ const minions = [
         "Cost": "4",
         "Legendary": "Y",
         "Type": "Demon",
-        "Keywords": "Immune",
-        "Combined": "Demon, Immune",
+        "Keywords": "Aura, Immune",
+        "Combined": "Demon, Aura, Immune",
         "ID": "BG21_039"
     },
     {
@@ -650,17 +639,6 @@ const minions = [
         "Keywords": "Deathrattle",
         "Combined": "Beast, Deathrattle",
         "ID": "BGS_078"
-    },
-    {
-        "Name": "Necrolyte",
-        "Tier": "3",
-        "Attack": "3",
-        "Health": "3",
-        "Cost": "3",
-        "Type": "Quilboar",
-        "Keywords": "Battlecry",
-        "Combined": "Quilboar, Battlecry",
-        "ID": "BG20_202"
     },
     {
         "Name": "Rat Pack",
@@ -771,15 +749,15 @@ const minions = [
         "ID": "BG21_010"
     },
     {
-        "Name": "Tarecgosa",
+        "Name": "Thorncaller",
         "Tier": "3",
         "Attack": "4",
-        "Health": "4",
-        "Cost": "3",
-        "Legendary": "Y",
-        "Type": "Dragon",
-        "Combined": "Dragon",
-        "ID": "BG21_015"
+        "Health": "3",
+        "Cost": "5",
+        "Type": "Quilboar",
+        "Keywords": "Battlecry, Deathrattle",
+        "Combined": "Quilboar, Battlecry, Deathrattle",
+        "ID": "BG20_105"
     },
     {
         "Name": "Twilight Emissary",
@@ -858,7 +836,7 @@ const minions = [
     {
         "Name": "Dazzling Lightspawn",
         "Tier": "4",
-        "Attack": "4",
+        "Attack": "2",
         "Health": "5",
         "Cost": "4",
         "Type": "Elemental",
@@ -878,21 +856,10 @@ const minions = [
         "ID": "EX1_093"
     },
     {
-        "Name": "Drakonid Enforcer",
-        "Tier": "4",
-        "Attack": "3",
-        "Health": "6",
-        "Cost": "6",
-        "Type": "Dragon",
-        "Keywords": "Divine Shield",
-        "Combined": "Dragon, Divine Shield",
-        "ID": "BGS_067"
-    },
-    {
         "Name": "Dynamic Duo",
         "Tier": "4",
-        "Attack": "4",
-        "Health": "5",
+        "Attack": "5",
+        "Health": "6",
         "Cost": "4",
         "Type": "Quilboar",
         "Keywords": "Taunt",
@@ -936,8 +903,9 @@ const minions = [
         "Attack": "2",
         "Health": "6",
         "Cost": "3",
+        "Keywords": "Avenge",
         "Synergy": "Demon",
-        "Combined": "Demon",
+        "Combined": "Demon, Avenge",
         "ID": "BG21_007"
     },
     {
@@ -965,7 +933,7 @@ const minions = [
     {
         "Name": "Mechano-Tank",
         "Tier": "4",
-        "Attack": "6",
+        "Attack": "5",
         "Health": "3",
         "Cost": "4",
         "Type": "Mech",
@@ -983,6 +951,17 @@ const minions = [
         "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
         "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar, Battlecry",
         "ID": "BGS_083"
+    },
+    {
+        "Name": "Necrolyte",
+        "Tier": "4",
+        "Attack": "3",
+        "Health": "3",
+        "Cost": "3",
+        "Type": "Quilboar",
+        "Keywords": "Battlecry",
+        "Combined": "Quilboar, Battlecry",
+        "ID": "BG20_202"
     },
     {
         "Name": "Peggy Brittlebone",
@@ -1018,8 +997,8 @@ const minions = [
     {
         "Name": "Prized Promo-Drake",
         "Tier": "4",
-        "Attack": "5",
-        "Health": "5",
+        "Attack": "3",
+        "Health": "3",
         "Cost": "4",
         "Type": "Dragon",
         "Combined": "Dragon",
@@ -1050,7 +1029,7 @@ const minions = [
         "Name": "Ripsnarl Captain",
         "Tier": "4",
         "Attack": "4",
-        "Health": "5",
+        "Health": "6",
         "Cost": "4",
         "Type": "Pirate",
         "Combined": "Pirate",
@@ -1066,6 +1045,17 @@ const minions = [
         "Keywords": "Deathrattle",
         "Combined": "Beast, Deathrattle",
         "ID": "EX1_534"
+    },
+    {
+        "Name": "Tarecgosa",
+        "Tier": "4",
+        "Attack": "4",
+        "Health": "4",
+        "Cost": "3",
+        "Legendary": "Y",
+        "Type": "Dragon",
+        "Combined": "Dragon",
+        "ID": "BG21_015"
     },
     {
         "Name": "Wildfire Elemental",
@@ -1144,17 +1134,6 @@ const minions = [
         "ID": "LOE_077"
     },
     {
-        "Name": "Bristleback Knight",
-        "Tier": "5",
-        "Attack": "4",
-        "Health": "8",
-        "Cost": "5",
-        "Type": "Quilboar",
-        "Keywords": "Divine Shield, Frenzy, Windfury",
-        "Combined": "Quilboar, Divine Shield, Frenzy, Windfury",
-        "ID": "BG20_204"
-    },
-    {
         "Name": "Cap'n Hoggarr",
         "Tier": "5",
         "Attack": "6",
@@ -1178,7 +1157,7 @@ const minions = [
     {
         "Name": "Holy Mecherel",
         "Tier": "5",
-        "Attack": "8",
+        "Attack": "6",
         "Health": "4",
         "Cost": "4",
         "Type": "Mech",
@@ -1262,6 +1241,17 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Dragon, Battlecry",
         "ID": "BGS_043"
+    },
+    {
+        "Name": "Mythrax the Unraveler",
+        "Tier": "5",
+        "Attack": "4",
+        "Health": "4",
+        "Cost": "5",
+        "Legendary": "Y",
+        "Synergy": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Pirate, Quilboar",
+        "ID": "BGS_202"
     },
     {
         "Name": "Nomi, Kitchen Nightmare",
@@ -1508,17 +1498,6 @@ const minions = [
         "ID": "FP1_010"
     },
     {
-        "Name": "Master of Realities",
-        "Tier": "6",
-        "Attack": "6",
-        "Health": "6",
-        "Cost": "6",
-        "Keywords": "Taunt",
-        "Synergy": "Taunt, Elemental",
-        "Combined": "Taunt, Elemental",
-        "ID": "BG21_036"
-    },
-    {
         "Name": "Nadina the Red",
         "Tier": "6",
         "Attack": "7",
@@ -1543,8 +1522,8 @@ const minions = [
     {
         "Name": "Omega Buster",
         "Tier": "6",
-        "Attack": "6",
-        "Health": "6",
+        "Attack": "5",
+        "Health": "5",
         "Cost": "6",
         "Type": "Mech",
         "Keywords": "Deathrattle",
