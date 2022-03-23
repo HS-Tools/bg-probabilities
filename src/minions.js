@@ -1,15 +1,5 @@
 const minions = [
     {
-        "Name": "Acolyte of C'Thun",
-        "Tier": "1",
-        "Attack": "2",
-        "Health": "2",
-        "Cost": "1",
-        "Keywords": "Reborn, Taunt",
-        "Combined": "Reborn, Taunt",
-        "ID": "BGS_106"
-    },
-    {
         "Name": "Alleycat",
         "Tier": "1",
         "Attack": "1",
@@ -73,17 +63,6 @@ const minions = [
         "Keywords": "Reborn",
         "Combined": "Mech, Reborn",
         "ID": "ULD_217"
-    },
-    {
-        "Name": "Murloc Tidehunter",
-        "Tier": "1",
-        "Attack": "2",
-        "Health": "1",
-        "Cost": "2",
-        "Type": "Murloc",
-        "Keywords": "Battlecry",
-        "Combined": "Murloc, Battlecry",
-        "ID": "EX1_506"
     },
     {
         "Name": "Pupbot",
@@ -181,6 +160,16 @@ const minions = [
         "ID": "BG20_301"
     },
     {
+        "Name": "Swampstriker",
+        "Tier": "1",
+        "Attack": "1",
+        "Health": "4",
+        "Cost": "1",
+        "Type": "Murloc",
+        "Combined": "Murloc",
+        "ID": "BG22_401"
+    },
+    {
         "Name": "Wrath Weaver",
         "Tier": "1",
         "Attack": "1",
@@ -189,6 +178,16 @@ const minions = [
         "Synergy": "Demon",
         "Combined": "Demon",
         "ID": "BGS_004"
+    },
+    {
+        "Name": "Acolyte of C'Thun",
+        "Tier": "2",
+        "Attack": "2",
+        "Health": "3",
+        "Cost": "1",
+        "Keywords": "Reborn, Taunt",
+        "Combined": "Reborn, Taunt",
+        "ID": "BGS_106"
     },
     {
         "Name": "Freedealing Gambler",
@@ -310,18 +309,6 @@ const minions = [
         "ID": "BGS_001"
     },
     {
-        "Name": "Old Murk-Eye",
-        "Tier": "2",
-        "Attack": "2",
-        "Health": "4",
-        "Cost": "4",
-        "Legendary": "Y",
-        "Type": "Murloc",
-        "Keywords": "Charge",
-        "Combined": "Murloc, Charge",
-        "ID": "EX1_062"
-    },
-    {
         "Name": "Party Elemental",
         "Tier": "2",
         "Attack": "3",
@@ -414,6 +401,17 @@ const minions = [
         "Keywords": "Deathrattle",
         "Combined": "Deathrattle",
         "ID": "OG_256"
+    },
+    {
+        "Name": "Tad",
+        "Tier": "2",
+        "Attack": "2",
+        "Health": "4",
+        "Cost": "2",
+        "Legendary": "Y",
+        "Type": "Murloc",
+        "Combined": "Murloc",
+        "ID": "BG22_202"
     },
     {
         "Name": "Tough Tusk",
@@ -733,8 +731,8 @@ const minions = [
         "Health": "4",
         "Cost": "4",
         "Type": "Elemental",
-        "Keywords": "Battlecry, Freeze",
-        "Combined": "Elemental, Battlecry, Freeze",
+        "Keywords": "Battlecry",
+        "Combined": "Elemental, Battlecry",
         "ID": "BGS_122"
     },
     {
@@ -1005,6 +1003,17 @@ const minions = [
         "ID": "BG21_014"
     },
     {
+        "Name": "Reanimating Rattler",
+        "Tier": "4",
+        "Attack": "5",
+        "Health": "3",
+        "Cost": "4",
+        "Type": "Beast",
+        "Keywords": "Battlecry, Reborn",
+        "Combined": "Beast, Battlecry, Reborn",
+        "ID": "BG21_003"
+    },
+    {
         "Name": "Recycling Wraith",
         "Tier": "4",
         "Attack": "5",
@@ -1045,6 +1054,17 @@ const minions = [
         "Keywords": "Deathrattle",
         "Combined": "Beast, Deathrattle",
         "ID": "EX1_534"
+    },
+    {
+        "Name": "Strongshell Scavenger",
+        "Tier": "4",
+        "Attack": "2",
+        "Health": "3",
+        "Cost": "4",
+        "Keywords": "Battlecry, Taunt",
+        "Synergy": "Taunt",
+        "Combined": "Taunt, Battlecry",
+        "ID": "ICC_807"
     },
     {
         "Name": "Tarecgosa",
@@ -1110,6 +1130,17 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Demon, Battlecry",
         "ID": "BGS_010"
+    },
+    {
+        "Name": "Baby Krush",
+        "Tier": "5",
+        "Attack": "7",
+        "Health": "7",
+        "Cost": "0",
+        "Legendary": "Y",
+        "Type": "Beast",
+        "Combined": "Beast",
+        "ID": "BG22_001"
     },
     {
         "Name": "Baron Rivendare",
@@ -1287,17 +1318,6 @@ const minions = [
         "ID": "BGS_036"
     },
     {
-        "Name": "Reanimating Rattler",
-        "Tier": "5",
-        "Attack": "7",
-        "Health": "3",
-        "Cost": "4",
-        "Type": "Beast",
-        "Keywords": "Battlecry, Reborn",
-        "Combined": "Beast, Battlecry, Reborn",
-        "ID": "BG21_003"
-    },
-    {
         "Name": "SI:Sefin",
         "Tier": "5",
         "Attack": "2",
@@ -1307,17 +1327,6 @@ const minions = [
         "Keywords": "Avenge, Poisonous",
         "Combined": "Murloc, Avenge, Poisonous",
         "ID": "BG21_009"
-    },
-    {
-        "Name": "Strongshell Scavenger",
-        "Tier": "5",
-        "Attack": "2",
-        "Health": "3",
-        "Cost": "4",
-        "Keywords": "Battlecry, Taunt",
-        "Synergy": "Taunt",
-        "Combined": "Taunt, Battlecry",
-        "ID": "ICC_807"
     },
     {
         "Name": "Tavern Tempest",
@@ -1418,6 +1427,16 @@ const minions = [
         "ID": "GVG_113"
     },
     {
+        "Name": "Friend of a Friend",
+        "Tier": "6",
+        "Attack": "5",
+        "Health": "6",
+        "Cost": "0",
+        "Keywords": "Battlecry, Discover",
+        "Combined": "Battlecry, Discover",
+        "ID": "BG22_404"
+    },
+    {
         "Name": "Gentle Djinni",
         "Tier": "6",
         "Attack": "4",
@@ -1486,18 +1505,6 @@ const minions = [
         "ID": "BGS_100"
     },
     {
-        "Name": "Maexxna",
-        "Tier": "6",
-        "Attack": "2",
-        "Health": "8",
-        "Cost": "6",
-        "Legendary": "Y",
-        "Type": "Beast",
-        "Keywords": "Poisonous",
-        "Combined": "Beast, Poisonous",
-        "ID": "FP1_010"
-    },
-    {
         "Name": "Nadina the Red",
         "Tier": "6",
         "Attack": "7",
@@ -1512,8 +1519,8 @@ const minions = [
     {
         "Name": "Nosy Looter",
         "Tier": "6",
-        "Attack": "7",
-        "Health": "6",
+        "Attack": "9",
+        "Health": "8",
         "Cost": "6",
         "Type": "Pirate",
         "Combined": "Pirate",
