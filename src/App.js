@@ -10,7 +10,7 @@ import './App.css';
 import SelectedCards from './SelectedCards/SelectedCards';
 import ReactGA from 'react-ga';
 
-const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Pirate', 'Elemental', 'Quilboar'];
+const tribes = ['Beast', 'Demon', 'Dragon', 'Mech', 'Murloc', 'Naga', 'Pirate', 'Elemental', 'Quilboar'];
 const tiers = [1, 2, 3, 4, 5, 6]
 
 class App extends Component {

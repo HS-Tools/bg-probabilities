@@ -23,6 +23,7 @@ const updateMinionsJSFile = (cardsArray) => {
         ELEMENTAL: "Elemental",
         MECHANICAL: "Mech",
         MURLOC: "Murloc",
+        NAGA: "Naga",
         PIRATE: "Pirate",
         QUILBOAR: "Quilboar"
     };
@@ -83,12 +84,12 @@ const updateMinionsJSFile = (cardsArray) => {
 
             const isMenagerie = text.match(/each[\r\n\s]*minion type|different[\r\n\s]*minion type/gi);
             if (isMenagerie) {
-                synergies.push(typeMap["ALL"]);
+              synergies.push(typeMap["ALL"]);
             }
 
             // Filter out duplicates.
             synergies = [...new Set(synergies)];
-        }
+          }
 
         return synergies;
     };
