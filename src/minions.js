@@ -278,7 +278,7 @@ const minions = [
         "Name": "Lava Lurker",
         "Tier": "2",
         "Attack": "2",
-        "Health": "5",
+        "Health": "4",
         "Cost": "1",
         "Type": "Naga",
         "Combined": "Naga",
@@ -426,7 +426,7 @@ const minions = [
     {
         "Name": "Snail Cavalry",
         "Tier": "2",
-        "Attack": "5",
+        "Attack": "4",
         "Health": "2",
         "Cost": "1",
         "Type": "Naga",
@@ -747,7 +747,7 @@ const minions = [
     {
         "Name": "Shoal Commander",
         "Tier": "3",
-        "Attack": "2",
+        "Attack": "1",
         "Health": "2",
         "Cost": "2",
         "Type": "Naga",
@@ -807,16 +807,6 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Elemental, Battlecry",
         "ID": "BGS_122"
-    },
-    {
-        "Name": "Stormscale Siren",
-        "Tier": "3",
-        "Attack": "5",
-        "Health": "4",
-        "Cost": "1",
-        "Type": "Naga",
-        "Combined": "Naga",
-        "ID": "BG23_005"
     },
     {
         "Name": "Swolefin",
@@ -1324,7 +1314,7 @@ const minions = [
         "Name": "Critter Wrangler",
         "Tier": "5",
         "Attack": "5",
-        "Health": "7",
+        "Health": "6",
         "Cost": "1",
         "Type": "Naga",
         "Combined": "Naga",
@@ -1494,6 +1484,16 @@ const minions = [
         "Keywords": "Avenge, Poisonous",
         "Combined": "Murloc, Avenge, Poisonous",
         "ID": "BG21_009"
+    },
+    {
+        "Name": "Stormscale Siren",
+        "Tier": "5",
+        "Attack": "6",
+        "Health": "5",
+        "Cost": "1",
+        "Type": "Naga",
+        "Combined": "Naga",
+        "ID": "BG23_005"
     },
     {
         "Name": "Tavern Tempest",
@@ -1696,8 +1696,8 @@ const minions = [
     {
         "Name": "Orgozoa, the Tender",
         "Tier": "6",
-        "Attack": "5",
-        "Health": "9",
+        "Attack": "3",
+        "Health": "7",
         "Cost": "1",
         "Legendary": "Y",
         "Keywords": "Discover",
@@ -1709,7 +1709,7 @@ const minions = [
         "Name": "Tidemistress Athissa",
         "Tier": "6",
         "Attack": "7",
-        "Health": "8",
+        "Health": "3",
         "Cost": "6",
         "Legendary": "Y",
         "Type": "Naga",
