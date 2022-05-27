@@ -1486,16 +1486,6 @@ const minions = [
         "ID": "BG21_009"
     },
     {
-        "Name": "Stormscale Siren",
-        "Tier": "5",
-        "Attack": "6",
-        "Health": "5",
-        "Cost": "1",
-        "Type": "Naga",
-        "Combined": "Naga",
-        "ID": "BG23_005"
-    },
-    {
         "Name": "Tavern Tempest",
         "Tier": "5",
         "Attack": "4",
