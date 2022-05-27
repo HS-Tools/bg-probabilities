@@ -842,6 +842,17 @@ const minions = [
         "ID": "BGS_038"
     },
     {
+        "Name": "Warden of Old",
+        "Tier": "3",
+        "Attack": "3",
+        "Health": "3",
+        "Cost": "4",
+        "Type": "Naga",
+        "Keywords": "Deathrattle",
+        "Combined": "Naga, Deathrattle",
+        "ID": "BGS_200"
+    },
+    {
         "Name": "Annoy-o-Module",
         "Tier": "4",
         "Attack": "2",
@@ -1484,16 +1495,6 @@ const minions = [
         "Keywords": "Avenge, Poisonous",
         "Combined": "Murloc, Avenge, Poisonous",
         "ID": "BG21_009"
-    },
-    {
-        "Name": "Stormscale Siren",
-        "Tier": "5",
-        "Attack": "6",
-        "Health": "5",
-        "Cost": "1",
-        "Type": "Naga",
-        "Combined": "Naga",
-        "ID": "BG23_005"
     },
     {
         "Name": "Tavern Tempest",

@@ -19,7 +19,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      missingTribes: [tribes[0], tribes[1], tribes[2]],
+      missingTribes: [...Array.from(Array(tribes.length - 5).keys())].map(index => tribes[index]),
       currentTier: tiers[0],
       rollCount: 1,
       buyableCards: [],
