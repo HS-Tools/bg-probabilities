@@ -11,6 +11,16 @@ const minions = [
         "ID": "CFM_315"
     },
     {
+        "Name": "Bubblette",
+        "Tier": "1",
+        "Attack": "2",
+        "Health": "5",
+        "Cost": "1",
+        "Type": "Elemental",
+        "Combined": "Elemental",
+        "ID": "BG_TID_713"
+    },
+    {
         "Name": "Deck Swabbie",
         "Tier": "1",
         "Attack": "2",
