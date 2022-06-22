@@ -13,8 +13,8 @@ const minions = [
     {
         "Name": "Bubblette",
         "Tier": "1",
-        "Attack": "2",
-        "Health": "5",
+        "Attack": "5",
+        "Health": "4",
         "Cost": "1",
         "Type": "Elemental",
         "Combined": "Elemental",
@@ -591,6 +591,17 @@ const minions = [
         "ID": "BG21_030"
     },
     {
+        "Name": "Coldlight Seer",
+        "Tier": "3",
+        "Attack": "2",
+        "Health": "3",
+        "Cost": "3",
+        "Type": "Murloc",
+        "Keywords": "Battlecry",
+        "Combined": "Murloc, Battlecry",
+        "ID": "EX1_103"
+    },
+    {
         "Name": "Crackling Cyclone",
         "Tier": "3",
         "Attack": "4",
@@ -757,7 +768,7 @@ const minions = [
     {
         "Name": "Shoal Commander",
         "Tier": "3",
-        "Attack": "1",
+        "Attack": "2",
         "Health": "2",
         "Cost": "2",
         "Type": "Naga",
@@ -828,6 +839,17 @@ const minions = [
         "Keywords": "Battlecry",
         "Combined": "Murloc, Battlecry",
         "ID": "BG21_010"
+    },
+    {
+        "Name": "Tarecgosa",
+        "Tier": "3",
+        "Attack": "4",
+        "Health": "4",
+        "Cost": "3",
+        "Legendary": "Y",
+        "Type": "Dragon",
+        "Combined": "Dragon",
+        "ID": "BG21_015"
     },
     {
         "Name": "Thorncaller",
@@ -913,17 +935,6 @@ const minions = [
         "Type": "Dragon",
         "Combined": "Dragon",
         "ID": "ICC_029"
-    },
-    {
-        "Name": "Coldlight Seer",
-        "Tier": "4",
-        "Attack": "2",
-        "Health": "3",
-        "Cost": "3",
-        "Type": "Murloc",
-        "Keywords": "Battlecry",
-        "Combined": "Murloc, Battlecry",
-        "ID": "EX1_103"
     },
     {
         "Name": "Dazzling Lightspawn",
@@ -1191,17 +1202,6 @@ const minions = [
         "ID": "ICC_807"
     },
     {
-        "Name": "Tarecgosa",
-        "Tier": "4",
-        "Attack": "4",
-        "Health": "4",
-        "Cost": "3",
-        "Legendary": "Y",
-        "Type": "Dragon",
-        "Combined": "Dragon",
-        "ID": "BG21_015"
-    },
-    {
         "Name": "Waverider",
         "Tier": "4",
         "Attack": "2",
@@ -1324,8 +1324,8 @@ const minions = [
     {
         "Name": "Corrupted Myrmidon",
         "Tier": "5",
-        "Attack": "2",
-        "Health": "2",
+        "Attack": "3",
+        "Health": "3",
         "Cost": "1",
         "Type": "Naga",
         "Combined": "Naga",
@@ -1335,7 +1335,7 @@ const minions = [
         "Name": "Critter Wrangler",
         "Tier": "5",
         "Attack": "5",
-        "Health": "6",
+        "Health": "7",
         "Cost": "1",
         "Type": "Naga",
         "Combined": "Naga",
@@ -1720,7 +1720,7 @@ const minions = [
         "Name": "Tidemistress Athissa",
         "Tier": "6",
         "Attack": "7",
-        "Health": "3",
+        "Health": "8",
         "Cost": "6",
         "Legendary": "Y",
         "Type": "Naga",
