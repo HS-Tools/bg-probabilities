@@ -6,19 +6,19 @@
     "runtime-main.js": "/bg-probabilities/static/js/runtime-main.e1073f10.js",
     "runtime-main.js.map": "/bg-probabilities/static/js/runtime-main.e1073f10.js.map",
     "static/css/2.f9aa6948.chunk.css": "/bg-probabilities/static/css/2.f9aa6948.chunk.css",
-    "static/js/2.0b7ab18b.chunk.js": "/bg-probabilities/static/js/2.0b7ab18b.chunk.js",
-    "static/js/2.0b7ab18b.chunk.js.map": "/bg-probabilities/static/js/2.0b7ab18b.chunk.js.map",
+    "static/js/2.42c0a73d.chunk.js": "/bg-probabilities/static/js/2.42c0a73d.chunk.js",
+    "static/js/2.42c0a73d.chunk.js.map": "/bg-probabilities/static/js/2.42c0a73d.chunk.js.map",
     "index.html": "/bg-probabilities/index.html",
-    "precache-manifest.7ad7ae4f744660fc34c7537a00f4354d.js": "/bg-probabilities/precache-manifest.7ad7ae4f744660fc34c7537a00f4354d.js",
+    "precache-manifest.779a4cf05414adc5ae9bc9bb0411d8aa.js": "/bg-probabilities/precache-manifest.779a4cf05414adc5ae9bc9bb0411d8aa.js",
     "service-worker.js": "/bg-probabilities/service-worker.js",
     "static/css/2.f9aa6948.chunk.css.map": "/bg-probabilities/static/css/2.f9aa6948.chunk.css.map",
     "static/css/main.819343d8.chunk.css.map": "/bg-probabilities/static/css/main.819343d8.chunk.css.map",
-    "static/js/2.0b7ab18b.chunk.js.LICENSE.txt": "/bg-probabilities/static/js/2.0b7ab18b.chunk.js.LICENSE.txt"
+    "static/js/2.42c0a73d.chunk.js.LICENSE.txt": "/bg-probabilities/static/js/2.42c0a73d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e1073f10.js",
     "static/css/2.f9aa6948.chunk.css",
-    "static/js/2.0b7ab18b.chunk.js",
+    "static/js/2.42c0a73d.chunk.js",
     "static/css/main.819343d8.chunk.css",
     "static/js/main.170c3bc9.chunk.js"
   ]
