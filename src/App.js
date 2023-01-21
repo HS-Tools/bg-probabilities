@@ -19,7 +19,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      missingTribes: [...Array.from(Array(tribes.length - 5).keys())].map(index => tribes[index]),
+      availableTribes: tribes.slice(0, 5),
       currentTier: tiers[0],
       rollCount: 1,
       buyableCards: [],
@@ -43,23 +43,23 @@ class App extends Component {
 
   componentDidMount() {
     this.minionToAttributesMap = this.mapNameToObjectOfAttributes();
-    this.changeBuyableCards(this.state.currentTier, this.state.missingTribes);
+    this.changeBuyableCards(this.state.currentTier, this.state.availableTribes);
   }
 
-  changeMissingTribeHandler = (position, e) => {
+  changeAvailableTribeHandler = (position, e) => {
     this.setState(prevState => {
-      let missingTribes =  [...prevState.missingTribes];
-      missingTribes[position] = e.target.value;
-      this.changeBuyableCards(this.state.currentTier, missingTribes);
+      let availableTribes =  [...prevState.availableTribes];
+      availableTribes[position] = e.target.value;
+      this.changeBuyableCards(this.state.currentTier, availableTribes);
 
-      return { missingTribes };
+      return { availableTribes };
     });
   }
 
   changeCurrentTierHandler = (e) => {
     let tier = e.target.value;
     this.setState({currentTier: tier});
-    this.changeBuyableCards(tier, this.state.missingTribes);
+    this.changeBuyableCards(tier, this.state.availableTribes);
   }
 
   calculateLongestSelectedCardCharCount(selectedCards) {
@@ -151,7 +151,7 @@ class App extends Component {
 
   changeBuyableCards(
     tier,
-    missingTribes) {
+    availableTribes) {
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
         this.deleteSelectedCardHandler(item.Name);
@@ -163,12 +163,12 @@ class App extends Component {
     let tribeAppropriateMinions = tierAppropriateMinions.filter(item => {
       let synergies = item.Combined.split(',').map(str => str.trim());
 
-      // If a card has multiple type synergies with it, only remove it if all those type synergies are included inside of missingTribes
+      // If a card has multiple type synergies with it, only remove it if all those type synergies are excluded from availableTribes
       let typeSynergies = synergies.filter(synergy => tribes.includes(synergy))
 
-      const isoverlap = typeSynergies.every(type => missingTribes.includes(type));
+      const typesAreNotIncluded = typeSynergies.every(type => !availableTribes.includes(type));
 
-      if (typeSynergies.length > 0 && isoverlap) {
+      if (typeSynergies.length > 0 && typesAreNotIncluded) {
         this.deleteSelectedCardHandler(item.Name)
         return false;
       } else {
@@ -184,20 +184,20 @@ class App extends Component {
     ReactGA.pageview('/home-page');
   }
 
-  missingTribes() {
+  availableTribes() {
     let radioList = [];
 
-    for (let i in Array.from(Array(tribes.length - 5))) {
-      let handler = this.changeMissingTribeHandler.bind(this, i);
-      let prefixText = `Banned tribe # ${parseInt(i)+1}`;
+    for (let i in Array.from(Array(5))) {
+      let handler = this.changeAvailableTribeHandler.bind(this, i);
+      let prefixText = `Available tribe # ${parseInt(i)+1}`;
       radioList.push(
           <Radio 
             key={i.toString()}
             collection={tribes}
             prefixText={prefixText}
             index={i}
-            allSelected={this.state.missingTribes}
-            currentSelected={this.state.missingTribes[i]}
+            allSelected={this.state.availableTribes}
+            currentSelected={this.state.availableTribes[i]}
             changed={handler} />
       );
     }
@@ -213,7 +213,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {this.missingTribes()}
+        {this.availableTribes()}
 
         <NoDropdownSelector
           collection={tiers}
@@ -224,7 +224,7 @@ class App extends Component {
         <DropdownSelector
           collection={this.state.buyableCards}
           currentTier={this.state.currentTier}
-          missingTribes={this.state.missingTribes}
+          availableTribes={this.state.availableTribes}
           selectedCards={this.state.selectedCards}
           changed={this.addSelectedCardHandler} />
 
