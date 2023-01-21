@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7cbbe2d105191d1fea907381ae36d97",
+    "revision": "d0eba6eaf8507b2c256eaae221158ab6",
     "url": "/bg-probabilities/index.html"
   },
   {
-    "revision": "2174210d293375a812f9",
+    "revision": "684ce8bc4218623d5726",
     "url": "/bg-probabilities/static/css/2.f9aa6948.chunk.css"
   },
   {
-    "revision": "fb38d320d28db5cd3506",
+    "revision": "66dd923d29b1484334cb",
     "url": "/bg-probabilities/static/css/main.819343d8.chunk.css"
   },
   {
-    "revision": "2174210d293375a812f9",
-    "url": "/bg-probabilities/static/js/2.42c0a73d.chunk.js"
+    "revision": "684ce8bc4218623d5726",
+    "url": "/bg-probabilities/static/js/2.50ef263d.chunk.js"
   },
   {
     "revision": "c87e50d81cc7b5311525cc6fd5482ea5",
-    "url": "/bg-probabilities/static/js/2.42c0a73d.chunk.js.LICENSE.txt"
+    "url": "/bg-probabilities/static/js/2.50ef263d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fb38d320d28db5cd3506",
-    "url": "/bg-probabilities/static/js/main.70a8a852.chunk.js"
+    "revision": "66dd923d29b1484334cb",
+    "url": "/bg-probabilities/static/js/main.86af1174.chunk.js"
   },
   {
     "revision": "2b72f798ea9b5991239a",
