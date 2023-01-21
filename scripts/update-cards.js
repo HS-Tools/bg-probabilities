@@ -5,6 +5,8 @@ const fs = require('fs');
 const latestRequest = new XMLHttpRequest();
 const cardsRequest = new XMLHttpRequest();
 
+const typeMap = require("../src/tribes")["typeMap"];
+
 let patchNumber = '';
 
 const updateMinionsJSFile = (cardsArray) => {    
@@ -16,17 +18,6 @@ const updateMinionsJSFile = (cardsArray) => {
         return a.name.localeCompare(b.name)
     });
 
-    const typeMap = {
-        BEAST: "Beast",
-        DEMON: "Demon",
-        DRAGON: "Dragon",
-        ELEMENTAL: "Elemental",
-        MECHANICAL: "Mech",
-        MURLOC: "Murloc",
-        NAGA: "Naga",
-        PIRATE: "Pirate",
-        QUILBOAR: "Quilboar"
-    };
     typeMap["ALL"] = Object.values(typeMap).join(", ");
 
     const keywordsMap = {
@@ -104,9 +95,10 @@ const updateMinionsJSFile = (cardsArray) => {
         };
 
         let type = typeMap[card["race"]];
+        let types = card["races"] && card["races"].map((race) => typeMap[race]);
         //Agamaggan, the Great Boar is a beast but is in the Quilboar bucket
         if (card.name === "Agamaggan, the Great Boar") {
-        type = typeMap["QUILBOAR"];
+            type = typeMap["QUILBOAR"];
         }
         const keywords = getKeywords(card);
         const synergies = getSynergies(card);
@@ -115,6 +107,9 @@ const updateMinionsJSFile = (cardsArray) => {
         const combined = [...new Set(keywordsAndSynergies)];
         if (type) {
             combined.unshift(type);
+        }
+        if (types && types.length > 1) {
+            combined.push(...types.filter(t => t !== type))
         }
 
         const formattedMinion = {
