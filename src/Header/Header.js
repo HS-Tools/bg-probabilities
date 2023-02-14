@@ -8,7 +8,7 @@ const Header = (props) => {
                 <a target="_blank" href="https://www.twitch.tv/liihs" rel="noopener noreferrer">
                     <img className={classes.Logo} src={require('../assets/twitch.png')} alt="Creator's twitch page"/>
                 </a>
-                <a target="_blank" href="https://github.com/JimLiu0/bg-probabilities" rel="noopener noreferrer">
+                <a target="_blank" href="https://github.com/HS-Tools/bg-probabilities" rel="noopener noreferrer">
                     <img className={classes.Logo} src={require('../assets/github.png')} alt="Page's source code"/>
                 </a>
             </div>
