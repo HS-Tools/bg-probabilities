@@ -11,7 +11,7 @@ import SelectedCards from './SelectedCards/SelectedCards';
 import ReactGA from 'react-ga';
 import { tribes } from './tribes';
 
-const tiers = [1, 2, 3, 4, 5, 6]
+const tiers = [1, 2, 3, 4, 5, 6, 7]
 
 class App extends Component {
 
