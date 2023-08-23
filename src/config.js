@@ -4,7 +4,8 @@ const tierCardCounts = {
     '3': 13,
     '4': 11,
     '5': 9,
-    '6': 7
+    '6': 7,
+    '7': 5,
 }
 
 const tavernCardCounts = {
@@ -13,7 +14,8 @@ const tavernCardCounts = {
     '3': 4,
     '4': 5,
     '5': 5,
-    '6': 6
+    '6': 6,
+    '7': 6,
 }
 
 export { tierCardCounts, tavernCardCounts };
