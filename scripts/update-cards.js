@@ -36,7 +36,9 @@ const updateMinionsJSFile = (cardsArray) => {
         OVERKILL: "Overkill",
         POISONOUS: "Poisonous",
         REBORN: "Reborn",
+        SPELLCRAFT: "Spellcraft",
         TAUNT: "Taunt",
+        VENOMOUS: "Venomous",
         WINDFURY: "Windfury"
     }
     
@@ -115,13 +117,14 @@ const updateMinionsJSFile = (cardsArray) => {
         const formattedMinion = {
             "Name": card["name"],
             "Tier": card["techLevel"].toString(),
-            "Attack": card["attack"].toString(),
-            "Health": card["health"].toString(),
-            "Cost": card["cost"].toString(),
-            "Legendary": card["elite"] && "Y",
-            "Type": type,
-            "Keywords": keywords.length ? keywords.join(', ') : undefined,
-            "Synergy": synergies.length ? synergies.join(', ') : undefined,
+            // Commenting out unused keys, keep the minions.js file slim
+            // "Attack": card["attack"].toString(),
+            // "Health": card["health"].toString(),
+            // "Cost": card["cost"].toString(),
+            // "Legendary": card["elite"] && "Y",
+            // "Type": type,
+            // "Keywords": keywords.length ? keywords.join(', ') : undefined,
+            // "Synergy": synergies.length ? synergies.join(', ') : undefined,
             "Combined": combined.join(', '),
             "ID": card["id"]
         };
@@ -162,7 +165,10 @@ cardsRequest.onreadystatechange = function() {
         // Filter for only BG minions
         const bgCardsArray = []
         cardsArray.forEach((card) => {
-            if (card["isBattlegroundsPoolMinion"]) {
+            if (
+              card["isBattlegroundsPoolMinion"] &&
+              card["name"] !== "Boulderfist Ogre" // Don't know why he is marked as a BGs card
+            ) {
               bgCardsArray.push(card);
             }
         });
