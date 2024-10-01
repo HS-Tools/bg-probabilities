@@ -6,28 +6,58 @@ const minions = [
         "ID": "BG_GVG_085"
     },
     {
-        "Name": "Dozy Whelp",
+        "Name": "Backstage Security",
         "Tier": "1",
-        "Combined": "Dragon, Taunt",
-        "ID": "BG24_300"
+        "Combined": "Demon, Battlecry",
+        "ID": "BG26_528"
     },
     {
-        "Name": "Imprisoner",
+        "Name": "Cord Puller",
         "Tier": "1",
-        "Combined": "Demon, Deathrattle, Taunt",
-        "ID": "BGS_014"
+        "Combined": "Mech, Deathrattle, Divine Shield",
+        "ID": "BG29_611"
     },
     {
-        "Name": "Manasaber",
+        "Name": "Deep-Sea Angler",
         "Tier": "1",
-        "Combined": "Beast, Deathrattle, Taunt",
-        "ID": "BG26_800"
+        "Combined": "Naga, Taunt",
+        "ID": "BG23_004"
     },
     {
-        "Name": "Micro Mummy",
+        "Name": "Glim Guardian",
         "Tier": "1",
-        "Combined": "Mech, Reborn, Undead",
-        "ID": "BG_ULD_217"
+        "Combined": "Dragon",
+        "ID": "BG29_888"
+    },
+    {
+        "Name": "Harmless Bonehead",
+        "Tier": "1",
+        "Combined": "Undead, Deathrattle",
+        "ID": "BG28_300"
+    },
+    {
+        "Name": "Kindly Grandmother",
+        "Tier": "1",
+        "Combined": "Beast, Deathrattle",
+        "ID": "BG_KAR_005"
+    },
+    {
+        "Name": "Misfit Dragonling",
+        "Tier": "1",
+        "Combined": "Dragon",
+        "ID": "BG29_814"
+    },
+    {
+        "Name": "Molten Rock",
+        "Tier": "1",
+        "Combined": "Elemental",
+        "ID": "BGS_127"
+    },
+    {
+        "Name": "Passenger",
+        "Tier": "1",
+        "Combined": "",
+        "ID": "BGDUO_114"
     },
     {
         "Name": "Picky Eater",
@@ -54,16 +84,10 @@ const minions = [
         "ID": "BG25_001"
     },
     {
-        "Name": "Rockpool Hunter",
+        "Name": "Saltscale Honcho",
         "Tier": "1",
-        "Combined": "Murloc, Battlecry",
-        "ID": "BG_UNG_073"
-    },
-    {
-        "Name": "Rot Hide Gnoll",
-        "Tier": "1",
-        "Combined": "Undead",
-        "ID": "BG25_013"
+        "Combined": "Murloc",
+        "ID": "BG21_008"
     },
     {
         "Name": "Scallywag",
@@ -72,16 +96,10 @@ const minions = [
         "ID": "BGS_061"
     },
     {
-        "Name": "Sellemental",
+        "Name": "Snail Cavalry",
         "Tier": "1",
-        "Combined": "Elemental",
-        "ID": "BGS_115"
-    },
-    {
-        "Name": "Shell Collector",
-        "Tier": "1",
-        "Combined": "Naga, Battlecry",
-        "ID": "BG23_002"
+        "Combined": "Naga",
+        "ID": "BG23_001"
     },
     {
         "Name": "Southsea Busker",
@@ -96,16 +114,22 @@ const minions = [
         "ID": "BG20_301"
     },
     {
-        "Name": "Surf n' Surf",
-        "Tier": "1",
-        "Combined": "Naga, Deathrattle, Beast",
-        "ID": "BG27_004"
-    },
-    {
         "Name": "Swampstriker",
         "Tier": "1",
         "Combined": "Murloc",
         "ID": "BG22_401"
+    },
+    {
+        "Name": "Thorncaptain",
+        "Tier": "1",
+        "Combined": "Quilboar, Pirate",
+        "ID": "BG25_045"
+    },
+    {
+        "Name": "Trusty Pup",
+        "Tier": "1",
+        "Combined": "Beast",
+        "ID": "BG29_800"
     },
     {
         "Name": "Upbeat Frontdrake",
@@ -120,10 +144,10 @@ const minions = [
         "ID": "BGS_004"
     },
     {
-        "Name": "Bejeweled Duelist",
+        "Name": "Ancestral Automaton",
         "Tier": "2",
-        "Combined": "Elemental, Taunt",
-        "ID": "BG27_020"
+        "Combined": "Mech, Aura",
+        "ID": "BG_TTN_401"
     },
     {
         "Name": "Blazing Skyfin",
@@ -132,46 +156,58 @@ const minions = [
         "ID": "BG25_040"
     },
     {
-        "Name": "Briarback Bookie",
+        "Name": "Bountiful Bedrock",
         "Tier": "2",
-        "Combined": "Quilboar",
-        "ID": "BG27_028"
+        "Combined": "Elemental",
+        "ID": "BG30_160"
     },
     {
-        "Name": "Cogwork Copter",
+        "Name": "Coldlight Seer",
         "Tier": "2",
-        "Combined": "Mech, Divine Shield",
-        "ID": "BG24_008"
+        "Combined": "Murloc, Battlecry",
+        "ID": "BG_EX1_103"
     },
     {
-        "Name": "Corpse Refiner",
+        "Name": "Crackling Cyclone",
         "Tier": "2",
-        "Combined": "Undead, Avenge, Pirate",
-        "ID": "BG25_033"
+        "Combined": "Elemental, Divine Shield, Windfury",
+        "ID": "BGS_119"
     },
     {
-        "Name": "Deep-Sea Angler",
+        "Name": "Defiant Shipwright",
         "Tier": "2",
-        "Combined": "Naga, Taunt",
-        "ID": "BG23_004"
+        "Combined": "Pirate",
+        "ID": "BG21_018"
     },
     {
         "Name": "Eternal Knight",
         "Tier": "2",
-        "Combined": "Undead",
+        "Combined": "Undead, Aura",
         "ID": "BG25_008"
     },
     {
-        "Name": "Flourishing Frostling",
+        "Name": "Free Travel Winner",
         "Tier": "2",
-        "Combined": "Elemental",
-        "ID": "BG26_537"
+        "Combined": "",
+        "ID": "BG30_103"
     },
     {
-        "Name": "Freedealing Gambler",
+        "Name": "Friendly Saloonkeeper",
         "Tier": "2",
-        "Combined": "Pirate",
-        "ID": "BGS_049"
+        "Combined": "Battlecry",
+        "ID": "BGDUO_104"
+    },
+    {
+        "Name": "Generous Geomancer",
+        "Tier": "2",
+        "Combined": "Quilboar, Deathrattle",
+        "ID": "BGDUO_111"
+    },
+    {
+        "Name": "Gift Pilferer",
+        "Tier": "2",
+        "Combined": "Pirate, Aura",
+        "ID": "BG30_118"
     },
     {
         "Name": "Humming Bird",
@@ -180,16 +216,16 @@ const minions = [
         "ID": "BG26_805"
     },
     {
-        "Name": "Hungry Snapjaw",
-        "Tier": "2",
-        "Combined": "Beast",
-        "ID": "BG26_370"
-    },
-    {
         "Name": "Impulsive Trickster",
         "Tier": "2",
         "Combined": "Demon, Deathrattle",
         "ID": "BG21_006"
+    },
+    {
+        "Name": "Irate Rooster",
+        "Tier": "2",
+        "Combined": "Beast",
+        "ID": "BG29_990"
     },
     {
         "Name": "Kaboom Bot",
@@ -204,10 +240,10 @@ const minions = [
         "ID": "BG23_009"
     },
     {
-        "Name": "Low-Flier",
+        "Name": "Leapfrogger",
         "Tier": "2",
-        "Combined": "Dragon",
-        "ID": "BG26_969"
+        "Combined": "Beast, Deathrattle",
+        "ID": "BG21_000"
     },
     {
         "Name": "Lullabot",
@@ -216,22 +252,28 @@ const minions = [
         "ID": "BG26_146"
     },
     {
-        "Name": "Menagerie Mug",
-        "Tier": "2",
-        "Combined": "Battlecry",
-        "ID": "BGS_082"
-    },
-    {
         "Name": "Mind Muck",
         "Tier": "2",
         "Combined": "Demon, Battlecry",
         "ID": "BG23_357"
     },
     {
+        "Name": "Moon-Bacon Jazzer",
+        "Tier": "2",
+        "Combined": "Quilboar, Battlecry",
+        "ID": "BG26_159"
+    },
+    {
         "Name": "Murcules",
         "Tier": "2",
         "Combined": "Murloc",
         "ID": "BG27_023"
+    },
+    {
+        "Name": "Museum Mummy",
+        "Tier": "2",
+        "Combined": "Undead, Battlecry",
+        "ID": "BG30_850"
     },
     {
         "Name": "Nerubian Deathswarmer",
@@ -246,10 +288,22 @@ const minions = [
         "ID": "BG27_002"
     },
     {
+        "Name": "Party Elemental",
+        "Tier": "2",
+        "Combined": "Elemental",
+        "ID": "BGS_120"
+    },
+    {
         "Name": "Patient Scout",
         "Tier": "2",
         "Combined": "Discover",
         "ID": "BG24_715"
+    },
+    {
+        "Name": "Prophet of the Boar",
+        "Tier": "2",
+        "Combined": "Quilboar, Taunt",
+        "ID": "BG20_203"
     },
     {
         "Name": "Reef Riffer",
@@ -264,34 +318,28 @@ const minions = [
         "ID": "BGS_056"
     },
     {
-        "Name": "Saltscale Honcho",
-        "Tier": "2",
-        "Combined": "Murloc",
-        "ID": "BG21_008"
-    },
-    {
         "Name": "Scarlet Skull",
         "Tier": "2",
         "Combined": "Undead, Deathrattle, Reborn",
         "ID": "BG25_022"
     },
     {
-        "Name": "Seaborn Summoner",
+        "Name": "Sellemental",
         "Tier": "2",
-        "Combined": "Naga, Elemental",
-        "ID": "BG27_012"
+        "Combined": "Elemental",
+        "ID": "BGS_115"
     },
     {
-        "Name": "Selfless Hero",
+        "Name": "Shell Collector",
         "Tier": "2",
-        "Combined": "Deathrattle, Divine Shield",
-        "ID": "BG_OG_221"
+        "Combined": "Naga, Battlecry",
+        "ID": "BG23_002"
     },
     {
-        "Name": "Sewer Rat",
+        "Name": "Silver Goose",
         "Tier": "2",
-        "Combined": "Beast, Deathrattle, Taunt",
-        "ID": "BG19_010"
+        "Combined": "Beast, Taunt",
+        "ID": "BG29_801"
     },
     {
         "Name": "Soul Rewinder",
@@ -318,6 +366,12 @@ const minions = [
         "ID": "BGS_038"
     },
     {
+        "Name": "Wanderer Cho",
+        "Tier": "2",
+        "Combined": "",
+        "ID": "BGDUO_100"
+    },
+    {
         "Name": "Whelp Smuggler",
         "Tier": "2",
         "Combined": "Dragon",
@@ -330,34 +384,40 @@ const minions = [
         "ID": "BG26_147"
     },
     {
-        "Name": "Amber Guardian",
+        "Name": "Annoy-o-Module",
         "Tier": "3",
-        "Combined": "Dragon, Divine Shield",
-        "ID": "BG24_500"
+        "Combined": "Mech, Divine Shield, Taunt",
+        "ID": "BG_BOT_911"
     },
     {
-        "Name": "Bloodsail Cannoneer",
+        "Name": "Barrens Brawler",
+        "Tier": "3",
+        "Combined": "Battlecry, Deathrattle",
+        "ID": "BG29_861"
+    },
+    {
+        "Name": "Bristling Buffoon",
+        "Tier": "3",
+        "Combined": "Quilboar",
+        "ID": "BG29_160"
+    },
+    {
+        "Name": "Crow's Nest Sentry",
         "Tier": "3",
         "Combined": "Pirate, Battlecry",
-        "ID": "BGS_053"
+        "ID": "BG29_502"
     },
     {
-        "Name": "Bronze Warden",
+        "Name": "Deadly Spore",
         "Tier": "3",
-        "Combined": "Dragon, Divine Shield, Reborn",
-        "ID": "BGS_034"
+        "Combined": "Venomous",
+        "ID": "BGS_131"
     },
     {
-        "Name": "Coldlight Seer",
+        "Name": "Deep Blue Crooner",
         "Tier": "3",
-        "Combined": "Murloc, Battlecry",
-        "ID": "BG_EX1_103"
-    },
-    {
-        "Name": "Daggerspine Thrasher",
-        "Tier": "3",
-        "Combined": "Naga, Divine Shield, Venomous, Windfury",
-        "ID": "BG27_024"
+        "Combined": "Naga",
+        "ID": "BG26_502"
     },
     {
         "Name": "Deflect-o-Bot",
@@ -366,22 +426,40 @@ const minions = [
         "ID": "BGS_071"
     },
     {
-        "Name": "Dreadbeard",
+        "Name": "Diremuck Forager",
         "Tier": "3",
-        "Combined": "Demon, Pirate",
-        "ID": "BG27_011"
+        "Combined": "Murloc",
+        "ID": "BG27_556"
     },
     {
-        "Name": "Faceless Disciple",
+        "Name": "Disguised Graverobber",
         "Tier": "3",
-        "Combined": "Battlecry",
-        "ID": "BG24_719"
+        "Combined": "Undead, Battlecry",
+        "ID": "BG28_303"
     },
     {
-        "Name": "Free-Flying Feathermane",
+        "Name": "Doting Dracthyr",
         "Tier": "3",
-        "Combined": "Beast",
-        "ID": "BG27_014"
+        "Combined": "Dragon",
+        "ID": "BGDUO_107"
+    },
+    {
+        "Name": "Electric Synthesizer",
+        "Tier": "3",
+        "Combined": "Dragon, Battlecry",
+        "ID": "BG26_963"
+    },
+    {
+        "Name": "False Implicator",
+        "Tier": "3",
+        "Combined": "Demon",
+        "ID": "BG29_140"
+    },
+    {
+        "Name": "Fiery Felblood",
+        "Tier": "3",
+        "Combined": "Elemental, Deathrattle, Demon",
+        "ID": "BG29_877"
     },
     {
         "Name": "Gunpowder Courier",
@@ -396,10 +474,10 @@ const minions = [
         "ID": "BG25_010"
     },
     {
-        "Name": "Iron Groundskeeper",
+        "Name": "Jumping Jack",
         "Tier": "3",
-        "Combined": "Taunt, Battlecry",
-        "ID": "BG27_000"
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead",
+        "ID": "BGDUO_115"
     },
     {
         "Name": "Keyboard Igniter",
@@ -408,22 +486,16 @@ const minions = [
         "ID": "BG26_522"
     },
     {
-        "Name": "Leeching Felhound",
+        "Name": "Land Lubber",
         "Tier": "3",
-        "Combined": "Demon",
-        "ID": "BG25_520"
+        "Combined": "Elemental, Pirate",
+        "ID": "BG28_556"
     },
     {
-        "Name": "Legion Overseer",
+        "Name": "Mangled Bandit",
         "Tier": "3",
-        "Combined": "Demon",
-        "ID": "BG23_361"
-    },
-    {
-        "Name": "Living Constellation",
-        "Tier": "3",
-        "Combined": "Battlecry",
-        "ID": "BG27_001"
+        "Combined": "Quilboar",
+        "ID": "BG28_582"
     },
     {
         "Name": "Monstrous Macaw",
@@ -432,28 +504,22 @@ const minions = [
         "ID": "BGS_078"
     },
     {
-        "Name": "Moon-Bacon Jazzer",
+        "Name": "Orc-estra Conductor",
         "Tier": "3",
-        "Combined": "Quilboar, Battlecry",
-        "ID": "BG26_159"
+        "Combined": "Battlecry",
+        "ID": "BGDUO_119"
     },
     {
-        "Name": "Nightmare Amalgam",
+        "Name": "Phaerix, Wrath of the Sun",
         "Tier": "3",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead",
-        "ID": "BG_GIL_681"
+        "Combined": "Avenge, Divine Shield",
+        "ID": "BG28_403"
     },
     {
-        "Name": "Party Elemental",
+        "Name": "Plunder Pal",
         "Tier": "3",
-        "Combined": "Elemental",
-        "ID": "BGS_120"
-    },
-    {
-        "Name": "Pashmar the Vengeful",
-        "Tier": "3",
-        "Combined": "Naga, Avenge",
-        "ID": "BG23_014"
+        "Combined": "Pirate",
+        "ID": "BGDUO_118"
     },
     {
         "Name": "Prickly Piper",
@@ -462,22 +528,22 @@ const minions = [
         "ID": "BG26_160"
     },
     {
-        "Name": "Recycling Wraith",
+        "Name": "Puddle Prancer",
         "Tier": "3",
-        "Combined": "Elemental",
-        "ID": "BG21_040"
+        "Combined": "Murloc",
+        "ID": "BGDUO_117"
     },
     {
-        "Name": "Relentless Sentry",
+        "Name": "Rampager",
         "Tier": "3",
-        "Combined": "Undead, Avenge, Taunt",
-        "ID": "BG25_003"
+        "Combined": "Beast",
+        "ID": "BG29_809"
     },
     {
-        "Name": "Replicating Menace",
+        "Name": "Roaring Rallier",
         "Tier": "3",
-        "Combined": "Mech, Deathrattle",
-        "ID": "BG_BOT_312"
+        "Combined": "Dragon",
+        "ID": "BG29_816"
     },
     {
         "Name": "Scourfin",
@@ -486,16 +552,40 @@ const minions = [
         "ID": "BG26_360"
     },
     {
-        "Name": "Sore Loser",
+        "Name": "Shell Whistler",
         "Tier": "3",
-        "Combined": "Undead, Aura",
-        "ID": "BG27_030"
+        "Combined": "Naga, Battlecry",
+        "ID": "BG26_045"
     },
     {
-        "Name": "Spark-ling",
+        "Name": "Silithid Burrower",
         "Tier": "3",
-        "Combined": "Elemental, Battlecry",
-        "ID": "BG27_019"
+        "Combined": "Beast, Deathrattle, Taunt",
+        "ID": "BG29_871"
+    },
+    {
+        "Name": "Sleeping Sea Glass",
+        "Tier": "3",
+        "Combined": "Elemental",
+        "ID": "BG30_128"
+    },
+    {
+        "Name": "Slimy Felblood",
+        "Tier": "3",
+        "Combined": "Elemental, Battlecry, Demon",
+        "ID": "BG29_873"
+    },
+    {
+        "Name": "Sprightly Scarab",
+        "Tier": "3",
+        "Combined": "Beast, Taunt",
+        "ID": "BG27_084"
+    },
+    {
+        "Name": "Tarecgosa",
+        "Tier": "3",
+        "Combined": "Dragon",
+        "ID": "BG21_015"
     },
     {
         "Name": "The Glad-iator",
@@ -504,28 +594,34 @@ const minions = [
         "ID": "BG27_025"
     },
     {
-        "Name": "Time Saver",
-        "Tier": "3",
-        "Combined": "Dragon",
-        "ID": "BG27_520"
-    },
-    {
-        "Name": "Withered Spearhide",
-        "Tier": "3",
-        "Combined": "Quilboar, Deathrattle, Reborn, Undead",
-        "ID": "BG27_006"
-    },
-    {
-        "Name": "Zesty Shaker",
+        "Name": "Volcanic Visitor",
         "Tier": "3",
         "Combined": "Naga",
-        "ID": "BG26_505"
+        "ID": "BG30_117"
     },
     {
-        "Name": "Annoy-o-Module",
+        "Name": "Warden of Old",
+        "Tier": "3",
+        "Combined": "Naga",
+        "ID": "BGS_200"
+    },
+    {
+        "Name": "Xylo-bones",
+        "Tier": "3",
+        "Combined": "Undead",
+        "ID": "BG26_172"
+    },
+    {
+        "Name": "'Loc Prince",
         "Tier": "4",
-        "Combined": "Mech, Divine Shield, Taunt",
-        "ID": "BG_BOT_911"
+        "Combined": "Murloc",
+        "ID": "BG29_889"
+    },
+    {
+        "Name": "Amber Guardian",
+        "Tier": "4",
+        "Combined": "Dragon, Divine Shield",
+        "ID": "BG24_500"
     },
     {
         "Name": "Anub'arak, Nerubian King",
@@ -534,10 +630,10 @@ const minions = [
         "ID": "BG25_007"
     },
     {
-        "Name": "Banana Slamma",
+        "Name": "Assistant Guard",
         "Tier": "4",
-        "Combined": "Beast",
-        "ID": "BG26_802"
+        "Combined": "Taunt, Battlecry",
+        "ID": "BG29_845"
     },
     {
         "Name": "Bannerboar",
@@ -558,58 +654,88 @@ const minions = [
         "ID": "BG26_817"
     },
     {
-        "Name": "Bonker",
-        "Tier": "4",
-        "Combined": "Quilboar, Windfury",
-        "ID": "BG20_104"
-    },
-    {
         "Name": "Bream Counter",
         "Tier": "4",
         "Combined": "Murloc",
         "ID": "BG26_137"
     },
     {
-        "Name": "Carbonic Copy",
+        "Name": "Cadaver Caretaker",
         "Tier": "4",
-        "Combined": "Elemental",
-        "ID": "BG27_503"
+        "Combined": "Undead, Deathrattle",
+        "ID": "BG30_125"
     },
     {
-        "Name": "Dancing Barnstormer",
-        "Tier": "4",
-        "Combined": "Elemental, Deathrattle",
-        "ID": "BG26_162"
-    },
-    {
-        "Name": "Deep Blue Crooner",
+        "Name": "Critter Wrangler",
         "Tier": "4",
         "Combined": "Naga",
-        "ID": "BG26_502"
+        "ID": "BG23_003"
     },
     {
-        "Name": "Electric Synthesizer",
+        "Name": "Fairy Gillmother",
         "Tier": "4",
-        "Combined": "Dragon, Battlecry",
-        "ID": "BG26_963"
+        "Combined": "Murloc",
+        "ID": "BG29_029"
     },
     {
-        "Name": "Emergent Flame",
+        "Name": "Fearless Foodie",
         "Tier": "4",
-        "Combined": "Elemental, Battlecry",
-        "ID": "BG27_018"
+        "Combined": "Quilboar",
+        "ID": "BG30_123"
     },
     {
-        "Name": "Fairy Tale Caroler",
+        "Name": "Feisty Freshwater",
+        "Tier": "4",
+        "Combined": "Elemental, Deathrattle",
+        "ID": "BGDUO_110"
+    },
+    {
+        "Name": "Gem Smuggler",
+        "Tier": "4",
+        "Combined": "Quilboar, Battlecry",
+        "ID": "BG25_155"
+    },
+    {
+        "Name": "Grave Narrator",
+        "Tier": "4",
+        "Combined": "Undead, Avenge",
+        "ID": "BGDUO_112"
+    },
+    {
+        "Name": "Grease Bot",
+        "Tier": "4",
+        "Combined": "Mech, Divine Shield",
+        "ID": "BG21_024"
+    },
+    {
+        "Name": "Ice Fisher",
+        "Tier": "4",
+        "Combined": "Pirate",
+        "ID": "BG30_120"
+    },
+    {
+        "Name": "Imposing Percussionist",
+        "Tier": "4",
+        "Combined": "Demon, Battlecry, Discover",
+        "ID": "BG26_525"
+    },
+    {
+        "Name": "Inspiring Underdog",
         "Tier": "4",
         "Combined": "Battlecry",
-        "ID": "BG26_001"
+        "ID": "BG30_127"
     },
     {
-        "Name": "Floating Watcher",
+        "Name": "Lil' Rag",
         "Tier": "4",
-        "Combined": "Demon",
-        "ID": "BG_GVG_100"
+        "Combined": "Elemental",
+        "ID": "BGS_100"
+    },
+    {
+        "Name": "Living Azerite",
+        "Tier": "4",
+        "Combined": "Elemental",
+        "ID": "BG28_707"
     },
     {
         "Name": "Lovesick Balladist",
@@ -618,34 +744,34 @@ const minions = [
         "ID": "BG26_814"
     },
     {
+        "Name": "Magnanimoose",
+        "Tier": "4",
+        "Combined": "Beast, Deathrattle",
+        "ID": "BGDUO_105"
+    },
+    {
         "Name": "Malchezaar, Prince of Dance",
         "Tier": "4",
         "Combined": "Demon",
         "ID": "BG26_524"
     },
     {
-        "Name": "Mechano-Tank",
+        "Name": "Mirror Monster",
         "Tier": "4",
-        "Combined": "Mech, Avenge",
-        "ID": "BG21_023"
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead, Discover",
+        "ID": "BGDUO_108"
     },
     {
-        "Name": "Menagerie Jug",
+        "Name": "Motley Phalanx",
         "Tier": "4",
-        "Combined": "Battlecry",
-        "ID": "BGS_083"
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead, Deathrattle, Taunt",
+        "ID": "BG27_080"
     },
     {
-        "Name": "Necrolyte",
+        "Name": "Mummifier",
         "Tier": "4",
-        "Combined": "Quilboar, Battlecry",
-        "ID": "BG20_202"
-    },
-    {
-        "Name": "Peckish Feldrake",
-        "Tier": "4",
-        "Combined": "Dragon, Battlecry, Demon",
-        "ID": "BG27_009"
+        "Combined": "Undead, Deathrattle",
+        "ID": "BG28_309"
     },
     {
         "Name": "Peggy Sturdybone",
@@ -654,22 +780,28 @@ const minions = [
         "ID": "BG25_032"
     },
     {
-        "Name": "Primalfin Lookout",
+        "Name": "Persistent Poet",
         "Tier": "4",
-        "Combined": "Murloc, Battlecry, Discover",
-        "ID": "BGS_020"
+        "Combined": "Dragon, Divine Shield",
+        "ID": "BG29_813"
     },
     {
-        "Name": "Reanimating Rattler",
+        "Name": "Prized Promo-Drake",
         "Tier": "4",
-        "Combined": "Beast, Reborn",
-        "ID": "BG21_003"
+        "Combined": "Dragon",
+        "ID": "BG21_014"
     },
     {
-        "Name": "Reef Explorer",
+        "Name": "Prosthetic Hand",
         "Tier": "4",
-        "Combined": "Battlecry, Discover",
-        "ID": "BG23_016"
+        "Combined": "Mech, Reborn, Undead",
+        "ID": "BG_DEEP_015"
+    },
+    {
+        "Name": "Recycling Wraith",
+        "Tier": "4",
+        "Combined": "Elemental",
+        "ID": "BG21_040"
     },
     {
         "Name": "Rylak Metalhead",
@@ -678,22 +810,16 @@ const minions = [
         "ID": "BG26_801"
     },
     {
-        "Name": "Scrap Scraper",
-        "Tier": "4",
-        "Combined": "Mech",
-        "ID": "BG26_148"
-    },
-    {
-        "Name": "Silent Swimmer",
-        "Tier": "4",
-        "Combined": "Naga",
-        "ID": "BG26_171"
-    },
-    {
         "Name": "Sin'dorei Straight Shot",
         "Tier": "4",
         "Combined": "Taunt, Divine Shield, Windfury",
         "ID": "BG25_016"
+    },
+    {
+        "Name": "Sky Pirate Flagbearer",
+        "Tier": "4",
+        "Combined": "Pirate",
+        "ID": "BG30_119"
     },
     {
         "Name": "Sly Raptor",
@@ -702,22 +828,34 @@ const minions = [
         "ID": "BG25_806"
     },
     {
-        "Name": "Soulsplitter",
+        "Name": "Snarling Conductor",
         "Tier": "4",
-        "Combined": "Undead, Reborn",
-        "ID": "BG25_023"
+        "Combined": "Quilboar",
+        "ID": "BG28_585"
     },
     {
-        "Name": "Stormbringer",
+        "Name": "Soft-hearted Siren",
         "Tier": "4",
-        "Combined": "Dragon",
-        "ID": "BG26_966"
+        "Combined": "Naga",
+        "ID": "BG26_590"
     },
     {
-        "Name": "Strongshell Scavenger",
+        "Name": "Storm Splitter",
         "Tier": "4",
-        "Combined": "Taunt, Battlecry",
-        "ID": "BG_ICC_807"
+        "Combined": "Naga",
+        "ID": "BGDUO_122"
+    },
+    {
+        "Name": "Tavern Tempest",
+        "Tier": "4",
+        "Combined": "Elemental, Battlecry",
+        "ID": "BGS_123"
+    },
+    {
+        "Name": "Thundering Abomination",
+        "Tier": "4",
+        "Combined": "Undead",
+        "ID": "BG30_124"
     },
     {
         "Name": "Treasure-Seeker Elise",
@@ -726,10 +864,28 @@ const minions = [
         "ID": "BG23_353"
     },
     {
+        "Name": "Trigore the Lasher",
+        "Tier": "4",
+        "Combined": "Beast",
+        "ID": "BG29_807"
+    },
+    {
         "Name": "Tunnel Blaster",
         "Tier": "4",
         "Combined": "Deathrattle, Taunt",
         "ID": "BG_DAL_775"
+    },
+    {
+        "Name": "Utility Drone",
+        "Tier": "4",
+        "Combined": "Mech",
+        "ID": "BG26_152"
+    },
+    {
+        "Name": "Wannabe Gargoyle",
+        "Tier": "4",
+        "Combined": "Dragon, Reborn",
+        "ID": "BG30_109"
     },
     {
         "Name": "Wildfire Elemental",
@@ -738,22 +894,16 @@ const minions = [
         "ID": "BGS_126"
     },
     {
-        "Name": "Witchwing Nestmatron",
+        "Name": "Zesty Shaker",
         "Tier": "4",
-        "Combined": "Avenge, Battlecry",
-        "ID": "BG21_038"
+        "Combined": "Naga",
+        "ID": "BG26_505"
     },
     {
-        "Name": "Adaptable Barricade",
+        "Name": "Barrens Conjurer",
         "Tier": "5",
-        "Combined": "Mech, Taunt",
-        "ID": "BG27_022"
-    },
-    {
-        "Name": "Aggem Thorncurse",
-        "Tier": "5",
-        "Combined": "Quilboar",
-        "ID": "BG20_302"
+        "Combined": "Deathrattle, Battlecry",
+        "ID": "BG29_862"
     },
     {
         "Name": "Bongo Bopper",
@@ -768,10 +918,10 @@ const minions = [
         "ID": "BG_LOE_077"
     },
     {
-        "Name": "Bristleback Knight",
+        "Name": "Catacomb Crasher",
         "Tier": "5",
-        "Combined": "Quilboar, Divine Shield, Windfury",
-        "ID": "BG20_204"
+        "Combined": "Undead",
+        "ID": "BG30_129"
     },
     {
         "Name": "Champion of the Primus",
@@ -780,28 +930,58 @@ const minions = [
         "ID": "BG27_029"
     },
     {
+        "Name": "Charging Czarina",
+        "Tier": "5",
+        "Combined": "Mech, Divine Shield",
+        "ID": "BG28_741"
+    },
+    {
+        "Name": "Clunker Junker",
+        "Tier": "5",
+        "Combined": "Mech, Battlecry, Discover",
+        "ID": "BG29_503"
+    },
+    {
         "Name": "Corrupted Myrmidon",
         "Tier": "5",
         "Combined": "Naga",
         "ID": "BG23_012"
     },
     {
-        "Name": "Critter Wrangler",
+        "Name": "Cruise Controller",
         "Tier": "5",
-        "Combined": "Naga",
-        "ID": "BG23_003"
+        "Combined": "Pirate, Deathrattle",
+        "ID": "BG31_821"
     },
     {
-        "Name": "Disco Shuffler",
+        "Name": "Daggerspine Thrasher",
         "Tier": "5",
-        "Combined": "Dragon, Battlecry, Discover",
-        "ID": "BG26_355"
+        "Combined": "Naga, Divine Shield, Venomous, Windfury",
+        "ID": "BG27_024"
+    },
+    {
+        "Name": "Depraved Felfin",
+        "Tier": "5",
+        "Combined": "Demon, Discover, Murloc",
+        "ID": "BG30_115"
     },
     {
         "Name": "Drakkari Enchanter",
         "Tier": "5",
         "Combined": "Aura",
         "ID": "BG26_ICC_901"
+    },
+    {
+        "Name": "Ensorcelled Fungus",
+        "Tier": "5",
+        "Combined": "Aura",
+        "ID": "BG28_555"
+    },
+    {
+        "Name": "Flourishing Frostling",
+        "Tier": "5",
+        "Combined": "Elemental, Aura",
+        "ID": "BG26_537"
     },
     {
         "Name": "General Drakkisath",
@@ -816,16 +996,10 @@ const minions = [
         "ID": "BG23_008"
     },
     {
-        "Name": "Gusty Trumpeter",
+        "Name": "Hot-Air Surveyor",
         "Tier": "5",
-        "Combined": "Elemental",
-        "ID": "BG26_534"
-    },
-    {
-        "Name": "Hungering Abomination",
-        "Tier": "5",
-        "Combined": "Undead, Avenge",
-        "ID": "BG25_014"
+        "Combined": "Quilboar, Aura",
+        "ID": "BG30_121"
     },
     {
         "Name": "Hunter of Gatherers",
@@ -834,16 +1008,28 @@ const minions = [
         "ID": "BG25_027"
     },
     {
-        "Name": "Imposing Percussionist",
-        "Tier": "5",
-        "Combined": "Demon, Battlecry, Discover",
-        "ID": "BG26_525"
-    },
-    {
         "Name": "Insatiable Ur'zul",
         "Tier": "5",
         "Combined": "Demon, Taunt",
         "ID": "BG21_004"
+    },
+    {
+        "Name": "Interrogator Whitemane",
+        "Tier": "5",
+        "Combined": "Taunt",
+        "ID": "BG24_704"
+    },
+    {
+        "Name": "Iridescent Skyblazer",
+        "Tier": "5",
+        "Combined": "Beast",
+        "ID": "BG29_806"
+    },
+    {
+        "Name": "Kangor's Apprentice",
+        "Tier": "5",
+        "Combined": "Mech, Deathrattle",
+        "ID": "BGS_012"
     },
     {
         "Name": "King Bagurgle",
@@ -858,46 +1044,46 @@ const minions = [
         "ID": "BG23_318"
     },
     {
-        "Name": "Mama Bear",
+        "Name": "Lightfang Enforcer",
         "Tier": "5",
-        "Combined": "Beast",
-        "ID": "BGS_021"
+        "Combined": "",
+        "ID": "BGS_009"
     },
     {
-        "Name": "Mannoroth",
+        "Name": "Lucky Egg",
         "Tier": "5",
-        "Combined": "Undead, Venomous, Demon",
-        "ID": "BG27_507"
+        "Combined": "Battlecry, Discover",
+        "ID": "BG30_104"
     },
     {
-        "Name": "Mechanized Gift Horse",
+        "Name": "Man'ari Messenger",
         "Tier": "5",
-        "Combined": "Beast, Deathrattle, Mech",
-        "ID": "BG27_008"
+        "Combined": "Demon, Battlecry",
+        "ID": "BGDUO_121"
     },
     {
-        "Name": "Murozond",
+        "Name": "Mirage Conjurer",
         "Tier": "5",
-        "Combined": "Dragon, Battlecry",
-        "ID": "BGS_043"
+        "Combined": "Demon",
+        "ID": "BG30_110"
     },
     {
-        "Name": "Mythrax the Unraveler",
+        "Name": "Moroes, Steward of Death",
         "Tier": "5",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead",
-        "ID": "BGS_202"
+        "Combined": "Undead, Deathrattle, Reborn",
+        "ID": "BG28_304"
     },
     {
-        "Name": "Niuzao",
-        "Tier": "5",
-        "Combined": "Beast",
-        "ID": "BG27_822"
-    },
-    {
-        "Name": "Nomi, Kitchen Nightmare",
+        "Name": "Moss of the Schloss",
         "Tier": "5",
         "Combined": "Elemental",
-        "ID": "BGS_104"
+        "ID": "BG30_111"
+    },
+    {
+        "Name": "Octosari, Wrap God",
+        "Tier": "5",
+        "Combined": "Beast, Deathrattle",
+        "ID": "BG26_804"
     },
     {
         "Name": "Operatic Belcher",
@@ -906,10 +1092,28 @@ const minions = [
         "ID": "BG26_888"
     },
     {
-        "Name": "Palescale Crocolisk",
+        "Name": "Pilgrimp",
         "Tier": "5",
-        "Combined": "Beast, Avenge, Deathrattle",
-        "ID": "BG21_001"
+        "Combined": "Demon",
+        "ID": "BG30_106"
+    },
+    {
+        "Name": "Primalfin Lookout",
+        "Tier": "5",
+        "Combined": "Murloc, Battlecry, Discover",
+        "ID": "BGS_020"
+    },
+    {
+        "Name": "Prime Mate",
+        "Tier": "5",
+        "Combined": "Beast, Deathrattle, Pirate",
+        "ID": "BG29_865"
+    },
+    {
+        "Name": "Rapscallion Recruiter",
+        "Tier": "5",
+        "Combined": "Pirate, Deathrattle",
+        "ID": "BG26_018"
     },
     {
         "Name": "Record Smuggler",
@@ -918,10 +1122,40 @@ const minions = [
         "ID": "BG26_812"
     },
     {
-        "Name": "Tavern Tempest",
+        "Name": "Rodeo Performer",
         "Tier": "5",
-        "Combined": "Elemental, Battlecry",
-        "ID": "BGS_123"
+        "Combined": "Battlecry, Discover",
+        "ID": "BG28_550"
+    },
+    {
+        "Name": "Scrap Scraper",
+        "Tier": "5",
+        "Combined": "Mech, Deathrattle",
+        "ID": "BG26_148"
+    },
+    {
+        "Name": "Spellbound Seafarer",
+        "Tier": "5",
+        "Combined": "Pirate",
+        "ID": "BG28_903"
+    },
+    {
+        "Name": "Spiked Savior",
+        "Tier": "5",
+        "Combined": "Beast, Deathrattle, Reborn, Taunt",
+        "ID": "BG29_808"
+    },
+    {
+        "Name": "Support System",
+        "Tier": "5",
+        "Combined": "Mech, Divine Shield",
+        "ID": "BGDUO_109"
+    },
+    {
+        "Name": "Three Lil' Quilboar",
+        "Tier": "5",
+        "Combined": "Quilboar, Deathrattle",
+        "ID": "BG26_867"
     },
     {
         "Name": "Tichondrius",
@@ -930,10 +1164,22 @@ const minions = [
         "ID": "BG26_523"
     },
     {
+        "Name": "Tidemistress Athissa",
+        "Tier": "5",
+        "Combined": "Naga",
+        "ID": "BG23_013"
+    },
+    {
         "Name": "Titus Rivendare",
         "Tier": "5",
         "Combined": "Aura, Deathrattle",
         "ID": "BG25_354"
+    },
+    {
+        "Name": "Tortollan Blue Shell",
+        "Tier": "5",
+        "Combined": "",
+        "ID": "BG24_018"
     },
     {
         "Name": "Transmuted Bramblewitch",
@@ -942,46 +1188,40 @@ const minions = [
         "ID": "BG27_013"
     },
     {
-        "Name": "Underhanded Dealer",
-        "Tier": "5",
-        "Combined": "Pirate",
-        "ID": "BG26_815"
-    },
-    {
-        "Name": "Upbeat Duo",
+        "Name": "Well Wisher",
         "Tier": "5",
         "Combined": "",
-        "ID": "BG26_199"
+        "ID": "BGDUO_120"
     },
     {
-        "Name": "Upbeat Impressionist",
+        "Name": "Yu'lon, Fortune Granter",
         "Tier": "5",
+        "Combined": "Dragon",
+        "ID": "BG29_811"
+    },
+    {
+        "Name": "Admiral Eliza Goreblade",
+        "Tier": "6",
         "Combined": "Pirate",
-        "ID": "BG26_124"
+        "ID": "BG27_555"
     },
     {
-        "Name": "Utility Drone",
-        "Tier": "5",
-        "Combined": "Mech",
-        "ID": "BG26_152"
+        "Name": "Archlich Kel'Thuzad",
+        "Tier": "6",
+        "Combined": "Undead",
+        "ID": "BG28_308"
     },
     {
-        "Name": "Vanessa VanCleef",
-        "Tier": "5",
-        "Combined": "Pirate",
-        "ID": "BG24_708"
+        "Name": "Arid Atrocity",
+        "Tier": "6",
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead, Deathrattle",
+        "ID": "BG29_864"
     },
     {
         "Name": "Bristlebach",
         "Tier": "6",
         "Combined": "Quilboar, Avenge",
         "ID": "BG26_157"
-    },
-    {
-        "Name": "Captain Flat Tusk",
-        "Tier": "6",
-        "Combined": "Quilboar",
-        "ID": "BG20_206"
     },
     {
         "Name": "Charlga",
@@ -994,6 +1234,12 @@ const minions = [
         "Tier": "6",
         "Combined": "Murloc",
         "ID": "BG26_354"
+    },
+    {
+        "Name": "Cultist S'Thara",
+        "Tier": "6",
+        "Combined": "Demon, Deathrattle",
+        "ID": "BG27_081"
     },
     {
         "Name": "Elemental of Surprise",
@@ -1014,12 +1260,6 @@ const minions = [
         "ID": "BG21_005"
     },
     {
-        "Name": "Felstomper",
-        "Tier": "6",
-        "Combined": "Demon, Beast",
-        "ID": "BG25_042"
-    },
-    {
         "Name": "Fleet Admiral Tethys",
         "Tier": "6",
         "Combined": "Pirate",
@@ -1032,10 +1272,28 @@ const minions = [
         "ID": "BG_GVG_113"
     },
     {
-        "Name": "Ghastcoiler",
+        "Name": "Ghoul-acabra",
+        "Tier": "6",
+        "Combined": "Undead, Deathrattle, Beast",
+        "ID": "BG29_863"
+    },
+    {
+        "Name": "Goldrinn, the Great Wolf",
         "Tier": "6",
         "Combined": "Beast, Deathrattle",
-        "ID": "BGS_008"
+        "ID": "BGS_018"
+    },
+    {
+        "Name": "Hoarding Hatespawn",
+        "Tier": "6",
+        "Combined": "Dragon",
+        "ID": "BG29_872"
+    },
+    {
+        "Name": "Indomitable Mount",
+        "Tier": "6",
+        "Combined": "Beast, Deathrattle",
+        "ID": "BG30_105"
     },
     {
         "Name": "Kalecgos, Arcane Aspect",
@@ -1044,22 +1302,34 @@ const minions = [
         "ID": "BGS_041"
     },
     {
+        "Name": "Mecha-Jaraxxus",
+        "Tier": "6",
+        "Combined": "Demon, Battlecry, Mech",
+        "ID": "BG25_807"
+    },
+    {
+        "Name": "Mrglin' Burglar",
+        "Tier": "6",
+        "Combined": "Murloc",
+        "ID": "BG30_122"
+    },
+    {
         "Name": "Murky",
         "Tier": "6",
         "Combined": "Murloc, Battlecry",
         "ID": "BG24_012"
     },
     {
-        "Name": "Octosari, Wrap God",
+        "Name": "Nalaa the Redeemer",
         "Tier": "6",
-        "Combined": "Beast, Deathrattle",
-        "ID": "BG26_804"
+        "Combined": "",
+        "ID": "BG28_551"
     },
     {
-        "Name": "Omega Buster",
+        "Name": "One-Amalgam Tour Group",
         "Tier": "6",
-        "Combined": "Mech, Deathrattle",
-        "ID": "BG21_025"
+        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead",
+        "ID": "BG30_102"
     },
     {
         "Name": "Orgozoa, the Tender",
@@ -1068,16 +1338,16 @@ const minions = [
         "ID": "BG23_015"
     },
     {
+        "Name": "Pokey Thornmantle",
+        "Tier": "6",
+        "Combined": "Quilboar",
+        "ID": "BG29_708"
+    },
+    {
         "Name": "Polarizing Beatboxer",
         "Tier": "6",
         "Combined": "Mech",
         "ID": "BG26_149"
-    },
-    {
-        "Name": "Relentless Mur'ghoul",
-        "Tier": "6",
-        "Combined": "Undead, Avenge, Venomous, Murloc",
-        "ID": "BG27_010"
     },
     {
         "Name": "Rock Rock",
@@ -1086,34 +1356,16 @@ const minions = [
         "ID": "BG26_535"
     },
     {
-        "Name": "Sister Deathwhisper",
-        "Tier": "6",
-        "Combined": "Undead",
-        "ID": "BG25_020"
-    },
-    {
-        "Name": "The Boogie Monster",
-        "Tier": "6",
-        "Combined": "",
-        "ID": "BG26_176"
-    },
-    {
-        "Name": "The Walking Fort",
-        "Tier": "6",
-        "Combined": "Taunt",
-        "ID": "BG24_712"
-    },
-    {
-        "Name": "Tidemistress Athissa",
+        "Name": "Slitherspear, Lord of Gains",
         "Tier": "6",
         "Combined": "Naga",
-        "ID": "BG23_013"
+        "ID": "BG27_083"
     },
     {
-        "Name": "Uther the Lightbringer",
+        "Name": "Sun Screener",
         "Tier": "6",
-        "Combined": "Battlecry",
-        "ID": "BG23_190"
+        "Combined": "Divine Shield",
+        "ID": "BG30_101"
     },
     {
         "Name": "Warpwing",
@@ -1122,28 +1374,16 @@ const minions = [
         "ID": "BG24_004"
     },
     {
+        "Name": "Whirling Lass-o-Matic",
+        "Tier": "6",
+        "Combined": "Mech, Divine Shield, Windfury",
+        "ID": "BG28_635"
+    },
+    {
         "Name": "Young Murk-Eye",
         "Tier": "6",
         "Combined": "Murloc, Battlecry",
         "ID": "BG22_403"
-    },
-    {
-        "Name": "Zapp Slywick",
-        "Tier": "6",
-        "Combined": "Windfury",
-        "ID": "BGS_022"
-    },
-    {
-        "Name": "Amalgadon",
-        "Tier": "7",
-        "Combined": "Beast, Demon, Dragon, Elemental, Mech, Murloc, Naga, Pirate, Quilboar, Undead, Battlecry, Adapt",
-        "ID": "BGS_069"
-    },
-    {
-        "Name": "Argent Braggart",
-        "Tier": "7",
-        "Combined": "Battlecry",
-        "ID": "BG_SCH_149"
     },
     {
         "Name": "Captain Sanders",
@@ -1192,6 +1432,12 @@ const minions = [
         "Tier": "7",
         "Combined": "Undead, Deathrattle",
         "ID": "BG26_055"
+    },
+    {
+        "Name": "Sandy",
+        "Tier": "7",
+        "Combined": "",
+        "ID": "BGDUO_125"
     },
     {
         "Name": "Sanguine Champion",
