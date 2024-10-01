@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.15.4",
+    "npx": "^10.2.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-ga": "^3.3.0",
