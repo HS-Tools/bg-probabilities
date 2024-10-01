@@ -12,6 +12,7 @@ import ReactGA from 'react-ga';
 import { tribes } from './tribes';
 
 const tiers = [1, 2, 3, 4, 5, 6, 7]
+const modes = ['Solo', 'Duo']
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
     this.state = {
       availableTribes: tribes.slice(0, 5),
       currentTier: tiers[0],
+      currentMode: modes[0],
       rollCount: 1,
       buyableCards: [],
       selectedCards: {},
@@ -43,14 +45,14 @@ class App extends Component {
 
   componentDidMount() {
     this.minionToAttributesMap = this.mapNameToObjectOfAttributes();
-    this.changeBuyableCards(this.state.currentTier, this.state.availableTribes);
+    this.changeBuyableCards(this.state.currentTier, this.state.availableTribes, this.state.currentMode);
   }
 
   changeAvailableTribeHandler = (position, e) => {
     this.setState(prevState => {
       let availableTribes =  [...prevState.availableTribes];
       availableTribes[position] = e.target.value;
-      this.changeBuyableCards(this.state.currentTier, availableTribes);
+      this.changeBuyableCards(this.state.currentTier, availableTribes, this.state.currentMode);
 
       return { availableTribes };
     });
@@ -59,7 +61,13 @@ class App extends Component {
   changeCurrentTierHandler = (e) => {
     let tier = e.target.value;
     this.setState({currentTier: tier});
-    this.changeBuyableCards(tier, this.state.availableTribes);
+    this.changeBuyableCards(tier, this.state.availableTribes, this.state.currentMode);
+  }
+
+  changeCurrentModeHandler = (e) => {
+    let mode = e.target.value;
+    this.setState({currentMode: mode});
+    this.changeBuyableCards(this.state.currentTier, this.state.availableTribes, mode);
   }
 
   calculateLongestSelectedCardCharCount(selectedCards) {
@@ -151,7 +159,8 @@ class App extends Component {
 
   changeBuyableCards(
     tier,
-    availableTribes) {
+    availableTribes,
+    mode) {
     let tierAppropriateMinions = minions.filter(item => {
       if (parseInt(item.Tier) > tier) {
         this.deleteSelectedCardHandler(item.Name);
@@ -176,7 +185,17 @@ class App extends Component {
       }
     });
 
-    this.setState({ buyableCards: tribeAppropriateMinions });
+    let modeAppropriateMinions = tribeAppropriateMinions.filter(item => {
+      // If solo mode, remove duo minions
+      if (mode === 'Solo' && item.ID.includes('BGDUO')) {
+        this.deleteSelectedCardHandler(item.Name)
+        return false;
+      } else {
+        return true;
+      }
+    })
+
+    this.setState({ buyableCards: modeAppropriateMinions });
   }
 
   initializeReactGA() {
@@ -220,6 +239,12 @@ class App extends Component {
           currentSelected={this.state.currentTier}
           changed={this.changeCurrentTierHandler}
           prefixText="The current tavern tier is:" />
+
+        <NoDropdownSelector
+          collection={modes}
+          currentSelected={this.state.currentMode}
+          changed={this.changeCurrentModeHandler}
+          prefixText="The current mode is:" />
 
         <DropdownSelector
           collection={this.state.buyableCards}
