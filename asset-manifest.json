@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bg-probabilities/static/css/main.a14fa779.css",
-    "main.js": "/bg-probabilities/static/js/main.751b7fc9.js",
+    "main.js": "/bg-probabilities/static/js/main.a1c09f32.js",
     "index.html": "/bg-probabilities/index.html",
     "main.a14fa779.css.map": "/bg-probabilities/static/css/main.a14fa779.css.map",
-    "main.751b7fc9.js.map": "/bg-probabilities/static/js/main.751b7fc9.js.map"
+    "main.a1c09f32.js.map": "/bg-probabilities/static/js/main.a1c09f32.js.map"
   },
   "entrypoints": [
     "static/css/main.a14fa779.css",
-    "static/js/main.751b7fc9.js"
+    "static/js/main.a1c09f32.js"
   ]
 }
